@@ -19,6 +19,7 @@ from app.components.ui_components import (
 )
 from backend.services.segmentation_service import SegmentationService
 from analytics.segmentation.rfm import RFMSegmenter
+from analytics.clv.uplift_engine import CustomerLifetimeValueEngine
 
 st.set_page_config(page_title="Customer Segmentation | BankSight", page_icon="🧩", layout="wide")
 apply_banking_theme()
@@ -36,7 +37,7 @@ ctrl_col1, ctrl_col2, ctrl_col3 = st.columns([2, 1, 1])
 with ctrl_col1:
     seg_method = st.radio(
         "Select Segmentation Framework:",
-        options=["RFM Segmentation", "K-Means Clustering", "Financial Balance Tiers", "Demographic Age Bands"],
+        options=["RFM Segmentation", "K-Means Clustering", "CLV & Uplift Retention Quadrants", "Financial Balance Tiers", "Demographic Age Bands"],
         horizontal=True
     )
 with ctrl_col2:
@@ -148,6 +149,91 @@ elif seg_method == "K-Means Clustering":
         fig_scatter.update_layout(**get_banking_chart_layout("Balance vs. Income Distribution", height=320))
         st.plotly_chart(fig_scatter, use_container_width=True)
 
+elif seg_method == "CLV & Uplift Retention Quadrants":
+    st.markdown("##### 📈 **Customer Lifetime Value (CLV) & Retention Uplift Quadrants**")
+    st.caption("Discounted Cash Flow Net Present Value (NPV) calculated over 36 months under a 220 bps NIM and 8.0% WACC.")
+
+    clv_summary = CustomerLifetimeValueEngine.evaluate_portfolio_clv()
+    clv_df = clv_summary.get("full_dataframe", pd.DataFrame())
+
+    # Top Metric Banner
+    cm1, cm2, cm3, cm4 = st.columns(4)
+    with cm1:
+        render_metric_card("Portfolio 36m CLV", format_currency(clv_summary.get("portfolio_36m_clv_usd", 0.0)), "3-Year Discounted NPV")
+    with cm2:
+        render_metric_card("CLV Value-at-Risk", format_currency(clv_summary.get("clv_at_risk_usd", 0.0)), "Churn Risk ≥ 50%")
+    with cm3:
+        render_metric_card("Persuadables Opportunity", format_currency(clv_summary.get("persuadables_clv_usd", 0.0)), "High ROI Intervention")
+    with cm4:
+        persuadable_n = clv_summary.get("quadrant_distribution", {}).get("Persuadables", 0)
+        render_metric_card("Persuadable Clients", f"{persuadable_n:,}", "Target for Concessions")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    qc_col1, qc_col2 = st.columns([3, 2])
+    with qc_col1:
+        if not clv_df.empty:
+            color_map = {
+                "Persuadables": "#EB3B5A",
+                "Sure Things": "#20BF6B",
+                "Lost Causes": "#FA8231",
+                "Sleeping Dogs": "#4B6584"
+            }
+            fig_clv = px.scatter(
+                clv_df,
+                x="churn_probability",
+                y="clv_36m_npv",
+                color="retention_quadrant",
+                color_discrete_map=color_map,
+                hover_data=["customer_id", "customer_name", "total_balance", "max_allowable_concession_usd"],
+                labels={
+                    "churn_probability": "Churn Probability (Decay Velocity)",
+                    "clv_36m_npv": "36-Month Discounted CLV ($)",
+                    "retention_quadrant": "Uplift Quadrant"
+                }
+            )
+            # Add quadrant threshold lines
+            fig_clv.add_vline(x=0.35, line_width=1.5, line_dash="dash", line_color="#94A3B8")
+            fig_clv.add_hline(y=1500.0, line_width=1.5, line_dash="dash", line_color="#94A3B8")
+            fig_clv.update_layout(**get_banking_chart_layout("Uplift Retention Strategy Quadrants", height=380))
+            st.plotly_chart(fig_clv, use_container_width=True)
+
+    with qc_col2:
+        st.markdown("##### 💡 **Intervention Playbook & Concession Capping**")
+        st.markdown(
+            """
+            <div style="background: white; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px; margin-bottom: 12px;">
+                <div style="font-weight: 700; color: #EB3B5A;">🎯 PERSUADABLES (High ROI Priority)</div>
+                <div style="font-size: 13px; color: #475569; margin-top: 4px;">
+                    Clients with high lifetime value and moderate-to-high defect risk. Highly receptive to concessions.
+                    <br><strong>Max Cap:</strong> Up to 12% of 3-yr CLV (max $2,500). Focus on CD rate bonuses and fee waivers.
+                </div>
+            </div>
+            <div style="background: white; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px; margin-bottom: 12px;">
+                <div style="font-weight: 700; color: #20BF6B;">💎 SURE THINGS (Core Wealth / Protect)</div>
+                <div style="font-size: 13px; color: #475569; margin-top: 4px;">
+                    Highly loyal, low-churn profitable relationships.
+                    <br><strong>Max Cap:</strong> $0.00. Do not grant costly financial concessions; nurture via annual wealth reviews.
+                </div>
+            </div>
+            <div style="background: white; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px; margin-bottom: 12px;">
+                <div style="font-weight: 700; color: #FA8231;">⚠️ LOST CAUSES (Defection Imminent)</div>
+                <div style="font-size: 13px; color: #475569; margin-top: 4px;">
+                    Extreme churn probability (>85%). Retention ROI is negative.
+                    <br><strong>Max Cap:</strong> Hard cap at $50.00. Restrict to standard customer service remediation.
+                </div>
+            </div>
+            <div style="background: white; border: 1px solid #E2E8F0; border-radius: 10px; padding: 16px;">
+                <div style="font-weight: 700; color: #4B6584;">💤 SLEEPING DOGS (Low Margin / Passive)</div>
+                <div style="font-size: 13px; color: #475569; margin-top: 4px;">
+                    Low balance or dormant accounts. Marketing outreach risks prompting account closure.
+                    <br><strong>Max Cap:</strong> $0.00. Maintain passive digital servicing only.
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
 else:
     # Demographic / Financial
     dist_key = "demographic_distribution" if "Demographic" in seg_method else "financial_distribution"
@@ -164,25 +250,47 @@ else:
 
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("##### 👥 **Customer Drill-Down by Segment**")
-selected_filter_col = "rfm_segment" if seg_method == "RFM Segmentation" else ("kmeans_segment" if seg_method == "K-Means Clustering" else ("demographic_segment" if "Demographic" in seg_method else "financial_segment"))
-segment_choices = ["All"] + seg_df[selected_filter_col].unique().tolist()
-picked_seg = st.selectbox(f"Filter records by {selected_filter_col}:", options=segment_choices)
 
-filtered_drill = seg_df if picked_seg == "All" else seg_df[seg_df[selected_filter_col] == picked_seg]
+if seg_method == "CLV & Uplift Retention Quadrants":
+    clv_quad_choices = ["All"] + sorted(clv_df["retention_quadrant"].unique().tolist())
+    picked_quad = st.selectbox("Filter records by Retention Quadrant:", options=clv_quad_choices)
+    filtered_clv = clv_df if picked_quad == "All" else clv_df[clv_df["retention_quadrant"] == picked_quad]
 
-st.dataframe(
-    filtered_drill[[
-        "customer_id", "first_name", "last_name", "age", "annual_income",
-        "total_balance", "txn_frequency_12m", "recency_days", "rfm_segment", "kmeans_segment"
-    ]].head(25),
-    use_container_width=True,
-    hide_index=True
-)
+    st.dataframe(
+        filtered_clv[[
+            "customer_id", "customer_name", "customer_segment", "total_balance",
+            "churn_probability", "clv_12m_npv", "clv_36m_npv", "retention_quadrant",
+            "max_allowable_concession_usd", "treatment_strategy"
+        ]].head(25),
+        use_container_width=True,
+        hide_index=True
+    )
+    st.download_button(
+        "📥 Export Uplift Cohort (.csv)",
+        data=filtered_clv.to_csv(index=False).encode("utf-8"),
+        file_name=f"banksight_clv_quadrant_{picked_quad.lower().replace(' ', '_')}.csv",
+        mime="text/csv"
+    )
+else:
+    selected_filter_col = "rfm_segment" if seg_method == "RFM Segmentation" else ("kmeans_segment" if seg_method == "K-Means Clustering" else ("demographic_segment" if "Demographic" in seg_method else "financial_segment"))
+    segment_choices = ["All"] + seg_df[selected_filter_col].unique().tolist()
+    picked_seg = st.selectbox(f"Filter records by {selected_filter_col}:", options=segment_choices)
 
-st.download_button(
-    "📥 Export Segment Customers (.csv)",
-    data=filtered_drill.to_csv(index=False).encode("utf-8"),
-    file_name=f"banksight_segment_{picked_seg.lower().replace(' ', '_')}.csv",
-    mime="text/csv"
-)
+    filtered_drill = seg_df if picked_seg == "All" else seg_df[seg_df[selected_filter_col] == picked_seg]
+
+    st.dataframe(
+        filtered_drill[[
+            "customer_id", "first_name", "last_name", "age", "annual_income",
+            "total_balance", "txn_frequency_12m", "recency_days", "rfm_segment", "kmeans_segment"
+        ]].head(25),
+        use_container_width=True,
+        hide_index=True
+    )
+
+    st.download_button(
+        "📥 Export Segment Customers (.csv)",
+        data=filtered_drill.to_csv(index=False).encode("utf-8"),
+        file_name=f"banksight_segment_{picked_seg.lower().replace(' ', '_')}.csv",
+        mime="text/csv"
+    )
 

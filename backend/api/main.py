@@ -11,7 +11,7 @@ from fastapi.responses import JSONResponse
 from backend.api.routers import (
     auth_router, kpi_router, customer_router,
     churn_router, retention_router, governance_router,
-    copilot_router, streaming_router
+    copilot_router, streaming_router, clv_router, webhook_router
 )
 from backend.monitoring.telemetry import (
     http_requests_total, http_request_duration_seconds,
@@ -93,6 +93,8 @@ app.include_router(retention_router.router, prefix="/api/v1")
 app.include_router(governance_router.router, prefix="/api/v1")
 app.include_router(copilot_router.router, prefix="/api/v1")
 app.include_router(streaming_router.router, prefix="/api/v1")
+app.include_router(clv_router.router, prefix="/api/v1")
+app.include_router(webhook_router.router, prefix="/api/v1")
 
 
 @app.get("/metrics", tags=["Observability & Telemetry"])

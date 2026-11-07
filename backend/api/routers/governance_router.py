@@ -2,13 +2,22 @@
 BankSight Governance, Audit & Model Risk Router (SR 11-7 / BCBS 239)
 """
 
-from typing import List
+from typing import List, Optional
 from fastapi import APIRouter, Depends, Query, Request
+from pydantic import BaseModel, Field
 from backend.api.dependencies import require_roles, log_api_action
 from backend.api.schemas import AuditLogItem, AuditIntegrityResponse
 from backend.security.audit_logger import audit_logger
+from analytics.stress_testing.ccar_simulator import CCARStressTestSimulator
+from backend.monitoring.telemetry import basel_iii_lcr_pct
 
 router = APIRouter(prefix="/governance", tags=["Governance, Audit & Regulatory Compliance"])
+
+
+class StressTestRequest(BaseModel):
+    scenario: str = Field(default="ADVERSE", example="ADVERSE", description="Supervisory scenario: BASELINE, ADVERSE, or SEVERELY_ADVERSE")
+    hqla_buffer_usd: float = Field(default=12000000.0, example=12000000.0, description="Available High Quality Liquid Assets (HQLA) in USD")
+
 
 
 @router.get("/audit-logs", response_model=List[AuditLogItem])
@@ -95,4 +104,47 @@ def get_executive_board_report(
         return HTMLResponse(content=html_text)
 
     return RegulatoryBoardReportExporter.generate_board_report_data()
+
+
+@router.post("/stress-test/simulate")
+def simulate_portfolio_stress_test(
+    req: StressTestRequest,
+    request: Request,
+    user: dict = Depends(require_roles(["Admin", "Executive", "ComplianceOfficer", "DataAnalyst"]))
+):
+    """
+    Simulates Federal Reserve CCAR / DFAST and Basel III Liquidity Coverage Ratio (LCR) shocks.
+    Scenarios: BASELINE, ADVERSE, SEVERELY_ADVERSE.
+    """
+    result = CCARStressTestSimulator.run_simulation(
+        scenario_key=req.scenario,
+        custom_hqla_buffer_usd=req.hqla_buffer_usd
+    )
+
+    # Update Prometheus gauge
+    lcr_val = result["basel_iii_liquidity"]["projected_lcr_pct"]
+    basel_iii_lcr_pct.labels(scenario=result["scenario"]).set(lcr_val)
+
+    log_api_action(request, user, "RUN_CCAR_STRESS_TEST", "RISK_SIMULATION", req.scenario)
+    return result
+
+
+@router.get("/stress-test/benchmark")
+def benchmark_all_stress_scenarios(
+    request: Request,
+    hqla_buffer_usd: float = Query(12000000.0, ge=100000.0),
+    user: dict = Depends(require_roles(["Admin", "Executive", "ComplianceOfficer", "DataAnalyst"]))
+):
+    """
+    Executes all three supervisory stress scenarios (Baseline, Adverse, Severely Adverse)
+    for comparative executive risk analysis.
+    """
+    results = CCARStressTestSimulator.run_all_scenarios(hqla_buffer_usd=hqla_buffer_usd)
+    for r in results:
+        lcr_val = r["basel_iii_liquidity"]["projected_lcr_pct"]
+        basel_iii_lcr_pct.labels(scenario=r["scenario"]).set(lcr_val)
+
+    log_api_action(request, user, "BENCHMARK_CCAR_STRESS_TESTS", "RISK_SIMULATION", f"hqla={hqla_buffer_usd}")
+    return results
+
 

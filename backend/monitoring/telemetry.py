@@ -41,6 +41,30 @@ capital_flight_alerts_total = Counter(
     "Total real-time capital flight detection events triggered"
 )
 
+# 5. Enterprise Institutional & Regulatory Gauges
+portfolio_clv_36m_usd = Gauge(
+    "banksight_portfolio_clv_36m_usd",
+    "Aggregated 36-month Discounted Cash Flow Customer Lifetime Value across portfolio"
+)
+
+clv_at_risk_usd = Gauge(
+    "banksight_clv_at_risk_usd",
+    "Customer Lifetime Value at risk from high churn probability relationships"
+)
+
+basel_iii_lcr_pct = Gauge(
+    "banksight_basel_iii_lcr_pct",
+    "Basel III Liquidity Coverage Ratio projection under active stress scenario",
+    ["scenario"]
+)
+
+webhook_deliveries_total = Counter(
+    "banksight_webhook_deliveries_total",
+    "Total outbound webhook notifications dispatched to Core Banking integrations",
+    ["event_type", "status"]
+)
+
+
 
 def get_prometheus_metrics() -> bytes:
     """Exports all registered metrics in standard Prometheus text exposition format."""

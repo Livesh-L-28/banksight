@@ -26,6 +26,7 @@ This document tracks the phased execution and verification of **BankSight — Ba
 | **PHASE 15** | Enterprise Tier-1 Hardening & Governance | **COMPLETED** | Decoupled FastAPI, JWT RBAC, PII masking, AES encryption, WORM audit chain, SR 11-7 validator, K8s manifests, 43 tests passed |
 | **PHASE 16** | Next-Level Enterprise Innovations | **COMPLETED** | GenAI RM Copilot, SOX 404 Four-Eyes Dual-Approval, Real-Time Event Streaming & Webhooks, Prometheus Telemetry, 50 tests passed |
 | **PHASE 17** | Operational Scale, MLOps Retraining & Distributed Resilience | **COMPLETED** | Python Client SDK, W3C Tracing, RLS Scoping, DR Drill, MLOps Auto-Promotion, Performance Benchmark, 70 tests passed |
+| **PHASE 18** | Institutional Stress Testing, CLV Uplift Modeling & Core Banking Webhooks | **COMPLETED** | Fed CCAR / Basel III LCR simulator, DCF CLV & Uplift Quadrants, HMAC-SHA256 Core Banking Webhook Bus, Prometheus institutional gauges, Streamlit Risk & Segmentation studios, 80 tests passed |
 
 ---
 
@@ -179,3 +180,33 @@ This document tracks the phased execution and verification of **BankSight — Ba
   - Automated MLOps retraining verified with Fair Lending DIR gating and auto-promotion.
   - API concurrency benchmark completed with 100% SLA compliance.
   - Streamlit UI verified with Senior Manager Queue, Live Event Simulator, and Board Packet Studio.
+
+### PHASE 18 — Institutional Stress Testing, CLV Uplift Modeling & Core Banking Webhooks
+- **Status:** COMPLETED
+- **Target:** Federal Reserve CCAR / DFAST and Basel III Liquidity Coverage Ratio (LCR) simulation engine, Discounted Cash Flow CLV & Uplift Retention Quadrant modeling, Core Banking HMAC-SHA256 authenticated webhook bus, Prometheus institutional gauges, Streamlit Risk & Segmentation studios, and automated test suite.
+- **Changed Files:**
+  - `analytics/clv/uplift_engine.py`
+  - `analytics/stress_testing/ccar_simulator.py`
+  - `backend/monitoring/webhooks.py`
+  - `backend/monitoring/telemetry.py`
+  - `backend/api/routers/clv_router.py`
+  - `backend/api/routers/webhook_router.py`
+  - `backend/api/routers/governance_router.py`
+  - `backend/api/main.py`
+  - `sdk/banksight_client.py` & `sdk/README.md`
+  - `app/pages/03_Segmentation.py`
+  - `app/pages/12_Model_Management.py`
+  - `tests/enterprise/test_clv_and_stress_testing.py`
+  - `tests/enterprise/test_webhooks_and_metrics.py`
+  - `PHASE_STATUS.md`
+  - `README.md`
+- **Verification:**
+  - 80 / 80 automated tests passing (100% pass rate across unit, integration, and enterprise suites).
+  - Ruff linter 100% clean with zero warnings or style infractions.
+  - Federal Reserve CCAR supervisory scenarios (Baseline, Adverse, Severely Adverse) verified with Basel III LCR math and capital mitigation advisories.
+  - 36-Month DCF Customer Lifetime Value and 4-quadrant causal uplift classification (Persuadables, Sure Things, Sleeping Dogs, Lost Causes) verified with economic concession gating.
+  - Outbound Core Banking Webhook Bus verified with cryptographic HMAC-SHA256 signature verification and delivery audit trail.
+  - Prometheus `/metrics` exporter validated with real-time institutional SLI/SLO gauges.
+  - Streamlit Module 3 (Segmentation) enhanced with interactive 2D CLV vs Churn Risk scatter plot and concession ROI playbooks.
+  - Streamlit Module 12 (Model Management) upgraded into a 3-tab institutional studio: Model Registry, Fed CCAR Stress Testing, and Core Banking Webhooks.
+

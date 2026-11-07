@@ -39,3 +39,4 @@ def test_api_retrain_endpoint():
     assert data["success"] is True
     assert "challenger_metrics" in data
     assert data["promoted_to_champion"] is False
+
