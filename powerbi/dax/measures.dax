@@ -1,0 +1,174 @@
+// ==============================================================================
+// BankSight Power BI Semantic Layer: Standard DAX Measures
+// Target Model: Star Schema (Facts: Transactions, CustomerSnapshot, Campaign, Retention)
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 1. Customer Portfolio Measures
+// ------------------------------------------------------------------------------
+
+Total Customers = 
+DISTINCTCOUNT(DimCustomer[CustomerKey])
+
+Active Customers = 
+CALCULATE(
+    DISTINCTCOUNT(DimCustomer[CustomerKey]),
+    DimCustomer[CustomerStatus] = "Active",
+    DimCustomer[ChurnFlag] = FALSE
+)
+
+Inactive Customers = 
+[Total Customers] - [Active Customers]
+
+Churned Customers = 
+CALCULATE(
+    DISTINCTCOUNT(DimCustomer[CustomerKey]),
+    DimCustomer[ChurnFlag] = TRUE
+)
+
+Customer Churn Rate = 
+DIVIDE(
+    [Churned Customers],
+    [Total Customers],
+    0.0
+)
+
+Customer Retention Rate = 
+1.0 - [Customer Churn Rate]
+
+
+// ------------------------------------------------------------------------------
+// 2. Financial & Balance Measures
+// ------------------------------------------------------------------------------
+
+Total Deposits = 
+CALCULATE(
+    SUM(FactTransactions[TransactionAmount]),
+    FactTransactions[TransactionType] = "Deposit",
+    FactTransactions[TransactionStatus] = "Completed"
+)
+
+Total Withdrawals = 
+CALCULATE(
+    SUM(FactTransactions[TransactionAmount]),
+    FactTransactions[TransactionType] IN {"Withdrawal", "Payment"},
+    FactTransactions[TransactionStatus] = "Completed"
+)
+
+Net Cashflow = 
+[Total Deposits] - [Total Withdrawals]
+
+Total Portfolio Balance = 
+SUM(FactCustomerSnapshot[TotalDepositBalance])
+
+Average Customer Balance = 
+DIVIDE(
+    [Total Portfolio Balance],
+    [Active Customers],
+    0.0
+)
+
+Average Balance = 
+[Average Customer Balance]
+
+Customer Acquisition Rate = 
+DIVIDE(
+    CALCULATE(DISTINCTCOUNT(DimCustomer[CustomerKey]), DimCustomer[CustomerTenureMonths] <= 12),
+    [Total Customers],
+    0.0
+)
+
+Campaign ROI = 
+DIVIDE(
+    [Campaign Attributed Revenue] - CALCULATE(SUM(DimProduct[AnnualFee])),
+    1.0,
+    0.0
+)
+
+Product Penetration = 
+DIVIDE(
+    CALCULATE(DISTINCTCOUNT(FactCustomerSnapshot[CustomerKey]), FactCustomerSnapshot[OpenAccountCount] > 1),
+    [Total Customers],
+    0.0
+)
+
+Average Revenue Per Customer (ARPU) = 
+([Average Customer Balance] * 0.025) + 120.0
+
+Average Customer Lifetime Value (CLV) = 
+DIVIDE(
+    [Average Revenue Per Customer (ARPU)] * 0.75,
+    MAX(0.05, [Customer Churn Rate]) + 0.08,
+    0.0
+)
+
+
+// ------------------------------------------------------------------------------
+// 3. Campaign & Retention Performance Measures
+// ------------------------------------------------------------------------------
+
+Campaign Total Reach = 
+COUNTROWS(FactCampaign)
+
+Campaign Responses = 
+CALCULATE(
+    COUNTROWS(FactCampaign),
+    FactCampaign[IsResponded] = 1
+)
+
+Campaign Conversions = 
+CALCULATE(
+    COUNTROWS(FactCampaign),
+    FactCampaign[IsConverted] = 1
+)
+
+Campaign Response Rate = 
+DIVIDE(
+    [Campaign Responses],
+    [Campaign Total Reach],
+    0.0
+)
+
+Campaign Conversion Rate = 
+DIVIDE(
+    [Campaign Conversions],
+    [Campaign Responses],
+    0.0
+)
+
+Campaign Attributed Revenue = 
+SUM(FactCampaign[AttributedRevenue])
+
+Total Retention Cases = 
+COUNTROWS(FactRetention)
+
+Retained Cases Count = 
+CALCULATE(
+    COUNTROWS(FactRetention),
+    FactRetention[IsRetained] = 1
+)
+
+Retention Workflow Conversion Rate = 
+DIVIDE(
+    [Retained Cases Count],
+    CALCULATE(COUNTROWS(FactRetention), FactRetention[RetentionStatus] IN {"Contacted", "Offer Proposed", "Retained", "Not Retained", "Closed"}),
+    0.0
+)
+
+
+// ------------------------------------------------------------------------------
+// 4. Product & Branch Performance Measures
+// ------------------------------------------------------------------------------
+
+Branch Average Deposit = 
+DIVIDE(
+    [Total Portfolio Balance],
+    DISTINCTCOUNT(DimBranch[BranchKey]),
+    0.0
+)
+
+High Risk Customer Count = 
+CALCULATE(
+    DISTINCTCOUNT(FactCustomerSnapshot[CustomerKey]),
+    FactCustomerSnapshot[RiskCategory] = "High Risk"
+)

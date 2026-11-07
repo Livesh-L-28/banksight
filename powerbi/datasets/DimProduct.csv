@@ -1,0 +1,9 @@
+ProductKey,ProductCode,ProductName,ProductCategory,AnnualFee,InterestRatePct,TargetSegment,IsActive
+PRD-CHK-01,CHK_STD,Everyday Checking,Deposit,0.0,0.05,All,1
+PRD-SAV-01,SAV_HYLD,High-Yield Savings,Deposit,0.0,4.15,Savers,1
+PRD-CD-01,CD_1YR,1-Year Fixed Deposit,Deposit,0.0,5.0,Wealth & Affluent,1
+PRD-CRD-01,CRD_PLAT,Platinum Rewards Credit Card,Card,95.0,19.99,Affluent Spenders,1
+PRD-CRD-02,CRD_CASH,Cashback Unlimited Card,Card,0.0,22.49,Young Professionals,1
+PRD-LOAN-01,LN_AUTO,Auto Loan 60M,Loan,0.0,6.49,Borrowers,1
+PRD-LOAN-02,LN_PERS,Personal Signature Loan,Loan,50.0,9.99,Borrowers,1
+PRD-MTG-01,MTG_30Y,30-Year Fixed Mortgage,Loan,0.0,6.85,Homeowners,1

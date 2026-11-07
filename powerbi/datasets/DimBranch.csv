@@ -1,0 +1,11 @@
+BranchKey,BranchName,BranchCode,City,State,Region,PostalCode,IsActive
+BRN-001,Downtown Central Branch,DCB-101,New York,NY,Northeast,10005,1
+BRN-002,Midtown Commercial Branch,MCB-102,New York,NY,Northeast,10017,1
+BRN-003,Boston Harbor Branch,BHB-103,Boston,MA,Northeast,2109,1
+BRN-004,Chicago Loop Branch,CLB-104,Chicago,IL,Midwest,60603,1
+BRN-005,Detroit Metro Branch,DMB-105,Detroit,MI,Midwest,48226,1
+BRN-006,Charlotte Financial Center,CFC-106,Charlotte,NC,Southeast,28202,1
+BRN-007,Atlanta Midtown Branch,AMB-107,Atlanta,GA,Southeast,30309,1
+BRN-008,Dallas Uptown Branch,DUB-108,Dallas,TX,South,75201,1
+BRN-009,Denver Capitol Branch,DCB-109,Denver,CO,West,80203,1
+BRN-010,San Francisco Financial Branch,SFF-110,San Francisco,CA,West,94104,1

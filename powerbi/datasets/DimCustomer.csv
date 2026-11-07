@@ -1,0 +1,1001 @@
+CustomerKey,CustomerName,Email,Age,Gender,Occupation,AnnualIncome,City,State,BranchKey,JoiningDate,CustomerTenureMonths,CustomerStatus,CustomerSegment,CreditScore,DigitalBankingActive,MobileBankingActive,ChurnFlag
+CUST-00001,Jacob Clark,jacob.clark633@yahoo.com,48,Male,Operations Manager,66800.0,Detroit,MI,BRN-005,2022-03-05,56,Active,Mass Retail,642,1,0,0
+CUST-00002,Wanda Bowman,wanda.bowman873@hotmail.com,46,Female,Financial Analyst,87700.0,Denver,CO,BRN-009,2022-07-05,52,Inactive,Mass Retail,780,1,1,1
+CUST-00003,Debra Clark,debra.clark415@hotmail.com,35,Female,Physician,104100.0,Charlotte,NC,BRN-006,2025-10-02,13,Active,Affluent,677,1,1,0
+CUST-00004,Jennifer Robinson,jennifer.robinson234@gmail.com,29,Female,Graphic Designer,26000.0,Atlanta,GA,BRN-007,2025-04-03,19,Inactive,Young Professional,776,1,0,1
+CUST-00005,Shannon Smith,shannon.smith400@hotmail.com,28,Female,Civil Engineer,89700.0,Atlanta,GA,BRN-007,2025-04-03,19,Active,Young Professional,669,1,1,0
+CUST-00006,Jesse Mckay,jesse.mckay310@hotmail.com,21,Male,Sales Executive,48600.0,Detroit,MI,BRN-005,2024-02-02,33,Active,Young Professional,753,1,1,0
+CUST-00007,Joshua Osborne,joshua.osborne166@hotmail.com,34,Male,Retired Executive,78600.0,Detroit,MI,BRN-005,2023-06-04,41,Active,Mass Retail,675,1,1,0
+CUST-00008,William Roman,william.roman256@gmail.com,54,Male,Graphic Designer,88400.0,Charlotte,NC,BRN-006,2024-07-03,28,Active,Mass Retail,673,1,1,0
+CUST-00009,Travis Martin,travis.martin281@hotmail.com,41,Male,Pharmacist,36800.0,Boston,MA,BRN-003,2026-04-03,7,Active,Mass Retail,700,1,1,0
+CUST-00010,Gina Chapman,gina.chapman133@gmail.com,47,Female,Attorney,32100.0,Charlotte,NC,BRN-006,2024-02-02,33,Active,Mass Retail,785,1,1,0
+CUST-00011,Diana Washington,diana.washington82@hotmail.com,24,Female,Sales Executive,83100.0,Chicago,IL,BRN-004,2016-11-05,120,Active,Young Professional,729,1,0,0
+CUST-00012,Jennifer Davis,jennifer.davis836@hotmail.com,53,Female,Financial Analyst,38000.0,Dallas,TX,BRN-008,2025-05-03,18,Inactive,Mass Retail,612,1,0,1
+CUST-00013,Cheryl West,cheryl.west829@yahoo.com,36,Female,Operations Manager,145400.0,New York,NY,BRN-002,2025-05-03,18,Active,Affluent,641,1,1,0
+CUST-00014,Russell Novak,russell.novak61@gmail.com,43,Male,Registered Nurse,106800.0,New York,NY,BRN-002,2022-04-04,55,Active,Affluent,772,0,0,0
+CUST-00015,Victoria Baker,victoria.baker934@yahoo.com,31,Female,Marketing Manager,59800.0,Dallas,TX,BRN-008,2020-02-04,81,Inactive,Loyal Traditional,616,1,0,1
+CUST-00016,Lauren Shaw,lauren.shaw168@hotmail.com,56,Female,Software Engineer,65200.0,Denver,CO,BRN-009,2025-03-03,20,Active,Mass Retail,688,1,1,0
+CUST-00017,Jared David,jared.david993@hotmail.com,52,Male,Attorney,176600.0,Denver,CO,BRN-009,2019-07-06,88,Active,Affluent,647,1,0,0
+CUST-00018,Keith Stewart,keith.stewart644@yahoo.com,41,Male,Teacher,137600.0,San Francisco,CA,BRN-010,2023-10-04,37,Active,Affluent,766,0,1,0
+CUST-00019,Elijah Stewart,elijah.stewart697@gmail.com,41,Male,Software Engineer,202200.0,Chicago,IL,BRN-004,2024-01-03,34,Active,High Net Worth,689,1,0,0
+CUST-00020,Taylor Ibarra,taylor.ibarra145@gmail.com,41,Female,Marketing Manager,29100.0,New York,NY,BRN-002,2024-03-04,32,Active,Mass Retail,782,1,0,0
+CUST-00021,Brian Rodriguez,brian.rodriguez693@hotmail.com,39,Male,Retired Executive,92200.0,San Francisco,CA,BRN-010,2024-09-02,26,Active,Mass Retail,663,1,1,0
+CUST-00022,Deborah Freeman,deborah.freeman629@gmail.com,51,Female,Sales Executive,63700.0,Denver,CO,BRN-009,2025-11-02,12,Active,Mass Retail,687,1,0,0
+CUST-00023,Mandy Green,mandy.green55@hotmail.com,53,Female,Accountant,90600.0,New York,NY,BRN-002,2021-04-05,67,Active,Loyal Traditional,804,1,1,0
+CUST-00024,Kevin Hernandez,kevin.hernandez568@gmail.com,44,Male,Accountant,59800.0,New York,NY,BRN-001,2026-01-01,10,Active,Mass Retail,758,1,1,0
+CUST-00025,Richard Henson,richard.henson692@yahoo.com,36,Male,Attorney,28200.0,New York,NY,BRN-001,2021-01-03,70,Active,Loyal Traditional,542,1,0,0
+CUST-00026,Robert Shields,robert.shields193@gmail.com,46,Male,Marketing Manager,56600.0,Boston,MA,BRN-003,2025-02-01,21,Active,Mass Retail,696,1,1,0
+CUST-00027,Alexander Lee,alexander.lee846@yahoo.com,39,Male,Physician,95100.0,New York,NY,BRN-001,2024-02-02,33,Active,Mass Retail,653,1,1,0
+CUST-00028,Amanda Carlson,amanda.carlson705@yahoo.com,60,Female,Retired Executive,72300.0,New York,NY,BRN-002,2025-04-03,19,Active,Mass Retail,606,0,1,0
+CUST-00029,Melissa Bentley,melissa.bentley363@hotmail.com,42,Female,Registered Nurse,362600.0,Detroit,MI,BRN-005,2026-03-03,8,Active,High Net Worth,746,1,1,0
+CUST-00030,Nathan Evans,nathan.evans382@yahoo.com,38,Male,Civil Engineer,50300.0,Atlanta,GA,BRN-007,2024-04-03,31,Active,Mass Retail,687,1,1,0
+CUST-00031,Jennifer Bass,jennifer.bass422@yahoo.com,56,Female,Financial Analyst,119200.0,Detroit,MI,BRN-005,2025-07-03,16,Active,Affluent,662,1,1,0
+CUST-00032,Kaylee Schultz,kaylee.schultz425@yahoo.com,59,Female,Physician,182300.0,Boston,MA,BRN-003,2023-12-03,35,Active,High Net Worth,805,1,1,0
+CUST-00033,Logan Mack,logan.mack533@yahoo.com,29,Male,Civil Engineer,50600.0,Dallas,TX,BRN-008,2026-04-03,7,Active,Young Professional,825,1,1,0
+CUST-00034,Christopher Rubio,christopher.rubio698@hotmail.com,53,Male,Attorney,73600.0,Charlotte,NC,BRN-006,2025-08-02,15,Inactive,Mass Retail,691,0,1,1
+CUST-00035,Jessica Meadows,jessica.meadows516@yahoo.com,28,Female,Retired Executive,99500.0,San Francisco,CA,BRN-010,2022-09-03,50,Active,Young Professional,755,1,1,0
+CUST-00036,Pamela Boyd,pamela.boyd61@hotmail.com,39,Female,Accountant,56800.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Mass Retail,657,1,1,0
+CUST-00037,Angela Hernandez,angela.hernandez637@yahoo.com,52,Female,Operations Manager,32900.0,San Francisco,CA,BRN-010,2021-01-03,70,Active,Loyal Traditional,803,0,1,0
+CUST-00038,Jennifer Clark,jennifer.clark794@yahoo.com,75,Female,Operations Manager,59200.0,Detroit,MI,BRN-005,2019-03-07,92,Active,Loyal Traditional,701,1,1,0
+CUST-00039,Paul Payne,paul.payne164@hotmail.com,45,Male,Registered Nurse,121600.0,Charlotte,NC,BRN-006,2025-02-01,21,Active,Affluent,799,1,1,0
+CUST-00040,Meghan Powell,meghan.powell408@gmail.com,30,Female,Graphic Designer,109300.0,New York,NY,BRN-001,2026-02-01,9,Active,Affluent,794,0,1,0
+CUST-00041,Debbie Murphy,debbie.murphy883@yahoo.com,45,Female,Pharmacist,46000.0,Charlotte,NC,BRN-006,2026-05-03,6,Active,Mass Retail,726,1,1,0
+CUST-00042,Rachael Pearson,rachael.pearson354@gmail.com,26,Female,Graphic Designer,144700.0,Atlanta,GA,BRN-007,2025-08-02,15,Active,Affluent,801,1,1,0
+CUST-00043,Travis Marshall,travis.marshall95@yahoo.com,29,Male,Accountant,122000.0,New York,NY,BRN-001,2025-03-03,20,Active,Affluent,765,1,1,0
+CUST-00044,Leslie Rivas,leslie.rivas294@gmail.com,58,Female,Graphic Designer,96400.0,Charlotte,NC,BRN-006,2023-10-04,37,Active,Mass Retail,776,1,1,0
+CUST-00045,Matthew Jones,matthew.jones809@hotmail.com,38,Male,Graphic Designer,44800.0,Charlotte,NC,BRN-006,2025-06-03,17,Inactive,Mass Retail,772,1,1,1
+CUST-00046,Rhonda Medina,rhonda.medina726@yahoo.com,38,Female,Pharmacist,160500.0,New York,NY,BRN-002,2024-03-04,32,Active,Affluent,749,1,0,0
+CUST-00047,Mary Rogers,mary.rogers416@yahoo.com,38,Female,Registered Nurse,428500.0,New York,NY,BRN-001,2025-09-02,14,Active,High Net Worth,652,1,1,0
+CUST-00048,Travis Miller,travis.miller365@hotmail.com,54,Male,Civil Engineer,75200.0,New York,NY,BRN-002,2025-10-02,13,Active,Mass Retail,706,1,0,0
+CUST-00049,Elizabeth Perkins,elizabeth.perkins734@yahoo.com,39,Female,Civil Engineer,116300.0,New York,NY,BRN-002,2026-05-03,6,Active,Affluent,706,1,1,0
+CUST-00050,Natalie Tapia,natalie.tapia340@hotmail.com,51,Female,Retired Executive,54500.0,Dallas,TX,BRN-008,2024-11-02,24,Active,Mass Retail,765,1,1,0
+CUST-00051,Cheyenne Perez,cheyenne.perez881@gmail.com,36,Female,Pharmacist,127600.0,Atlanta,GA,BRN-007,2025-10-02,13,Active,Affluent,761,1,1,0
+CUST-00052,Duane Mendoza,duane.mendoza97@yahoo.com,43,Male,Data Scientist,110100.0,Detroit,MI,BRN-005,2026-02-01,9,Active,Affluent,829,1,1,0
+CUST-00053,Michael Hernandez,michael.hernandez424@hotmail.com,42,Male,Operations Manager,34800.0,New York,NY,BRN-001,2019-10-05,85,Active,Loyal Traditional,771,1,1,0
+CUST-00054,Wanda Torres,wanda.torres287@hotmail.com,55,Female,Data Scientist,39200.0,Denver,CO,BRN-009,2025-04-03,19,Inactive,Mass Retail,804,0,0,1
+CUST-00055,Cynthia Arnold,cynthia.arnold751@gmail.com,48,Female,Registered Nurse,102100.0,Chicago,IL,BRN-004,2020-01-05,82,Active,Affluent,716,1,1,0
+CUST-00056,Douglas Heath,douglas.heath290@gmail.com,53,Male,Data Scientist,186100.0,Detroit,MI,BRN-005,2023-02-02,45,Active,High Net Worth,715,0,1,0
+CUST-00057,Samantha Jones,samantha.jones490@gmail.com,54,Female,Marketing Manager,111700.0,New York,NY,BRN-002,2019-06-06,89,Active,Affluent,640,0,1,0
+CUST-00058,Johnny Miller,johnny.miller165@gmail.com,22,Male,Registered Nurse,81400.0,Atlanta,GA,BRN-007,2026-04-03,7,Active,Young Professional,659,1,1,0
+CUST-00059,Pamela Thompson,pamela.thompson471@hotmail.com,72,Female,Marketing Manager,26000.0,San Francisco,CA,BRN-010,2025-05-03,18,Active,Mass Retail,688,1,1,0
+CUST-00060,Gary Steele,gary.steele280@yahoo.com,43,Male,Accountant,40900.0,New York,NY,BRN-002,2024-01-03,34,Active,Mass Retail,693,1,1,0
+CUST-00061,Julia Brown,julia.brown733@hotmail.com,32,Female,Civil Engineer,113700.0,Detroit,MI,BRN-005,2023-04-04,43,Active,Affluent,850,1,1,0
+CUST-00062,Allen Mccoy,allen.mccoy445@gmail.com,65,Male,Retired Executive,177400.0,San Francisco,CA,BRN-010,2016-11-05,120,Active,Affluent,768,1,1,0
+CUST-00063,Susan Murray,susan.murray459@gmail.com,21,Female,Sales Executive,82600.0,Detroit,MI,BRN-005,2021-05-05,66,Active,Young Professional,686,1,1,0
+CUST-00064,Joyce Thomas,joyce.thomas36@gmail.com,21,Female,Pharmacist,44300.0,Atlanta,GA,BRN-007,2025-10-02,13,Active,Young Professional,822,1,1,0
+CUST-00065,Sara Carpenter,sara.carpenter948@hotmail.com,35,Female,Registered Nurse,47800.0,Boston,MA,BRN-003,2023-11-03,36,Active,Mass Retail,776,1,1,0
+CUST-00066,Cynthia Rowe,cynthia.rowe720@gmail.com,58,Female,Operations Manager,93500.0,New York,NY,BRN-002,2023-06-04,41,Active,Mass Retail,822,1,1,0
+CUST-00067,Sergio Sawyer,sergio.sawyer683@yahoo.com,22,Male,Sales Executive,53400.0,Atlanta,GA,BRN-007,2025-01-02,22,Active,Young Professional,699,1,1,0
+CUST-00068,Benjamin Harrington,benjamin.harrington959@yahoo.com,66,Male,Data Scientist,72200.0,New York,NY,BRN-001,2024-05-03,30,Active,Mass Retail,654,1,1,0
+CUST-00069,Barry Welch,barry.welch482@yahoo.com,38,Male,Retired Executive,32500.0,New York,NY,BRN-002,2024-10-02,25,Active,Mass Retail,815,1,1,0
+CUST-00070,Elizabeth Johnson,elizabeth.johnson574@yahoo.com,59,Female,Graphic Designer,67300.0,Dallas,TX,BRN-008,2023-04-04,43,Active,Mass Retail,684,1,1,0
+CUST-00071,Michael White,michael.white299@gmail.com,57,Male,Graphic Designer,73600.0,Charlotte,NC,BRN-006,2023-01-03,46,Active,Mass Retail,701,1,1,0
+CUST-00072,Crystal Little,crystal.little965@yahoo.com,42,Female,Attorney,111400.0,Denver,CO,BRN-009,2023-09-03,38,Active,Affluent,723,1,0,0
+CUST-00073,Sarah Gonzalez,sarah.gonzalez405@yahoo.com,62,Female,Operations Manager,32700.0,Charlotte,NC,BRN-006,2024-06-03,29,Active,Mass Retail,759,0,1,0
+CUST-00074,Kylie Jennings,kylie.jennings112@hotmail.com,42,Female,Financial Analyst,97300.0,Charlotte,NC,BRN-006,2018-12-05,95,Active,Loyal Traditional,707,1,0,0
+CUST-00075,Lisa Byrd,lisa.byrd675@hotmail.com,45,Female,Financial Analyst,48800.0,Detroit,MI,BRN-005,2026-03-03,8,Active,Mass Retail,772,0,1,0
+CUST-00076,Nicholas Davis,nicholas.davis250@yahoo.com,35,Male,Financial Analyst,48800.0,Dallas,TX,BRN-008,2022-08-04,51,Active,Mass Retail,691,0,1,0
+CUST-00077,Sandra Scott,sandra.scott935@yahoo.com,53,Female,Teacher,89300.0,New York,NY,BRN-002,2022-03-05,56,Active,Mass Retail,674,1,1,0
+CUST-00078,Richard Smith,richard.smith634@hotmail.com,53,Male,Retired Executive,104700.0,Boston,MA,BRN-003,2021-03-05,68,Active,Affluent,668,1,1,0
+CUST-00079,John Harvey,john.harvey930@hotmail.com,41,Male,Accountant,78900.0,Dallas,TX,BRN-008,2024-12-02,23,Active,Mass Retail,671,1,0,0
+CUST-00080,Whitney Wilson,whitney.wilson477@gmail.com,57,Female,Registered Nurse,200700.0,Detroit,MI,BRN-005,2021-12-04,59,Active,High Net Worth,686,1,1,0
+CUST-00081,Annette Burns,annette.burns291@yahoo.com,58,Female,Graphic Designer,74100.0,Detroit,MI,BRN-005,2025-03-03,20,Active,Mass Retail,699,0,1,0
+CUST-00082,James Lopez,james.lopez645@gmail.com,53,Male,Civil Engineer,61300.0,San Francisco,CA,BRN-010,2016-12-06,119,Active,Loyal Traditional,675,1,1,0
+CUST-00083,Laurie Li,laurie.li759@gmail.com,43,Female,Data Scientist,107700.0,Dallas,TX,BRN-008,2023-04-04,43,Active,Affluent,598,1,1,0
+CUST-00084,Rachel Young,rachel.young860@yahoo.com,36,Female,Pharmacist,160000.0,Charlotte,NC,BRN-006,2021-12-04,59,Active,Affluent,637,1,0,0
+CUST-00085,Jerome Cox,jerome.cox890@hotmail.com,50,Male,Registered Nurse,110000.0,Dallas,TX,BRN-008,2026-02-01,9,Active,Affluent,669,1,1,0
+CUST-00086,Amy Mendoza,amy.mendoza608@yahoo.com,41,Female,Operations Manager,26000.0,Dallas,TX,BRN-008,2019-06-06,89,Active,Loyal Traditional,830,1,0,0
+CUST-00087,Marcus Richards,marcus.richards660@hotmail.com,31,Male,Registered Nurse,59300.0,San Francisco,CA,BRN-010,2025-12-02,11,Active,Mass Retail,754,1,0,0
+CUST-00088,Jesse Perez,jesse.perez918@yahoo.com,59,Male,Financial Analyst,55200.0,Dallas,TX,BRN-008,2020-12-04,71,Active,Loyal Traditional,728,1,1,0
+CUST-00089,Sandra Davis,sandra.davis971@gmail.com,35,Female,Operations Manager,85000.0,New York,NY,BRN-002,2026-02-01,9,Inactive,Mass Retail,790,0,0,1
+CUST-00090,Lindsay Bell,lindsay.bell72@hotmail.com,35,Female,Registered Nurse,47500.0,Charlotte,NC,BRN-006,2026-02-01,9,Active,Mass Retail,803,1,1,0
+CUST-00091,Laura Aguirre,laura.aguirre259@hotmail.com,46,Female,Graphic Designer,190800.0,New York,NY,BRN-001,2024-09-02,26,Active,High Net Worth,695,1,1,0
+CUST-00092,Thomas Bell,thomas.bell817@gmail.com,41,Male,Sales Executive,46900.0,Chicago,IL,BRN-004,2026-01-01,10,Inactive,Mass Retail,711,1,1,1
+CUST-00093,Cindy Barnes,cindy.barnes818@yahoo.com,46,Female,Marketing Manager,42700.0,New York,NY,BRN-001,2022-01-03,58,Active,Mass Retail,747,1,1,0
+CUST-00094,Brooke Williamson,brooke.williamson535@hotmail.com,43,Female,Data Scientist,28600.0,New York,NY,BRN-002,2019-12-05,83,Active,Loyal Traditional,660,1,0,0
+CUST-00095,Paul Wilson,paul.wilson500@yahoo.com,44,Male,Data Scientist,73700.0,Dallas,TX,BRN-008,2026-03-03,8,Active,Mass Retail,745,0,1,0
+CUST-00096,Anthony Harris,anthony.harris291@gmail.com,42,Male,Financial Analyst,321000.0,San Francisco,CA,BRN-010,2022-08-04,51,Active,High Net Worth,741,0,1,0
+CUST-00097,Carl Patel,carl.patel883@gmail.com,69,Male,Financial Analyst,44400.0,San Francisco,CA,BRN-010,2023-08-04,39,Active,Mass Retail,707,1,1,0
+CUST-00098,Dylan Sullivan,dylan.sullivan330@yahoo.com,54,Male,Civil Engineer,28400.0,Dallas,TX,BRN-008,2025-10-02,13,Active,Mass Retail,765,0,1,0
+CUST-00099,Jessica Morales,jessica.morales841@gmail.com,21,Female,Civil Engineer,52000.0,New York,NY,BRN-002,2023-08-04,39,Active,Young Professional,590,1,1,0
+CUST-00100,Cynthia Thomas,cynthia.thomas624@gmail.com,46,Female,Physician,106000.0,Atlanta,GA,BRN-007,2025-11-02,12,Active,Affluent,778,1,1,0
+CUST-00101,Peter Cole,peter.cole790@hotmail.com,24,Male,Graphic Designer,240500.0,Charlotte,NC,BRN-006,2017-11-05,108,Active,High Net Worth,710,1,1,0
+CUST-00102,Heather Jones,heather.jones39@yahoo.com,38,Female,Software Engineer,88600.0,Denver,CO,BRN-009,2024-11-02,24,Active,Mass Retail,643,1,1,0
+CUST-00103,Frank Alvarez,frank.alvarez103@gmail.com,40,Male,Operations Manager,163500.0,New York,NY,BRN-002,2024-09-02,26,Active,Affluent,707,1,1,0
+CUST-00104,Jeffrey Gonzales,jeffrey.gonzales169@hotmail.com,41,Male,Civil Engineer,86600.0,San Francisco,CA,BRN-010,2016-11-05,120,Inactive,Loyal Traditional,734,1,0,1
+CUST-00105,Rachel Holland,rachel.holland450@gmail.com,42,Female,Civil Engineer,75400.0,Chicago,IL,BRN-004,2021-10-04,61,Active,Loyal Traditional,694,1,1,0
+CUST-00106,Betty Fletcher,betty.fletcher978@gmail.com,21,Female,Registered Nurse,30000.0,New York,NY,BRN-001,2022-11-03,48,Active,Young Professional,749,1,1,0
+CUST-00107,Christopher Lewis,christopher.lewis522@yahoo.com,22,Male,Registered Nurse,167800.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Affluent,730,1,1,0
+CUST-00108,Pamela Anderson,pamela.anderson599@yahoo.com,68,Female,Marketing Manager,78800.0,Dallas,TX,BRN-008,2020-05-05,78,Active,Loyal Traditional,815,1,1,0
+CUST-00109,Cynthia Wallace,cynthia.wallace100@yahoo.com,68,Female,Attorney,228900.0,San Francisco,CA,BRN-010,2019-10-05,85,Active,High Net Worth,648,1,1,0
+CUST-00110,Jonathan Barnes,jonathan.barnes88@gmail.com,38,Male,Physician,192500.0,Charlotte,NC,BRN-006,2025-08-02,15,Active,High Net Worth,772,0,1,0
+CUST-00111,Timothy Dawson,timothy.dawson272@hotmail.com,55,Male,Accountant,26000.0,Boston,MA,BRN-003,2024-11-02,24,Active,Mass Retail,772,0,1,0
+CUST-00112,Theresa Walker,theresa.walker894@yahoo.com,40,Female,Operations Manager,83300.0,San Francisco,CA,BRN-010,2021-07-05,64,Active,Loyal Traditional,573,1,1,0
+CUST-00113,Timothy Combs,timothy.combs327@hotmail.com,63,Male,Registered Nurse,29800.0,New York,NY,BRN-001,2020-02-04,81,Inactive,Loyal Traditional,714,0,0,1
+CUST-00114,Sandy Dunn,sandy.dunn604@hotmail.com,52,Female,Retired Executive,60900.0,San Francisco,CA,BRN-010,2016-11-05,120,Active,Loyal Traditional,606,1,1,0
+CUST-00115,Kyle Smith,kyle.smith471@hotmail.com,21,Male,Civil Engineer,69000.0,Dallas,TX,BRN-008,2023-03-05,44,Active,Young Professional,707,1,1,0
+CUST-00116,Kenneth Lopez,kenneth.lopez382@hotmail.com,41,Male,Civil Engineer,35700.0,Dallas,TX,BRN-008,2025-01-02,22,Active,Mass Retail,746,1,1,0
+CUST-00117,Amanda Hughes,amanda.hughes300@yahoo.com,41,Female,Teacher,136100.0,New York,NY,BRN-002,2022-12-04,47,Active,Affluent,685,1,1,0
+CUST-00118,Amanda Payne,amanda.payne142@hotmail.com,35,Female,Civil Engineer,43000.0,Detroit,MI,BRN-005,2026-02-01,9,Active,Mass Retail,678,1,1,0
+CUST-00119,Terri Johnson,terri.johnson530@gmail.com,40,Female,Pharmacist,37300.0,Denver,CO,BRN-009,2025-09-02,14,Active,Mass Retail,718,1,1,0
+CUST-00120,Matthew Mitchell,matthew.mitchell529@gmail.com,21,Male,Civil Engineer,68400.0,New York,NY,BRN-002,2021-04-05,67,Active,Young Professional,717,1,1,0
+CUST-00121,Jacob Salinas,jacob.salinas861@yahoo.com,32,Male,Software Engineer,84000.0,Atlanta,GA,BRN-007,2019-11-05,84,Active,Loyal Traditional,770,1,1,0
+CUST-00122,Ashley Murphy,ashley.murphy249@yahoo.com,33,Female,Retired Executive,45300.0,Dallas,TX,BRN-008,2025-09-02,14,Active,Mass Retail,752,1,1,0
+CUST-00123,Margaret Moody,margaret.moody806@gmail.com,38,Female,Pharmacist,26000.0,Dallas,TX,BRN-008,2023-05-05,42,Active,Mass Retail,674,1,0,0
+CUST-00124,Samuel Gregory,samuel.gregory738@yahoo.com,21,Male,Pharmacist,127200.0,Dallas,TX,BRN-008,2019-04-06,91,Active,Affluent,650,1,1,0
+CUST-00125,Joanna Watson,joanna.watson915@yahoo.com,80,Female,Financial Analyst,151400.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Affluent,814,1,1,0
+CUST-00126,Danielle Wilson,danielle.wilson963@hotmail.com,21,Female,Accountant,43200.0,Charlotte,NC,BRN-006,2024-12-02,23,Active,Young Professional,656,1,0,0
+CUST-00127,Jill Davies,jill.davies640@yahoo.com,33,Female,Sales Executive,36200.0,Boston,MA,BRN-003,2026-01-01,10,Inactive,Mass Retail,729,0,0,1
+CUST-00128,Joshua Vance,joshua.vance58@gmail.com,53,Male,Registered Nurse,145200.0,Detroit,MI,BRN-005,2024-03-04,32,Active,Affluent,757,1,0,0
+CUST-00129,Alexander Spencer,alexander.spencer745@yahoo.com,43,Male,Accountant,41800.0,New York,NY,BRN-001,2023-08-04,39,Inactive,Mass Retail,686,0,1,1
+CUST-00130,Rodney Jones,rodney.jones409@yahoo.com,62,Male,Data Scientist,56800.0,New York,NY,BRN-002,2024-12-02,23,Inactive,Mass Retail,671,1,0,1
+CUST-00131,Jessica Bartlett,jessica.bartlett146@gmail.com,54,Female,Graphic Designer,253000.0,New York,NY,BRN-002,2025-01-02,22,Active,High Net Worth,716,1,1,0
+CUST-00132,Courtney Meza,courtney.meza47@hotmail.com,43,Female,Retired Executive,57800.0,Boston,MA,BRN-003,2025-11-02,12,Active,Mass Retail,699,1,1,0
+CUST-00133,Christopher Weber,christopher.weber302@hotmail.com,33,Male,Registered Nurse,53300.0,Dallas,TX,BRN-008,2025-10-02,13,Inactive,Mass Retail,661,0,0,1
+CUST-00134,Luke Johnson,luke.johnson518@hotmail.com,34,Male,Marketing Manager,26000.0,Dallas,TX,BRN-008,2016-11-05,120,Active,Loyal Traditional,759,1,1,0
+CUST-00135,Kari Harris,kari.harris338@hotmail.com,38,Female,Attorney,40500.0,San Francisco,CA,BRN-010,2016-11-05,120,Active,Loyal Traditional,730,1,1,0
+CUST-00136,Emma Owens,emma.owens639@yahoo.com,45,Female,Registered Nurse,45700.0,Dallas,TX,BRN-008,2022-12-04,47,Active,Mass Retail,680,1,1,0
+CUST-00137,Cheryl Moore,cheryl.moore45@hotmail.com,43,Female,Teacher,119200.0,Boston,MA,BRN-003,2023-09-03,38,Inactive,Affluent,775,1,0,1
+CUST-00138,Amber Simpson,amber.simpson791@hotmail.com,32,Female,Civil Engineer,50700.0,Dallas,TX,BRN-008,2024-08-03,27,Active,Mass Retail,649,1,0,0
+CUST-00139,Jennifer Hudson,jennifer.hudson945@gmail.com,21,Female,Physician,75500.0,Boston,MA,BRN-003,2026-01-01,10,Active,Young Professional,615,0,1,0
+CUST-00140,Jake Hatfield,jake.hatfield883@hotmail.com,52,Male,Pharmacist,34900.0,Dallas,TX,BRN-008,2024-05-03,30,Active,Mass Retail,732,1,0,0
+CUST-00141,Brittany Barry,brittany.barry922@gmail.com,33,Female,Pharmacist,75400.0,Charlotte,NC,BRN-006,2025-02-01,21,Active,Mass Retail,675,1,1,0
+CUST-00142,Robyn Richardson,robyn.richardson36@hotmail.com,51,Female,Pharmacist,150100.0,Boston,MA,BRN-003,2023-07-04,40,Active,Affluent,765,0,1,0
+CUST-00143,Rachel Parsons,rachel.parsons548@hotmail.com,21,Female,Accountant,43600.0,New York,NY,BRN-002,2025-01-02,22,Active,Young Professional,726,0,1,0
+CUST-00144,Manuel Randall,manuel.randall796@gmail.com,43,Male,Graphic Designer,100400.0,Denver,CO,BRN-009,2020-07-05,76,Active,Affluent,817,1,1,0
+CUST-00145,Melissa Jenkins,melissa.jenkins980@hotmail.com,46,Female,Marketing Manager,56000.0,Charlotte,NC,BRN-006,2025-09-02,14,Active,Mass Retail,694,1,0,0
+CUST-00146,Tyler Stevens,tyler.stevens524@hotmail.com,37,Male,Accountant,104100.0,Detroit,MI,BRN-005,2024-01-03,34,Active,Affluent,782,1,1,0
+CUST-00147,Todd Hendrix,todd.hendrix93@yahoo.com,53,Male,Pharmacist,59200.0,San Francisco,CA,BRN-010,2024-11-02,24,Active,Mass Retail,698,1,1,0
+CUST-00148,Mikayla Roberts,mikayla.roberts504@hotmail.com,58,Female,Data Scientist,47100.0,Denver,CO,BRN-009,2025-04-03,19,Active,Mass Retail,570,1,1,0
+CUST-00149,Daniel Clayton,daniel.clayton330@yahoo.com,42,Male,Financial Analyst,217400.0,Chicago,IL,BRN-004,2025-07-03,16,Active,High Net Worth,699,1,1,0
+CUST-00150,Jason Love,jason.love283@gmail.com,52,Male,Marketing Manager,130600.0,Charlotte,NC,BRN-006,2023-04-04,43,Active,Affluent,721,0,0,0
+CUST-00151,Erica Brewer,erica.brewer204@gmail.com,22,Female,Retired Executive,153800.0,Boston,MA,BRN-003,2025-12-02,11,Inactive,Affluent,748,1,1,1
+CUST-00152,Zachary Sanders,zachary.sanders607@yahoo.com,58,Male,Marketing Manager,137000.0,Denver,CO,BRN-009,2021-06-04,65,Inactive,Affluent,720,0,0,1
+CUST-00153,Tanya Rogers,tanya.rogers384@yahoo.com,36,Female,Sales Executive,42100.0,Detroit,MI,BRN-005,2025-07-03,16,Active,Mass Retail,813,1,1,0
+CUST-00154,Richard Bradley,richard.bradley141@gmail.com,47,Male,Sales Executive,58300.0,Denver,CO,BRN-009,2020-12-04,71,Active,Loyal Traditional,768,0,1,0
+CUST-00155,Brandon Holden,brandon.holden56@yahoo.com,38,Male,Operations Manager,38700.0,Denver,CO,BRN-009,2021-05-05,66,Active,Loyal Traditional,687,1,0,0
+CUST-00156,Amy Wilson,amy.wilson641@yahoo.com,34,Female,Sales Executive,136800.0,San Francisco,CA,BRN-010,2023-03-05,44,Active,Affluent,778,1,1,0
+CUST-00157,Tyler Mendoza,tyler.mendoza387@yahoo.com,47,Male,Pharmacist,247700.0,Detroit,MI,BRN-005,2025-06-03,17,Active,High Net Worth,646,0,0,0
+CUST-00158,Michael Miller,michael.miller748@hotmail.com,35,Male,Accountant,81700.0,San Francisco,CA,BRN-010,2024-10-02,25,Active,Mass Retail,769,1,1,0
+CUST-00159,Kelly Wilson,kelly.wilson331@gmail.com,50,Female,Sales Executive,70500.0,New York,NY,BRN-002,2025-11-02,12,Active,Mass Retail,726,1,0,0
+CUST-00160,David Smith,david.smith584@gmail.com,76,Male,Accountant,64100.0,New York,NY,BRN-001,2019-11-05,84,Active,Loyal Traditional,718,1,1,0
+CUST-00161,Andres Ortiz,andres.ortiz990@gmail.com,43,Male,Marketing Manager,117200.0,Detroit,MI,BRN-005,2022-08-04,51,Active,Affluent,729,1,1,0
+CUST-00162,Wendy Long,wendy.long583@gmail.com,47,Female,Registered Nurse,86000.0,Dallas,TX,BRN-008,2023-06-04,41,Active,Mass Retail,640,1,1,0
+CUST-00163,Joe Moore,joe.moore307@gmail.com,62,Male,Data Scientist,52500.0,Atlanta,GA,BRN-007,2017-10-06,109,Inactive,Loyal Traditional,709,0,1,1
+CUST-00164,Jeremy Powers,jeremy.powers121@gmail.com,52,Male,Software Engineer,380800.0,Denver,CO,BRN-009,2024-10-02,25,Active,High Net Worth,749,1,1,0
+CUST-00165,Sharon Brown,sharon.brown744@hotmail.com,39,Female,Sales Executive,55400.0,New York,NY,BRN-001,2021-04-05,67,Active,Loyal Traditional,770,0,1,0
+CUST-00166,Antonio Fry,antonio.fry784@hotmail.com,21,Male,Retired Executive,63000.0,Dallas,TX,BRN-008,2025-01-02,22,Active,Young Professional,755,1,1,0
+CUST-00167,Michael Floyd,michael.floyd966@yahoo.com,37,Male,Accountant,216400.0,New York,NY,BRN-001,2025-08-02,15,Active,High Net Worth,641,0,0,0
+CUST-00168,Justin Faulkner,justin.faulkner960@hotmail.com,40,Male,Sales Executive,72800.0,New York,NY,BRN-001,2024-09-02,26,Active,Mass Retail,629,1,0,0
+CUST-00169,Jacob Nichols,jacob.nichols348@gmail.com,38,Male,Data Scientist,115000.0,Dallas,TX,BRN-008,2023-08-04,39,Active,Affluent,648,1,1,0
+CUST-00170,Kevin Powers,kevin.powers189@gmail.com,48,Male,Sales Executive,43500.0,San Francisco,CA,BRN-010,2016-11-05,120,Active,Loyal Traditional,704,1,1,0
+CUST-00171,James Allen,james.allen16@yahoo.com,75,Male,Marketing Manager,76000.0,Boston,MA,BRN-003,2026-03-03,8,Active,Mass Retail,664,1,1,0
+CUST-00172,Thomas Wood,thomas.wood693@yahoo.com,50,Male,Data Scientist,67900.0,Charlotte,NC,BRN-006,2025-09-02,14,Inactive,Mass Retail,725,1,0,1
+CUST-00173,Kerry Butler,kerry.butler499@gmail.com,41,Male,Data Scientist,51400.0,San Francisco,CA,BRN-010,2023-10-04,37,Active,Mass Retail,805,1,1,0
+CUST-00174,George Hines,george.hines548@yahoo.com,21,Male,Software Engineer,26000.0,Chicago,IL,BRN-004,2023-10-04,37,Active,Young Professional,634,1,0,0
+CUST-00175,Theresa Barnett,theresa.barnett884@gmail.com,37,Female,Registered Nurse,57400.0,Denver,CO,BRN-009,2020-02-04,81,Active,Loyal Traditional,705,0,1,0
+CUST-00176,Kim Jenkins,kim.jenkins587@gmail.com,48,Female,Data Scientist,125700.0,Boston,MA,BRN-003,2024-10-02,25,Active,Affluent,628,1,1,0
+CUST-00177,David Harvey,david.harvey443@yahoo.com,54,Male,Retired Executive,167100.0,Chicago,IL,BRN-004,2026-04-03,7,Active,Affluent,669,0,0,0
+CUST-00178,Brandon Gray,brandon.gray794@hotmail.com,32,Male,Retired Executive,78000.0,Detroit,MI,BRN-005,2025-10-02,13,Active,Mass Retail,706,1,0,0
+CUST-00179,Daniel Parrish,daniel.parrish679@hotmail.com,26,Male,Accountant,116200.0,Atlanta,GA,BRN-007,2026-02-01,9,Inactive,Affluent,767,0,1,1
+CUST-00180,Brianna Hoover,brianna.hoover554@yahoo.com,29,Female,Marketing Manager,85200.0,New York,NY,BRN-001,2024-10-02,25,Active,Young Professional,731,1,0,0
+CUST-00181,Gary Campos,gary.campos256@gmail.com,27,Male,Attorney,109100.0,New York,NY,BRN-001,2025-04-03,19,Inactive,Affluent,606,0,0,1
+CUST-00182,Gilbert Mack,gilbert.mack562@hotmail.com,64,Male,Graphic Designer,32600.0,New York,NY,BRN-001,2024-11-02,24,Inactive,Mass Retail,661,0,0,1
+CUST-00183,Brady Montgomery,brady.montgomery686@gmail.com,21,Male,Software Engineer,108400.0,Charlotte,NC,BRN-006,2023-04-04,43,Active,Affluent,796,1,1,0
+CUST-00184,Abigail Parker,abigail.parker579@yahoo.com,21,Female,Pharmacist,26000.0,Boston,MA,BRN-003,2017-01-05,118,Active,Young Professional,679,1,1,0
+CUST-00185,Linda Nguyen,linda.nguyen256@yahoo.com,34,Female,Pharmacist,94800.0,Detroit,MI,BRN-005,2019-12-05,83,Active,Loyal Traditional,778,1,1,0
+CUST-00186,Michael Jackson,michael.jackson407@yahoo.com,41,Male,Graphic Designer,58800.0,Atlanta,GA,BRN-007,2026-05-03,6,Active,Mass Retail,802,1,1,0
+CUST-00187,Tony Le,tony.le904@yahoo.com,46,Male,Operations Manager,26000.0,New York,NY,BRN-001,2023-03-05,44,Active,Mass Retail,674,1,0,0
+CUST-00188,James Atkins,james.atkins774@yahoo.com,36,Male,Financial Analyst,31700.0,New York,NY,BRN-001,2025-05-03,18,Active,Mass Retail,721,0,1,0
+CUST-00189,Tracy Casey,tracy.casey325@yahoo.com,44,Female,Pharmacist,38700.0,Atlanta,GA,BRN-007,2025-05-03,18,Active,Mass Retail,845,0,1,0
+CUST-00190,Terri Clark,terri.clark56@yahoo.com,51,Female,Marketing Manager,53900.0,Chicago,IL,BRN-004,2026-05-03,6,Active,Mass Retail,749,1,1,0
+CUST-00191,Jenny Bennett,jenny.bennett245@yahoo.com,45,Female,Sales Executive,138500.0,Detroit,MI,BRN-005,2023-07-04,40,Active,Affluent,649,1,1,0
+CUST-00192,Ashley Wright,ashley.wright481@hotmail.com,48,Female,Operations Manager,66000.0,Dallas,TX,BRN-008,2024-11-02,24,Active,Mass Retail,767,1,0,0
+CUST-00193,Justin Watts,justin.watts977@gmail.com,33,Male,Graphic Designer,74400.0,New York,NY,BRN-001,2025-11-02,12,Inactive,Mass Retail,692,0,1,1
+CUST-00194,Tammie Miller,tammie.miller71@hotmail.com,44,Female,Civil Engineer,28800.0,Chicago,IL,BRN-004,2024-11-02,24,Active,Mass Retail,752,1,1,0
+CUST-00195,Jessica Horton,jessica.horton558@yahoo.com,29,Female,Pharmacist,30400.0,New York,NY,BRN-001,2022-05-05,54,Inactive,Young Professional,752,0,1,1
+CUST-00196,Timothy Yang,timothy.yang644@hotmail.com,21,Male,Pharmacist,282900.0,Denver,CO,BRN-009,2017-09-05,110,Active,High Net Worth,695,1,1,0
+CUST-00197,Robert Soto,robert.soto317@gmail.com,30,Male,Registered Nurse,115300.0,San Francisco,CA,BRN-010,2026-04-03,7,Active,Affluent,754,1,1,0
+CUST-00198,Kenneth Lloyd,kenneth.lloyd521@hotmail.com,22,Male,Retired Executive,72900.0,New York,NY,BRN-001,2023-07-04,40,Active,Young Professional,672,1,1,0
+CUST-00199,Joseph Fowler,joseph.fowler956@hotmail.com,56,Male,Accountant,46300.0,San Francisco,CA,BRN-010,2026-01-01,10,Active,Mass Retail,726,0,1,0
+CUST-00200,Angela Anderson,angela.anderson961@gmail.com,37,Female,Attorney,264000.0,San Francisco,CA,BRN-010,2024-08-03,27,Active,High Net Worth,711,1,1,0
+CUST-00201,Kenneth Henderson,kenneth.henderson819@yahoo.com,51,Male,Software Engineer,50700.0,Charlotte,NC,BRN-006,2021-04-05,67,Active,Loyal Traditional,644,1,1,0
+CUST-00202,Joanne Brown,joanne.brown802@yahoo.com,54,Female,Physician,26000.0,San Francisco,CA,BRN-010,2026-02-01,9,Active,Mass Retail,789,1,0,0
+CUST-00203,Jason Larsen,jason.larsen800@yahoo.com,41,Male,Registered Nurse,109500.0,San Francisco,CA,BRN-010,2025-10-02,13,Active,Affluent,784,1,1,0
+CUST-00204,Carol Ellis,carol.ellis379@hotmail.com,43,Female,Teacher,124300.0,Boston,MA,BRN-003,2023-01-03,46,Active,Affluent,755,1,1,0
+CUST-00205,Kimberly Fritz,kimberly.fritz115@gmail.com,52,Female,Graphic Designer,98600.0,Atlanta,GA,BRN-007,2025-07-03,16,Inactive,Mass Retail,615,1,1,1
+CUST-00206,Reginald Young,reginald.young595@hotmail.com,41,Male,Accountant,124500.0,New York,NY,BRN-002,2026-04-03,7,Active,Affluent,723,1,1,0
+CUST-00207,Kim Carlson,kim.carlson316@gmail.com,27,Female,Physician,145000.0,Boston,MA,BRN-003,2018-03-07,104,Active,Affluent,788,1,1,0
+CUST-00208,Wendy Camacho,wendy.camacho16@gmail.com,40,Female,Pharmacist,54000.0,Dallas,TX,BRN-008,2020-10-04,73,Active,Loyal Traditional,772,1,1,0
+CUST-00209,Lori Brooks,lori.brooks627@gmail.com,43,Female,Financial Analyst,54200.0,San Francisco,CA,BRN-010,2025-08-02,15,Active,Mass Retail,647,0,1,0
+CUST-00210,Sean Boone,sean.boone343@gmail.com,58,Male,Attorney,61700.0,Dallas,TX,BRN-008,2025-03-03,20,Active,Mass Retail,723,0,1,0
+CUST-00211,Ronald Morgan,ronald.morgan458@hotmail.com,60,Male,Civil Engineer,83100.0,New York,NY,BRN-001,2025-03-03,20,Active,Mass Retail,771,1,1,0
+CUST-00212,Sara Smith,sara.smith85@gmail.com,45,Female,Sales Executive,30400.0,Boston,MA,BRN-003,2026-05-03,6,Active,Mass Retail,753,1,0,0
+CUST-00213,Angela Beck,angela.beck728@hotmail.com,43,Female,Pharmacist,146200.0,Denver,CO,BRN-009,2017-07-07,112,Active,Affluent,794,1,1,0
+CUST-00214,Angela Wheeler,angela.wheeler780@hotmail.com,33,Female,Physician,52500.0,San Francisco,CA,BRN-010,2023-04-04,43,Active,Mass Retail,553,1,1,0
+CUST-00215,Holly Evans,holly.evans410@yahoo.com,36,Female,Accountant,188100.0,San Francisco,CA,BRN-010,2024-09-02,26,Active,High Net Worth,658,1,1,0
+CUST-00216,Jeremiah Bowen,jeremiah.bowen366@hotmail.com,52,Male,Teacher,60200.0,Atlanta,GA,BRN-007,2025-05-03,18,Active,Mass Retail,662,1,1,0
+CUST-00217,Kevin Cruz,kevin.cruz839@yahoo.com,28,Male,Civil Engineer,44400.0,Charlotte,NC,BRN-006,2026-04-03,7,Inactive,Young Professional,589,0,0,1
+CUST-00218,Lawrence Lopez,lawrence.lopez348@yahoo.com,26,Male,Civil Engineer,36500.0,Denver,CO,BRN-009,2016-12-06,119,Active,Young Professional,759,1,1,0
+CUST-00219,Timothy Anderson,timothy.anderson470@hotmail.com,54,Male,Physician,63600.0,New York,NY,BRN-001,2017-03-07,116,Active,Loyal Traditional,850,1,1,0
+CUST-00220,Travis Sanders,travis.sanders384@yahoo.com,33,Male,Civil Engineer,156200.0,San Francisco,CA,BRN-010,2024-02-02,33,Active,Affluent,820,1,1,0
+CUST-00221,Kimberly Myers,kimberly.myers611@hotmail.com,33,Female,Graphic Designer,51800.0,San Francisco,CA,BRN-010,2025-08-02,15,Active,Mass Retail,751,1,1,0
+CUST-00222,Jesse Lynch,jesse.lynch330@yahoo.com,33,Male,Sales Executive,53000.0,San Francisco,CA,BRN-010,2016-11-05,120,Active,Loyal Traditional,704,1,1,0
+CUST-00223,Rodney Green,rodney.green578@yahoo.com,60,Male,Attorney,50500.0,Atlanta,GA,BRN-007,2022-08-04,51,Active,Mass Retail,737,1,1,0
+CUST-00224,Kelly Baker,kelly.baker996@hotmail.com,37,Female,Financial Analyst,46200.0,Boston,MA,BRN-003,2023-12-03,35,Active,Mass Retail,669,1,1,0
+CUST-00225,Jacob Scott,jacob.scott309@gmail.com,62,Male,Accountant,235000.0,San Francisco,CA,BRN-010,2026-02-01,9,Active,High Net Worth,691,1,1,0
+CUST-00226,Thomas White,thomas.white596@gmail.com,49,Male,Sales Executive,104100.0,Dallas,TX,BRN-008,2023-11-03,36,Active,Affluent,785,1,1,0
+CUST-00227,William Finley,william.finley763@gmail.com,39,Male,Operations Manager,43500.0,Denver,CO,BRN-009,2024-12-02,23,Active,Mass Retail,772,1,0,0
+CUST-00228,Dana Richardson,dana.richardson891@yahoo.com,29,Female,Pharmacist,42300.0,New York,NY,BRN-002,2025-08-02,15,Active,Young Professional,714,1,1,0
+CUST-00229,David Reed,david.reed341@hotmail.com,35,Male,Graphic Designer,84600.0,Charlotte,NC,BRN-006,2020-05-05,78,Active,Loyal Traditional,520,1,0,0
+CUST-00230,Jennifer Woodward,jennifer.woodward897@gmail.com,30,Female,Physician,160100.0,Boston,MA,BRN-003,2025-01-02,22,Active,Affluent,737,1,1,0
+CUST-00231,Angela Bradley,angela.bradley652@yahoo.com,50,Female,Financial Analyst,242900.0,Atlanta,GA,BRN-007,2025-06-03,17,Active,High Net Worth,730,1,1,0
+CUST-00232,Angela Harris,angela.harris605@hotmail.com,45,Female,Data Scientist,134100.0,Charlotte,NC,BRN-006,2020-01-05,82,Active,Affluent,742,0,1,0
+CUST-00233,Vincent Clark,vincent.clark449@yahoo.com,52,Male,Teacher,101700.0,New York,NY,BRN-002,2022-08-04,51,Active,Affluent,780,1,1,0
+CUST-00234,Warren Foster,warren.foster57@gmail.com,61,Male,Operations Manager,48000.0,Charlotte,NC,BRN-006,2019-09-05,86,Inactive,Loyal Traditional,746,1,0,1
+CUST-00235,Ronald Haas,ronald.haas905@gmail.com,39,Male,Marketing Manager,80400.0,Boston,MA,BRN-003,2025-02-01,21,Active,Mass Retail,670,1,1,0
+CUST-00236,Alison Brown,alison.brown753@hotmail.com,48,Female,Data Scientist,96000.0,New York,NY,BRN-001,2024-03-04,32,Active,Mass Retail,741,1,1,0
+CUST-00237,Janet Simmons,janet.simmons19@yahoo.com,44,Female,Data Scientist,75400.0,San Francisco,CA,BRN-010,2023-04-04,43,Active,Mass Retail,763,1,1,0
+CUST-00238,Jennifer Pierce,jennifer.pierce912@gmail.com,24,Female,Civil Engineer,193300.0,New York,NY,BRN-002,2026-01-01,10,Inactive,High Net Worth,728,0,1,1
+CUST-00239,Joshua Smith,joshua.smith460@yahoo.com,45,Male,Retired Executive,203900.0,New York,NY,BRN-001,2016-11-05,120,Active,High Net Worth,793,1,1,0
+CUST-00240,Allen Cochran,allen.cochran613@yahoo.com,23,Male,Pharmacist,82000.0,New York,NY,BRN-002,2026-03-03,8,Active,Young Professional,741,1,1,0
+CUST-00241,Daisy Ferguson,daisy.ferguson807@hotmail.com,55,Female,Physician,37500.0,Denver,CO,BRN-009,2026-03-03,8,Inactive,Mass Retail,597,0,0,1
+CUST-00242,Oscar Howard,oscar.howard516@hotmail.com,54,Male,Sales Executive,53500.0,Detroit,MI,BRN-005,2019-12-05,83,Active,Loyal Traditional,723,0,1,0
+CUST-00243,Sara Cochran,sara.cochran384@yahoo.com,34,Female,Pharmacist,93500.0,Charlotte,NC,BRN-006,2021-12-04,59,Active,Mass Retail,706,1,1,0
+CUST-00244,Renee Peterson,renee.peterson528@gmail.com,21,Female,Financial Analyst,117700.0,Chicago,IL,BRN-004,2024-07-03,28,Active,Affluent,785,1,1,0
+CUST-00245,Eric Taylor,eric.taylor327@gmail.com,23,Male,Teacher,26000.0,San Francisco,CA,BRN-010,2025-11-02,12,Active,Young Professional,757,1,1,0
+CUST-00246,Bethany Daniel,bethany.daniel757@hotmail.com,54,Female,Operations Manager,151600.0,New York,NY,BRN-002,2025-05-03,18,Inactive,Affluent,800,0,1,1
+CUST-00247,Charles Mcgee,charles.mcgee728@gmail.com,50,Male,Pharmacist,68600.0,Boston,MA,BRN-003,2024-09-02,26,Active,Mass Retail,635,1,1,0
+CUST-00248,Nathan Williams,nathan.williams353@yahoo.com,63,Male,Data Scientist,131100.0,Detroit,MI,BRN-005,2025-08-02,15,Active,Affluent,701,0,1,0
+CUST-00249,Rebecca Johnson,rebecca.johnson889@gmail.com,25,Female,Pharmacist,186900.0,Denver,CO,BRN-009,2020-02-04,81,Active,High Net Worth,747,1,1,0
+CUST-00250,Steven Bush,steven.bush55@yahoo.com,41,Male,Financial Analyst,87100.0,Chicago,IL,BRN-004,2021-09-04,62,Inactive,Loyal Traditional,700,0,1,1
+CUST-00251,Jennifer Spencer,jennifer.spencer239@hotmail.com,49,Female,Marketing Manager,97800.0,New York,NY,BRN-001,2021-11-03,60,Active,Mass Retail,653,1,1,0
+CUST-00252,Aaron Miller,aaron.miller986@hotmail.com,46,Male,Pharmacist,164700.0,New York,NY,BRN-001,2024-05-03,30,Inactive,Affluent,746,0,1,1
+CUST-00253,Stephanie Baker,stephanie.baker587@hotmail.com,33,Female,Teacher,235800.0,New York,NY,BRN-001,2025-09-02,14,Active,High Net Worth,666,1,1,0
+CUST-00254,Antonio Goodwin,antonio.goodwin164@hotmail.com,41,Male,Teacher,26000.0,Chicago,IL,BRN-004,2021-05-05,66,Inactive,Loyal Traditional,751,1,0,1
+CUST-00255,Joseph Sheppard,joseph.sheppard439@hotmail.com,36,Male,Registered Nurse,26000.0,Detroit,MI,BRN-005,2026-05-03,6,Inactive,Mass Retail,703,1,1,1
+CUST-00256,Rebecca Byrd,rebecca.byrd775@hotmail.com,33,Female,Civil Engineer,364800.0,Atlanta,GA,BRN-007,2025-04-03,19,Active,High Net Worth,682,1,1,0
+CUST-00257,William Graham,william.graham308@hotmail.com,52,Male,Data Scientist,96400.0,Atlanta,GA,BRN-007,2021-08-04,63,Active,Loyal Traditional,713,1,1,0
+CUST-00258,Juan Gates,juan.gates808@hotmail.com,34,Male,Operations Manager,61600.0,Chicago,IL,BRN-004,2016-11-05,120,Active,Loyal Traditional,688,1,1,0
+CUST-00259,Rachel Dillon,rachel.dillon281@yahoo.com,41,Female,Graphic Designer,34400.0,Chicago,IL,BRN-004,2023-05-05,42,Inactive,Mass Retail,749,0,0,1
+CUST-00260,Michael Morales,michael.morales374@yahoo.com,65,Male,Software Engineer,41400.0,Charlotte,NC,BRN-006,2025-01-02,22,Active,Mass Retail,717,0,0,0
+CUST-00261,Sarah Garrison,sarah.garrison114@hotmail.com,28,Female,Graphic Designer,60900.0,Denver,CO,BRN-009,2023-10-04,37,Active,Young Professional,779,1,1,0
+CUST-00262,Cole Lewis,cole.lewis606@yahoo.com,50,Male,Registered Nurse,53100.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Mass Retail,686,1,1,0
+CUST-00263,Allen Lee,allen.lee974@gmail.com,60,Male,Operations Manager,133400.0,New York,NY,BRN-002,2026-04-03,7,Inactive,Affluent,832,1,0,1
+CUST-00264,Kathy Reid,kathy.reid466@gmail.com,46,Female,Civil Engineer,94400.0,Chicago,IL,BRN-004,2021-04-05,67,Inactive,Loyal Traditional,759,1,0,1
+CUST-00265,Hailey Monroe,hailey.monroe150@yahoo.com,55,Female,Physician,51600.0,New York,NY,BRN-001,2026-02-01,9,Active,Mass Retail,722,1,1,0
+CUST-00266,Courtney Clark,courtney.clark567@hotmail.com,54,Female,Teacher,64300.0,Atlanta,GA,BRN-007,2023-02-02,45,Active,Mass Retail,800,1,1,0
+CUST-00267,Renee Torres,renee.torres69@hotmail.com,64,Female,Accountant,83200.0,Chicago,IL,BRN-004,2026-02-01,9,Active,Mass Retail,647,1,1,0
+CUST-00268,Kayla Bates,kayla.bates373@yahoo.com,35,Female,Pharmacist,109300.0,New York,NY,BRN-001,2024-03-04,32,Active,Affluent,788,1,1,0
+CUST-00269,Chris Cannon,chris.cannon586@gmail.com,64,Male,Sales Executive,97100.0,Charlotte,NC,BRN-006,2025-08-02,15,Active,Mass Retail,641,1,1,0
+CUST-00270,Kevin Cooley,kevin.cooley549@gmail.com,49,Male,Pharmacist,52800.0,Chicago,IL,BRN-004,2026-04-03,7,Active,Mass Retail,728,1,1,0
+CUST-00271,Brent Anderson,brent.anderson610@yahoo.com,38,Male,Graphic Designer,26000.0,Charlotte,NC,BRN-006,2019-12-05,83,Active,Loyal Traditional,775,1,1,0
+CUST-00272,Elizabeth French,elizabeth.french319@yahoo.com,53,Female,Civil Engineer,26000.0,Atlanta,GA,BRN-007,2024-12-02,23,Active,Mass Retail,656,1,1,0
+CUST-00273,Bryan Becker,bryan.becker397@hotmail.com,44,Male,Accountant,144400.0,San Francisco,CA,BRN-010,2024-08-03,27,Active,Affluent,708,1,0,0
+CUST-00274,Richard Freeman,richard.freeman626@hotmail.com,65,Male,Retired Executive,26000.0,Atlanta,GA,BRN-007,2023-07-04,40,Active,Mass Retail,677,1,1,0
+CUST-00275,Kenneth Moore,kenneth.moore851@gmail.com,61,Male,Operations Manager,179300.0,Charlotte,NC,BRN-006,2022-03-05,56,Active,Affluent,741,1,1,0
+CUST-00276,Aaron Ferguson,aaron.ferguson747@hotmail.com,33,Male,Accountant,90300.0,Charlotte,NC,BRN-006,2024-04-03,31,Inactive,Mass Retail,696,0,0,1
+CUST-00277,Janet Chapman,janet.chapman817@gmail.com,49,Female,Accountant,57500.0,Denver,CO,BRN-009,2024-07-03,28,Active,Mass Retail,569,1,1,0
+CUST-00278,Zachary Cooper,zachary.cooper85@yahoo.com,45,Male,Retired Executive,34500.0,New York,NY,BRN-001,2024-11-02,24,Active,Mass Retail,735,0,1,0
+CUST-00279,Jaime Bowman,jaime.bowman975@hotmail.com,25,Female,Software Engineer,155500.0,Dallas,TX,BRN-008,2021-09-04,62,Active,Affluent,613,1,1,0
+CUST-00280,Jill Martinez,jill.martinez686@yahoo.com,38,Female,Accountant,26000.0,Denver,CO,BRN-009,2020-10-04,73,Inactive,Loyal Traditional,731,1,1,1
+CUST-00281,Jason Roach,jason.roach36@hotmail.com,21,Male,Graphic Designer,55400.0,San Francisco,CA,BRN-010,2023-05-05,42,Active,Young Professional,660,1,1,0
+CUST-00282,Kelly Harris,kelly.harris199@hotmail.com,48,Female,Operations Manager,126800.0,Detroit,MI,BRN-005,2024-05-03,30,Active,Affluent,794,1,1,0
+CUST-00283,Michael Meadows,michael.meadows780@hotmail.com,46,Male,Pharmacist,96700.0,Detroit,MI,BRN-005,2023-08-04,39,Active,Mass Retail,695,1,0,0
+CUST-00284,Robin Sawyer,robin.sawyer848@yahoo.com,46,Female,Attorney,59100.0,Denver,CO,BRN-009,2026-03-03,8,Active,Mass Retail,679,0,1,0
+CUST-00285,Hunter Kim,hunter.kim133@hotmail.com,51,Male,Pharmacist,75600.0,New York,NY,BRN-001,2026-04-03,7,Active,Mass Retail,706,1,1,0
+CUST-00286,Robert Banks,robert.banks864@gmail.com,28,Male,Registered Nurse,64600.0,Atlanta,GA,BRN-007,2024-03-04,32,Active,Young Professional,744,1,1,0
+CUST-00287,Jeffrey Carr,jeffrey.carr815@yahoo.com,53,Male,Registered Nurse,91600.0,Detroit,MI,BRN-005,2024-06-03,29,Active,Mass Retail,578,1,1,0
+CUST-00288,Angel Green,angel.green814@yahoo.com,80,Male,Marketing Manager,41500.0,New York,NY,BRN-002,2026-04-03,7,Active,Mass Retail,741,1,1,0
+CUST-00289,Shelley Stone,shelley.stone157@hotmail.com,56,Female,Financial Analyst,37200.0,New York,NY,BRN-001,2025-09-02,14,Active,Mass Retail,732,0,1,0
+CUST-00290,Steven Salazar,steven.salazar355@gmail.com,33,Male,Graphic Designer,146900.0,Dallas,TX,BRN-008,2025-10-02,13,Active,Affluent,704,1,1,0
+CUST-00291,Cynthia Cordova,cynthia.cordova802@gmail.com,53,Female,Physician,100900.0,Boston,MA,BRN-003,2017-04-06,115,Active,Affluent,712,1,0,0
+CUST-00292,Laura Miller,laura.miller850@yahoo.com,68,Female,Marketing Manager,136800.0,Dallas,TX,BRN-008,2023-09-03,38,Active,Affluent,734,1,1,0
+CUST-00293,Mark Wu,mark.wu207@hotmail.com,56,Male,Operations Manager,158200.0,Denver,CO,BRN-009,2025-08-02,15,Active,Affluent,644,1,1,0
+CUST-00294,Jordan Castro,jordan.castro660@hotmail.com,63,Female,Operations Manager,44300.0,Charlotte,NC,BRN-006,2023-01-03,46,Active,Mass Retail,734,1,1,0
+CUST-00295,Kimberly Brooks,kimberly.brooks177@gmail.com,41,Female,Marketing Manager,90600.0,San Francisco,CA,BRN-010,2019-12-05,83,Active,Loyal Traditional,737,1,1,0
+CUST-00296,James Bryant,james.bryant703@gmail.com,60,Male,Software Engineer,105500.0,Chicago,IL,BRN-004,2024-10-02,25,Active,Affluent,738,1,0,0
+CUST-00297,Noah Tran,noah.tran625@yahoo.com,57,Male,Data Scientist,32900.0,Dallas,TX,BRN-008,2021-03-05,68,Active,Loyal Traditional,761,0,1,0
+CUST-00298,Veronica Moon,veronica.moon233@gmail.com,50,Female,Attorney,169100.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Affluent,698,1,1,0
+CUST-00299,Mackenzie Harris,mackenzie.harris315@hotmail.com,39,Female,Civil Engineer,73900.0,Charlotte,NC,BRN-006,2025-03-03,20,Active,Mass Retail,631,1,1,0
+CUST-00300,Kenneth Contreras,kenneth.contreras931@yahoo.com,21,Male,Data Scientist,41100.0,Detroit,MI,BRN-005,2024-07-03,28,Active,Young Professional,815,1,1,0
+CUST-00301,William Vega,william.vega607@gmail.com,33,Male,Data Scientist,30900.0,Atlanta,GA,BRN-007,2025-08-02,15,Active,Mass Retail,726,1,1,0
+CUST-00302,Ashley Parrish,ashley.parrish875@hotmail.com,32,Female,Marketing Manager,148500.0,Dallas,TX,BRN-008,2024-06-03,29,Active,Affluent,814,1,1,0
+CUST-00303,Tammy Hughes,tammy.hughes680@hotmail.com,54,Female,Financial Analyst,59200.0,Denver,CO,BRN-009,2024-02-02,33,Active,Mass Retail,685,1,1,0
+CUST-00304,Joshua Morrison,joshua.morrison491@hotmail.com,41,Male,Operations Manager,34500.0,Detroit,MI,BRN-005,2024-10-02,25,Active,Mass Retail,615,0,1,0
+CUST-00305,Jamie Patterson,jamie.patterson65@hotmail.com,55,Female,Financial Analyst,357100.0,Atlanta,GA,BRN-007,2023-06-04,41,Active,High Net Worth,759,0,0,0
+CUST-00306,Anthony Randolph,anthony.randolph807@hotmail.com,49,Male,Civil Engineer,62100.0,Boston,MA,BRN-003,2018-02-04,105,Active,Loyal Traditional,740,1,1,0
+CUST-00307,Joshua Powell,joshua.powell511@yahoo.com,32,Male,Civil Engineer,60900.0,Boston,MA,BRN-003,2024-04-03,31,Active,Mass Retail,658,1,1,0
+CUST-00308,Paul Banks,paul.banks758@gmail.com,29,Male,Physician,137500.0,New York,NY,BRN-001,2023-12-03,35,Active,Affluent,674,1,1,0
+CUST-00309,Kimberly Campbell,kimberly.campbell142@hotmail.com,53,Female,Graphic Designer,26300.0,Chicago,IL,BRN-004,2022-06-04,53,Active,Mass Retail,675,1,0,0
+CUST-00310,Tiffany Jackson,tiffany.jackson454@hotmail.com,21,Female,Teacher,67000.0,Denver,CO,BRN-009,2022-10-04,49,Active,Young Professional,704,1,1,0
+CUST-00311,Joshua Park,joshua.park754@hotmail.com,43,Male,Accountant,30700.0,Atlanta,GA,BRN-007,2022-07-05,52,Active,Mass Retail,725,1,1,0
+CUST-00312,Robert Grant,robert.grant618@hotmail.com,29,Male,Software Engineer,181400.0,Atlanta,GA,BRN-007,2023-11-03,36,Active,High Net Worth,710,1,1,0
+CUST-00313,Michael Nichols,michael.nichols220@hotmail.com,43,Male,Civil Engineer,55300.0,Denver,CO,BRN-009,2016-11-05,120,Active,Loyal Traditional,793,1,1,0
+CUST-00314,Dylan Jennings,dylan.jennings533@hotmail.com,46,Male,Operations Manager,60800.0,Boston,MA,BRN-003,2025-08-02,15,Inactive,Mass Retail,741,1,1,1
+CUST-00315,Brandy Myers,brandy.myers312@hotmail.com,23,Female,Teacher,228000.0,Denver,CO,BRN-009,2020-08-04,75,Inactive,High Net Worth,697,1,1,1
+CUST-00316,Laura Long,laura.long162@hotmail.com,51,Female,Retired Executive,118900.0,New York,NY,BRN-002,2025-05-03,18,Active,Affluent,669,1,1,0
+CUST-00317,Luis King,luis.king112@gmail.com,38,Male,Teacher,164600.0,Detroit,MI,BRN-005,2022-12-04,47,Active,Affluent,730,1,1,0
+CUST-00318,Earl Jones,earl.jones689@gmail.com,31,Male,Attorney,310100.0,New York,NY,BRN-002,2025-11-02,12,Active,High Net Worth,634,1,1,0
+CUST-00319,Cynthia Mitchell,cynthia.mitchell419@gmail.com,50,Female,Pharmacist,95700.0,Charlotte,NC,BRN-006,2025-08-02,15,Active,Mass Retail,794,1,0,0
+CUST-00320,Keith Diaz,keith.diaz975@yahoo.com,63,Male,Accountant,26900.0,Boston,MA,BRN-003,2024-11-02,24,Inactive,Mass Retail,732,0,0,1
+CUST-00321,Ian Torres,ian.torres918@hotmail.com,40,Male,Civil Engineer,391100.0,Boston,MA,BRN-003,2016-11-05,120,Active,High Net Worth,741,1,1,0
+CUST-00322,Billy Jones,billy.jones988@gmail.com,31,Male,Financial Analyst,28800.0,San Francisco,CA,BRN-010,2022-05-05,54,Active,Mass Retail,590,1,1,0
+CUST-00323,Dean Shannon,dean.shannon21@hotmail.com,49,Male,Graphic Designer,210800.0,Atlanta,GA,BRN-007,2025-05-03,18,Active,High Net Worth,643,1,1,0
+CUST-00324,Katrina Sanders,katrina.sanders61@hotmail.com,32,Female,Graphic Designer,49900.0,Charlotte,NC,BRN-006,2024-02-02,33,Active,Mass Retail,702,1,1,0
+CUST-00325,Lacey Knight,lacey.knight467@gmail.com,45,Female,Financial Analyst,26600.0,Dallas,TX,BRN-008,2019-09-05,86,Active,Loyal Traditional,745,1,1,0
+CUST-00326,Jasmine Hardin,jasmine.hardin921@gmail.com,69,Female,Teacher,34100.0,New York,NY,BRN-002,2022-11-03,48,Active,Mass Retail,634,1,1,0
+CUST-00327,Lauren Hudson,lauren.hudson743@yahoo.com,63,Female,Registered Nurse,96000.0,Dallas,TX,BRN-008,2024-06-03,29,Active,Mass Retail,721,1,1,0
+CUST-00328,Rebecca Eaton,rebecca.eaton728@gmail.com,33,Female,Registered Nurse,38400.0,Detroit,MI,BRN-005,2023-12-03,35,Active,Mass Retail,755,1,1,0
+CUST-00329,Christopher Guzman,christopher.guzman743@gmail.com,40,Male,Pharmacist,40600.0,Atlanta,GA,BRN-007,2021-12-04,59,Active,Mass Retail,800,0,1,0
+CUST-00330,Matthew Jenkins,matthew.jenkins553@gmail.com,26,Male,Retired Executive,51700.0,Denver,CO,BRN-009,2025-11-02,12,Active,Young Professional,623,1,0,0
+CUST-00331,Anthony Scott,anthony.scott116@gmail.com,57,Male,Retired Executive,80200.0,San Francisco,CA,BRN-010,2024-02-02,33,Active,Mass Retail,666,1,0,0
+CUST-00332,Sandra Burke,sandra.burke311@hotmail.com,44,Female,Marketing Manager,51900.0,Chicago,IL,BRN-004,2020-11-04,72,Active,Loyal Traditional,738,1,1,0
+CUST-00333,Kevin Hall,kevin.hall224@yahoo.com,51,Male,Retired Executive,136200.0,Denver,CO,BRN-009,2026-04-03,7,Active,Affluent,645,1,0,0
+CUST-00334,Karen Mendez,karen.mendez737@gmail.com,30,Female,Civil Engineer,46300.0,Boston,MA,BRN-003,2017-08-06,111,Active,Loyal Traditional,699,1,0,0
+CUST-00335,Shaun Wolfe,shaun.wolfe35@yahoo.com,21,Male,Physician,101700.0,Atlanta,GA,BRN-007,2024-10-02,25,Active,Affluent,850,1,1,0
+CUST-00336,John Hall,john.hall717@gmail.com,27,Male,Teacher,125900.0,Detroit,MI,BRN-005,2024-03-04,32,Active,Affluent,717,1,1,0
+CUST-00337,Kelly Brooks,kelly.brooks253@gmail.com,43,Female,Data Scientist,68600.0,Denver,CO,BRN-009,2024-11-02,24,Active,Mass Retail,751,1,0,0
+CUST-00338,Donald Becker,donald.becker771@gmail.com,49,Male,Graphic Designer,52600.0,Charlotte,NC,BRN-006,2024-10-02,25,Active,Mass Retail,699,1,1,0
+CUST-00339,Raymond Sanders,raymond.sanders804@gmail.com,48,Male,Civil Engineer,40800.0,Charlotte,NC,BRN-006,2025-01-02,22,Active,Mass Retail,718,1,0,0
+CUST-00340,Rachel Owen,rachel.owen295@hotmail.com,44,Female,Software Engineer,63200.0,New York,NY,BRN-002,2020-02-04,81,Active,Loyal Traditional,727,1,1,0
+CUST-00341,Daniel Miller,daniel.miller802@gmail.com,41,Male,Operations Manager,124400.0,Boston,MA,BRN-003,2023-06-04,41,Active,Affluent,672,1,1,0
+CUST-00342,Dakota Sandoval,dakota.sandoval543@hotmail.com,48,Male,Registered Nurse,26000.0,Charlotte,NC,BRN-006,2025-11-02,12,Inactive,Mass Retail,719,1,0,1
+CUST-00343,Zachary Chan,zachary.chan983@yahoo.com,34,Male,Registered Nurse,64800.0,Charlotte,NC,BRN-006,2026-05-03,6,Active,Mass Retail,748,1,1,0
+CUST-00344,Gregory Ochoa,gregory.ochoa708@gmail.com,42,Male,Financial Analyst,26000.0,San Francisco,CA,BRN-010,2024-03-04,32,Active,Mass Retail,672,1,1,0
+CUST-00345,Kristin Gordon,kristin.gordon508@yahoo.com,29,Female,Registered Nurse,66600.0,Denver,CO,BRN-009,2023-03-05,44,Active,Young Professional,750,1,0,0
+CUST-00346,Justin Carrillo,justin.carrillo696@yahoo.com,25,Male,Physician,39000.0,New York,NY,BRN-001,2026-03-03,8,Inactive,Young Professional,742,0,0,1
+CUST-00347,Jason Gomez,jason.gomez774@hotmail.com,39,Male,Software Engineer,192700.0,Atlanta,GA,BRN-007,2026-03-03,8,Inactive,High Net Worth,678,1,1,1
+CUST-00348,Roberto Jones,roberto.jones942@gmail.com,36,Male,Teacher,57600.0,Denver,CO,BRN-009,2026-01-01,10,Active,Mass Retail,669,1,1,0
+CUST-00349,Nicolas Salas,nicolas.salas727@gmail.com,36,Male,Marketing Manager,81700.0,San Francisco,CA,BRN-010,2024-02-02,33,Active,Mass Retail,615,1,1,0
+CUST-00350,Tyler Vasquez,tyler.vasquez495@gmail.com,53,Male,Pharmacist,101200.0,Dallas,TX,BRN-008,2024-08-03,27,Active,Affluent,850,1,1,0
+CUST-00351,Sydney Ramirez,sydney.ramirez990@gmail.com,24,Female,Registered Nurse,63200.0,Boston,MA,BRN-003,2024-12-02,23,Active,Young Professional,793,1,1,0
+CUST-00352,Ricardo Bryant,ricardo.bryant776@gmail.com,37,Male,Financial Analyst,129500.0,Denver,CO,BRN-009,2026-05-03,6,Active,Affluent,764,0,0,0
+CUST-00353,Cynthia Ruiz,cynthia.ruiz208@hotmail.com,34,Female,Graphic Designer,26000.0,Boston,MA,BRN-003,2026-05-03,6,Active,Mass Retail,771,1,0,0
+CUST-00354,Christopher Anderson,christopher.anderson266@hotmail.com,31,Male,Accountant,78500.0,Denver,CO,BRN-009,2025-08-02,15,Active,Mass Retail,642,1,1,0
+CUST-00355,Brittany Shaffer,brittany.shaffer471@gmail.com,41,Female,Attorney,106600.0,New York,NY,BRN-002,2026-01-01,10,Active,Affluent,587,1,1,0
+CUST-00356,Anthony Cervantes,anthony.cervantes814@yahoo.com,68,Male,Accountant,33700.0,Boston,MA,BRN-003,2025-03-03,20,Active,Mass Retail,712,1,1,0
+CUST-00357,Barbara Dillon,barbara.dillon508@hotmail.com,39,Female,Graphic Designer,222500.0,Dallas,TX,BRN-008,2024-12-02,23,Active,High Net Worth,658,1,0,0
+CUST-00358,Jordan Hampton,jordan.hampton754@yahoo.com,21,Male,Graphic Designer,88000.0,Chicago,IL,BRN-004,2016-11-05,120,Active,Young Professional,728,1,1,0
+CUST-00359,Jennifer Salazar,jennifer.salazar679@yahoo.com,33,Female,Retired Executive,143800.0,New York,NY,BRN-001,2022-09-03,50,Active,Affluent,611,1,1,0
+CUST-00360,Matthew Nelson,matthew.nelson416@yahoo.com,36,Male,Pharmacist,69000.0,Dallas,TX,BRN-008,2023-03-05,44,Active,Mass Retail,774,1,1,0
+CUST-00361,Todd Haynes,todd.haynes763@gmail.com,51,Male,Pharmacist,88800.0,San Francisco,CA,BRN-010,2023-03-05,44,Active,Mass Retail,673,1,1,0
+CUST-00362,Kelly Ferrell,kelly.ferrell407@gmail.com,44,Female,Civil Engineer,33700.0,New York,NY,BRN-001,2022-03-05,56,Active,Mass Retail,719,1,1,0
+CUST-00363,Joseph Jackson,joseph.jackson395@gmail.com,68,Male,Sales Executive,79900.0,Detroit,MI,BRN-005,2026-04-03,7,Active,Mass Retail,730,1,0,0
+CUST-00364,Lynn Fields,lynn.fields508@hotmail.com,36,Female,Retired Executive,43400.0,Atlanta,GA,BRN-007,2025-04-03,19,Active,Mass Retail,799,1,1,0
+CUST-00365,Jason Moore,jason.moore171@gmail.com,57,Male,Financial Analyst,47700.0,Detroit,MI,BRN-005,2022-12-04,47,Active,Mass Retail,685,1,1,0
+CUST-00366,Thomas Arroyo,thomas.arroyo672@yahoo.com,36,Male,Accountant,87900.0,Dallas,TX,BRN-008,2021-11-03,60,Inactive,Mass Retail,668,0,1,1
+CUST-00367,Miguel Brewer,miguel.brewer539@yahoo.com,54,Male,Retired Executive,44700.0,New York,NY,BRN-001,2023-04-04,43,Active,Mass Retail,633,1,1,0
+CUST-00368,Kim Adams,kim.adams898@gmail.com,35,Female,Pharmacist,87800.0,New York,NY,BRN-002,2021-09-04,62,Active,Loyal Traditional,654,1,1,0
+CUST-00369,Katherine Flores,katherine.flores954@gmail.com,47,Female,Financial Analyst,298700.0,Denver,CO,BRN-009,2026-04-03,7,Active,High Net Worth,809,1,1,0
+CUST-00370,Jeffrey Smith,jeffrey.smith630@gmail.com,65,Male,Retired Executive,118700.0,Denver,CO,BRN-009,2023-01-03,46,Active,Affluent,753,1,1,0
+CUST-00371,Michael Johnson,michael.johnson928@gmail.com,37,Male,Financial Analyst,42400.0,Dallas,TX,BRN-008,2018-01-05,106,Active,Loyal Traditional,676,1,1,0
+CUST-00372,Danielle James,danielle.james368@gmail.com,25,Female,Financial Analyst,26000.0,Chicago,IL,BRN-004,2023-05-05,42,Active,Young Professional,588,1,1,0
+CUST-00373,Christina Moss,christina.moss273@gmail.com,39,Female,Registered Nurse,61100.0,New York,NY,BRN-002,2019-07-06,88,Active,Loyal Traditional,627,1,1,0
+CUST-00374,Joseph King,joseph.king168@hotmail.com,53,Male,Financial Analyst,89100.0,Charlotte,NC,BRN-006,2020-06-05,77,Active,Loyal Traditional,732,1,1,0
+CUST-00375,Rachel Smith,rachel.smith193@gmail.com,39,Female,Pharmacist,87900.0,Atlanta,GA,BRN-007,2021-12-04,59,Active,Mass Retail,793,1,1,0
+CUST-00376,Amy Newman,amy.newman811@hotmail.com,40,Female,Sales Executive,130300.0,New York,NY,BRN-002,2023-01-03,46,Active,Affluent,762,1,1,0
+CUST-00377,Michael Howard,michael.howard833@gmail.com,44,Male,Registered Nurse,31500.0,New York,NY,BRN-001,2016-11-05,120,Active,Loyal Traditional,708,1,1,0
+CUST-00378,Sharon George,sharon.george638@hotmail.com,40,Female,Pharmacist,124000.0,New York,NY,BRN-001,2025-08-02,15,Active,Affluent,752,1,1,0
+CUST-00379,Margaret Gray,margaret.gray209@gmail.com,58,Female,Attorney,74100.0,Chicago,IL,BRN-004,2022-03-05,56,Active,Mass Retail,850,1,1,0
+CUST-00380,Tracy Fuentes,tracy.fuentes808@gmail.com,55,Female,Sales Executive,26000.0,New York,NY,BRN-001,2023-10-04,37,Active,Mass Retail,720,1,1,0
+CUST-00381,Amanda Pace,amanda.pace365@gmail.com,51,Female,Retired Executive,93700.0,Denver,CO,BRN-009,2023-03-05,44,Active,Mass Retail,674,1,1,0
+CUST-00382,Marcus Garza,marcus.garza525@gmail.com,48,Male,Graphic Designer,62100.0,Denver,CO,BRN-009,2025-07-03,16,Active,Mass Retail,713,1,1,0
+CUST-00383,Rodney Bauer,rodney.bauer785@gmail.com,39,Male,Operations Manager,42100.0,Atlanta,GA,BRN-007,2021-04-05,67,Active,Loyal Traditional,731,1,1,0
+CUST-00384,James Lee,james.lee829@hotmail.com,23,Male,Sales Executive,116800.0,Chicago,IL,BRN-004,2025-10-02,13,Active,Affluent,809,1,0,0
+CUST-00385,Margaret Howard,margaret.howard87@yahoo.com,57,Female,Physician,49200.0,New York,NY,BRN-002,2023-11-03,36,Active,Mass Retail,620,0,1,0
+CUST-00386,William Nguyen,william.nguyen250@yahoo.com,27,Male,Physician,54400.0,Chicago,IL,BRN-004,2019-10-05,85,Active,Young Professional,661,1,0,0
+CUST-00387,Tonya West,tonya.west638@yahoo.com,64,Female,Teacher,56400.0,New York,NY,BRN-002,2019-07-06,88,Active,Loyal Traditional,604,1,1,0
+CUST-00388,Aaron Joyce,aaron.joyce792@gmail.com,60,Male,Software Engineer,218100.0,San Francisco,CA,BRN-010,2026-05-03,6,Active,High Net Worth,666,1,1,0
+CUST-00389,Holly Perkins,holly.perkins891@gmail.com,22,Female,Data Scientist,166200.0,New York,NY,BRN-001,2021-05-05,66,Active,Affluent,726,1,1,0
+CUST-00390,Roger Norris,roger.norris343@hotmail.com,31,Male,Sales Executive,308400.0,Chicago,IL,BRN-004,2026-03-03,8,Active,High Net Worth,695,1,1,0
+CUST-00391,Tammy Cook,tammy.cook444@yahoo.com,62,Female,Teacher,269400.0,Charlotte,NC,BRN-006,2023-10-04,37,Active,High Net Worth,821,1,1,0
+CUST-00392,Christian Nunez,christian.nunez843@yahoo.com,54,Male,Graphic Designer,48700.0,Boston,MA,BRN-003,2020-11-04,72,Active,Loyal Traditional,768,1,1,0
+CUST-00393,Bradley Duncan,bradley.duncan190@gmail.com,31,Male,Sales Executive,73000.0,Boston,MA,BRN-003,2026-03-03,8,Inactive,Mass Retail,787,0,0,1
+CUST-00394,Christina Gilbert,christina.gilbert111@hotmail.com,33,Female,Operations Manager,135400.0,Denver,CO,BRN-009,2024-02-02,33,Active,Affluent,759,1,1,0
+CUST-00395,Jessica Bailey,jessica.bailey362@yahoo.com,27,Female,Attorney,64500.0,Detroit,MI,BRN-005,2025-02-01,21,Active,Young Professional,660,1,1,0
+CUST-00396,Amanda Meyers,amanda.meyers803@gmail.com,40,Female,Attorney,99900.0,Detroit,MI,BRN-005,2022-03-05,56,Active,Mass Retail,626,1,1,0
+CUST-00397,Elizabeth Ruiz,elizabeth.ruiz441@yahoo.com,28,Female,Registered Nurse,244100.0,Boston,MA,BRN-003,2023-03-05,44,Active,High Net Worth,692,1,1,0
+CUST-00398,Monica Thomas,monica.thomas287@hotmail.com,45,Female,Operations Manager,154200.0,Detroit,MI,BRN-005,2024-11-02,24,Active,Affluent,695,1,1,0
+CUST-00399,Richard Williamson,richard.williamson225@gmail.com,66,Male,Retired Executive,199400.0,Chicago,IL,BRN-004,2025-10-02,13,Active,High Net Worth,623,1,1,0
+CUST-00400,Sean Banks,sean.banks116@gmail.com,26,Male,Physician,51900.0,Atlanta,GA,BRN-007,2024-02-02,33,Inactive,Young Professional,765,0,0,1
+CUST-00401,David Moreno,david.moreno689@yahoo.com,46,Male,Retired Executive,66400.0,Denver,CO,BRN-009,2025-06-03,17,Active,Mass Retail,782,1,1,0
+CUST-00402,Stefanie Briggs,stefanie.briggs656@gmail.com,39,Female,Civil Engineer,57500.0,Denver,CO,BRN-009,2021-04-05,67,Active,Loyal Traditional,741,1,1,0
+CUST-00403,Christian Waller,christian.waller462@hotmail.com,26,Male,Sales Executive,26000.0,Denver,CO,BRN-009,2025-12-02,11,Inactive,Young Professional,728,0,0,1
+CUST-00404,Sylvia Stewart,sylvia.stewart979@hotmail.com,37,Female,Pharmacist,26000.0,Dallas,TX,BRN-008,2022-04-04,55,Active,Mass Retail,704,1,1,0
+CUST-00405,Taylor Shannon,taylor.shannon414@hotmail.com,34,Female,Graphic Designer,99200.0,Charlotte,NC,BRN-006,2023-06-04,41,Active,Mass Retail,740,1,1,0
+CUST-00406,Melissa Howard,melissa.howard301@hotmail.com,34,Female,Financial Analyst,92000.0,Chicago,IL,BRN-004,2026-03-03,8,Active,Mass Retail,722,1,1,0
+CUST-00407,Jennifer Novak,jennifer.novak288@yahoo.com,40,Female,Accountant,64100.0,New York,NY,BRN-002,2025-06-03,17,Active,Mass Retail,738,1,1,0
+CUST-00408,Ricardo Franklin,ricardo.franklin742@yahoo.com,39,Male,Operations Manager,42400.0,New York,NY,BRN-002,2021-11-03,60,Inactive,Mass Retail,655,1,0,1
+CUST-00409,Joshua Terrell,joshua.terrell348@gmail.com,61,Male,Pharmacist,61300.0,Dallas,TX,BRN-008,2026-03-03,8,Active,Mass Retail,680,1,1,0
+CUST-00410,Edward Ellison,edward.ellison134@hotmail.com,41,Male,Physician,78100.0,Detroit,MI,BRN-005,2024-09-02,26,Active,Mass Retail,641,1,1,0
+CUST-00411,Joshua Long,joshua.long494@yahoo.com,51,Male,Data Scientist,60900.0,New York,NY,BRN-002,2026-05-03,6,Active,Mass Retail,731,0,1,0
+CUST-00412,Michael Walters,michael.walters894@gmail.com,43,Male,Civil Engineer,115400.0,Detroit,MI,BRN-005,2026-03-03,8,Active,Affluent,721,1,1,0
+CUST-00413,Christopher Thomas,christopher.thomas19@hotmail.com,21,Male,Data Scientist,51900.0,San Francisco,CA,BRN-010,2022-04-04,55,Active,Young Professional,642,1,1,0
+CUST-00414,Toni Smith,toni.smith963@yahoo.com,49,Female,Teacher,30700.0,Boston,MA,BRN-003,2016-11-05,120,Active,Loyal Traditional,850,1,1,0
+CUST-00415,Mary Chavez,mary.chavez581@yahoo.com,21,Female,Data Scientist,155900.0,Boston,MA,BRN-003,2026-01-01,10,Active,Affluent,687,1,1,0
+CUST-00416,Samantha Clark,samantha.clark733@gmail.com,34,Female,Physician,110400.0,Boston,MA,BRN-003,2023-10-04,37,Active,Affluent,685,1,1,0
+CUST-00417,Anthony Butler,anthony.butler80@gmail.com,28,Male,Sales Executive,76100.0,Dallas,TX,BRN-008,2020-03-05,80,Active,Young Professional,695,1,1,0
+CUST-00418,Kent Huynh,kent.huynh644@gmail.com,43,Male,Data Scientist,93600.0,Atlanta,GA,BRN-007,2026-02-01,9,Active,Mass Retail,832,1,0,0
+CUST-00419,Jennifer Clark,jennifer.clark794@gmail.com,28,Female,Civil Engineer,26000.0,Chicago,IL,BRN-004,2025-11-02,12,Active,Young Professional,685,1,1,0
+CUST-00420,Eugene Fox,eugene.fox216@hotmail.com,68,Male,Attorney,231100.0,New York,NY,BRN-001,2023-12-03,35,Active,High Net Worth,647,1,1,0
+CUST-00421,Bailey Marshall,bailey.marshall60@gmail.com,42,Female,Civil Engineer,45600.0,San Francisco,CA,BRN-010,2021-03-05,68,Active,Loyal Traditional,672,1,0,0
+CUST-00422,Marcia Smith,marcia.smith851@gmail.com,41,Female,Software Engineer,48600.0,New York,NY,BRN-001,2025-06-03,17,Inactive,Mass Retail,754,0,0,1
+CUST-00423,Luis Johnson,luis.johnson752@gmail.com,35,Male,Attorney,39400.0,Chicago,IL,BRN-004,2021-12-04,59,Active,Mass Retail,621,1,1,0
+CUST-00424,Julia Grimes,julia.grimes700@yahoo.com,43,Female,Pharmacist,57900.0,Atlanta,GA,BRN-007,2024-07-03,28,Active,Mass Retail,748,1,1,0
+CUST-00425,Andrea Hernandez,andrea.hernandez965@gmail.com,53,Female,Financial Analyst,69500.0,Boston,MA,BRN-003,2023-12-03,35,Active,Mass Retail,651,1,1,0
+CUST-00426,Jason Crawford,jason.crawford394@gmail.com,41,Male,Teacher,143600.0,San Francisco,CA,BRN-010,2024-11-02,24,Active,Affluent,747,0,1,0
+CUST-00427,Jonathan Lloyd,jonathan.lloyd540@hotmail.com,43,Male,Software Engineer,28700.0,New York,NY,BRN-001,2025-05-03,18,Inactive,Mass Retail,738,0,0,1
+CUST-00428,Rodney Hurley,rodney.hurley106@hotmail.com,59,Male,Marketing Manager,158300.0,Denver,CO,BRN-009,2024-10-02,25,Active,Affluent,749,1,1,0
+CUST-00429,Melissa Wheeler,melissa.wheeler592@gmail.com,42,Female,Pharmacist,127300.0,Detroit,MI,BRN-005,2025-11-02,12,Active,Affluent,778,1,1,0
+CUST-00430,Donna Patel,donna.patel48@yahoo.com,50,Female,Pharmacist,125700.0,San Francisco,CA,BRN-010,2018-12-05,95,Active,Affluent,687,1,1,0
+CUST-00431,Jose Clark,jose.clark900@yahoo.com,37,Male,Civil Engineer,56300.0,Atlanta,GA,BRN-007,2025-10-02,13,Active,Mass Retail,734,1,1,0
+CUST-00432,Carlos Ruiz,carlos.ruiz344@hotmail.com,51,Male,Operations Manager,64200.0,New York,NY,BRN-001,2023-05-05,42,Active,Mass Retail,639,1,1,0
+CUST-00433,Lori Vaughn,lori.vaughn161@yahoo.com,42,Female,Sales Executive,183100.0,Atlanta,GA,BRN-007,2016-11-05,120,Active,High Net Worth,732,1,1,0
+CUST-00434,Michael Mckinney,michael.mckinney509@yahoo.com,41,Male,Physician,154300.0,Boston,MA,BRN-003,2025-11-02,12,Active,Affluent,808,1,1,0
+CUST-00435,Amanda Alvarez,amanda.alvarez443@yahoo.com,39,Female,Attorney,138800.0,San Francisco,CA,BRN-010,2025-11-02,12,Active,Affluent,717,1,1,0
+CUST-00436,Rebecca Patel,rebecca.patel648@yahoo.com,38,Female,Physician,234500.0,Charlotte,NC,BRN-006,2019-06-06,89,Active,High Net Worth,729,1,1,0
+CUST-00437,Joshua Young,joshua.young258@hotmail.com,44,Male,Software Engineer,58100.0,New York,NY,BRN-002,2025-10-02,13,Active,Mass Retail,732,1,1,0
+CUST-00438,Rodney Thompson,rodney.thompson767@yahoo.com,45,Male,Pharmacist,236800.0,Dallas,TX,BRN-008,2025-03-03,20,Active,High Net Worth,737,1,1,0
+CUST-00439,Antonio Robinson,antonio.robinson395@gmail.com,59,Male,Accountant,67700.0,Boston,MA,BRN-003,2024-06-03,29,Active,Mass Retail,709,1,1,0
+CUST-00440,Shawn Evans,shawn.evans78@hotmail.com,21,Male,Graphic Designer,52900.0,Detroit,MI,BRN-005,2025-10-02,13,Active,Young Professional,779,1,1,0
+CUST-00441,Walter Smith,walter.smith935@hotmail.com,52,Male,Registered Nurse,104300.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Affluent,678,1,1,0
+CUST-00442,Kimberly Bates,kimberly.bates351@yahoo.com,36,Female,Civil Engineer,47500.0,New York,NY,BRN-001,2022-01-03,58,Active,Mass Retail,583,1,1,0
+CUST-00443,Calvin Smith,calvin.smith650@hotmail.com,57,Male,Sales Executive,196600.0,Denver,CO,BRN-009,2025-01-02,22,Active,High Net Worth,708,0,1,0
+CUST-00444,Michael Conrad,michael.conrad757@hotmail.com,57,Male,Financial Analyst,75000.0,Atlanta,GA,BRN-007,2025-12-02,11,Active,Mass Retail,723,1,1,0
+CUST-00445,Jeff Smith,jeff.smith221@yahoo.com,26,Male,Graphic Designer,158300.0,San Francisco,CA,BRN-010,2022-09-03,50,Active,Affluent,688,1,1,0
+CUST-00446,Keith Bush,keith.bush681@gmail.com,48,Male,Sales Executive,52500.0,Boston,MA,BRN-003,2023-02-02,45,Active,Mass Retail,765,1,1,0
+CUST-00447,Melinda Ryan,melinda.ryan911@hotmail.com,43,Female,Data Scientist,257900.0,Boston,MA,BRN-003,2025-04-03,19,Active,High Net Worth,781,0,0,0
+CUST-00448,Harry Levine,harry.levine119@yahoo.com,24,Male,Attorney,117000.0,Detroit,MI,BRN-005,2022-12-04,47,Active,Affluent,758,1,1,0
+CUST-00449,Rhonda Weber,rhonda.weber147@yahoo.com,47,Female,Accountant,62500.0,New York,NY,BRN-001,2022-11-03,48,Active,Mass Retail,652,1,1,0
+CUST-00450,Carrie Vargas,carrie.vargas792@gmail.com,43,Female,Data Scientist,26000.0,Chicago,IL,BRN-004,2020-02-04,81,Active,Loyal Traditional,566,1,1,0
+CUST-00451,Linda Underwood,linda.underwood714@yahoo.com,21,Female,Financial Analyst,126900.0,Boston,MA,BRN-003,2016-11-05,120,Active,Affluent,702,1,1,0
+CUST-00452,James Turner,james.turner543@hotmail.com,29,Male,Sales Executive,63300.0,Charlotte,NC,BRN-006,2020-03-05,80,Active,Young Professional,742,1,0,0
+CUST-00453,Jerry Gregory,jerry.gregory204@hotmail.com,48,Male,Operations Manager,61800.0,Atlanta,GA,BRN-007,2021-12-04,59,Active,Mass Retail,772,1,1,0
+CUST-00454,Annette Pena,annette.pena102@yahoo.com,35,Female,Accountant,112300.0,Denver,CO,BRN-009,2026-01-01,10,Active,Affluent,689,1,1,0
+CUST-00455,Ronald Smith,ronald.smith913@gmail.com,46,Male,Data Scientist,241500.0,Dallas,TX,BRN-008,2026-02-01,9,Inactive,High Net Worth,592,0,1,1
+CUST-00456,Allison Davis,allison.davis754@hotmail.com,38,Female,Sales Executive,26000.0,Charlotte,NC,BRN-006,2025-04-03,19,Active,Mass Retail,765,1,1,0
+CUST-00457,Steven Knight,steven.knight176@gmail.com,54,Male,Financial Analyst,222300.0,San Francisco,CA,BRN-010,2019-05-06,90,Active,High Net Worth,762,1,1,0
+CUST-00458,Mark Livingston,mark.livingston930@yahoo.com,33,Male,Operations Manager,77200.0,Detroit,MI,BRN-005,2016-11-05,120,Inactive,Loyal Traditional,684,0,0,1
+CUST-00459,David Hess,david.hess612@gmail.com,42,Male,Registered Nurse,155600.0,San Francisco,CA,BRN-010,2026-03-03,8,Active,Affluent,737,1,1,0
+CUST-00460,Thomas Baldwin,thomas.baldwin60@gmail.com,57,Male,Graphic Designer,86900.0,Detroit,MI,BRN-005,2020-10-04,73,Active,Loyal Traditional,756,1,1,0
+CUST-00461,Aaron Johnson,aaron.johnson436@yahoo.com,44,Male,Operations Manager,140200.0,Charlotte,NC,BRN-006,2024-02-02,33,Active,Affluent,597,1,1,0
+CUST-00462,Janice Norris,janice.norris849@yahoo.com,33,Female,Marketing Manager,190600.0,Detroit,MI,BRN-005,2023-06-04,41,Active,High Net Worth,692,1,1,0
+CUST-00463,Zachary Holland,zachary.holland722@yahoo.com,40,Male,Registered Nurse,135900.0,Charlotte,NC,BRN-006,2023-06-04,41,Active,Affluent,794,1,1,0
+CUST-00464,Lydia Howard,lydia.howard275@gmail.com,64,Female,Attorney,37800.0,Detroit,MI,BRN-005,2024-02-02,33,Active,Mass Retail,765,1,1,0
+CUST-00465,Ricky Schneider,ricky.schneider735@yahoo.com,38,Male,Data Scientist,42300.0,Dallas,TX,BRN-008,2024-04-03,31,Inactive,Mass Retail,742,0,0,1
+CUST-00466,Crystal Jones,crystal.jones583@hotmail.com,43,Female,Data Scientist,191300.0,Atlanta,GA,BRN-007,2024-03-04,32,Active,High Net Worth,754,1,1,0
+CUST-00467,Adrian Chen,adrian.chen126@yahoo.com,33,Male,Graphic Designer,83000.0,Denver,CO,BRN-009,2025-06-03,17,Active,Mass Retail,686,1,1,0
+CUST-00468,Robert Walker,robert.walker671@gmail.com,21,Male,Retired Executive,63400.0,Dallas,TX,BRN-008,2025-09-02,14,Active,Young Professional,580,1,1,0
+CUST-00469,Gabriela Martinez,gabriela.martinez578@gmail.com,22,Female,Pharmacist,119900.0,New York,NY,BRN-001,2025-09-02,14,Inactive,Affluent,701,0,0,1
+CUST-00470,Bobby Smith,bobby.smith357@gmail.com,42,Male,Attorney,148000.0,Boston,MA,BRN-003,2023-09-03,38,Active,Affluent,677,1,1,0
+CUST-00471,Linda Love,linda.love736@hotmail.com,21,Female,Graphic Designer,78800.0,Detroit,MI,BRN-005,2017-11-05,108,Inactive,Young Professional,664,0,1,1
+CUST-00472,Bruce Moreno,bruce.moreno806@gmail.com,39,Male,Retired Executive,41100.0,New York,NY,BRN-002,2025-01-02,22,Active,Mass Retail,732,1,1,0
+CUST-00473,Cassandra Santiago,cassandra.santiago156@gmail.com,55,Female,Physician,74200.0,Denver,CO,BRN-009,2024-04-03,31,Active,Mass Retail,689,1,1,0
+CUST-00474,Renee Chang,renee.chang964@gmail.com,33,Female,Retired Executive,29900.0,Denver,CO,BRN-009,2024-09-02,26,Active,Mass Retail,594,1,1,0
+CUST-00475,Kayla Jones,kayla.jones664@gmail.com,45,Female,Marketing Manager,101800.0,Detroit,MI,BRN-005,2023-06-04,41,Active,Affluent,774,1,1,0
+CUST-00476,Annette Rojas,annette.rojas127@gmail.com,34,Female,Sales Executive,80400.0,Detroit,MI,BRN-005,2022-09-03,50,Active,Mass Retail,675,1,1,0
+CUST-00477,Chad Cortez,chad.cortez82@hotmail.com,38,Male,Software Engineer,41000.0,Detroit,MI,BRN-005,2024-06-03,29,Active,Mass Retail,657,1,1,0
+CUST-00478,Paige Robinson,paige.robinson193@yahoo.com,38,Female,Attorney,196600.0,New York,NY,BRN-001,2026-03-03,8,Active,High Net Worth,683,1,1,0
+CUST-00479,Kelly Atkins,kelly.atkins591@gmail.com,39,Female,Civil Engineer,47900.0,Denver,CO,BRN-009,2017-05-07,114,Active,Loyal Traditional,794,1,1,0
+CUST-00480,Stephanie Butler,stephanie.butler944@gmail.com,57,Female,Pharmacist,157100.0,Chicago,IL,BRN-004,2026-05-03,6,Active,Affluent,602,1,1,0
+CUST-00481,Melissa Garcia,melissa.garcia500@yahoo.com,51,Female,Attorney,85100.0,New York,NY,BRN-002,2023-05-05,42,Active,Mass Retail,739,1,1,0
+CUST-00482,Zachary Smith,zachary.smith821@hotmail.com,50,Male,Attorney,76000.0,New York,NY,BRN-002,2025-12-02,11,Active,Mass Retail,666,1,1,0
+CUST-00483,Michele Smith,michele.smith813@hotmail.com,41,Female,Data Scientist,63900.0,New York,NY,BRN-002,2025-04-03,19,Active,Mass Retail,850,1,1,0
+CUST-00484,Theresa Daniels,theresa.daniels343@gmail.com,35,Female,Financial Analyst,26000.0,San Francisco,CA,BRN-010,2022-04-04,55,Active,Mass Retail,762,1,1,0
+CUST-00485,James Marshall,james.marshall102@gmail.com,54,Male,Pharmacist,96500.0,Atlanta,GA,BRN-007,2022-09-03,50,Active,Mass Retail,834,1,1,0
+CUST-00486,Nancy Goodwin,nancy.goodwin210@hotmail.com,32,Female,Retired Executive,39600.0,Atlanta,GA,BRN-007,2021-06-04,65,Active,Loyal Traditional,643,0,1,0
+CUST-00487,Donald Brown,donald.brown636@yahoo.com,60,Male,Software Engineer,62200.0,Charlotte,NC,BRN-006,2020-12-04,71,Active,Loyal Traditional,596,1,1,0
+CUST-00488,Angela Hurst,angela.hurst896@yahoo.com,32,Female,Data Scientist,26000.0,Denver,CO,BRN-009,2023-07-04,40,Active,Mass Retail,791,1,1,0
+CUST-00489,Tristan Johnson,tristan.johnson578@yahoo.com,55,Male,Accountant,152100.0,Boston,MA,BRN-003,2024-12-02,23,Active,Affluent,698,1,0,0
+CUST-00490,Shane Hall,shane.hall157@hotmail.com,26,Male,Registered Nurse,39100.0,New York,NY,BRN-001,2026-05-03,6,Active,Young Professional,687,1,1,0
+CUST-00491,Darrell Watson,darrell.watson475@yahoo.com,59,Male,Financial Analyst,181200.0,San Francisco,CA,BRN-010,2025-02-01,21,Active,High Net Worth,705,1,1,0
+CUST-00492,Clarence Thompson,clarence.thompson739@hotmail.com,32,Male,Software Engineer,150500.0,San Francisco,CA,BRN-010,2023-06-04,41,Active,Affluent,638,0,1,0
+CUST-00493,Cody Hart,cody.hart155@gmail.com,25,Male,Operations Manager,49800.0,New York,NY,BRN-002,2016-11-05,120,Active,Young Professional,837,1,1,0
+CUST-00494,Travis Reilly,travis.reilly710@gmail.com,35,Male,Retired Executive,71000.0,Chicago,IL,BRN-004,2026-04-03,7,Active,Mass Retail,640,1,1,0
+CUST-00495,Tracy Webster,tracy.webster441@hotmail.com,49,Female,Data Scientist,73400.0,Denver,CO,BRN-009,2024-11-02,24,Active,Mass Retail,643,1,1,0
+CUST-00496,Michael Wilson,michael.wilson682@gmail.com,37,Male,Marketing Manager,26000.0,San Francisco,CA,BRN-010,2019-02-04,93,Active,Loyal Traditional,691,1,1,0
+CUST-00497,Rachael Wang,rachael.wang291@gmail.com,51,Female,Retired Executive,58900.0,Detroit,MI,BRN-005,2023-06-04,41,Inactive,Mass Retail,614,0,1,1
+CUST-00498,Larry Harding,larry.harding506@hotmail.com,22,Male,Teacher,103100.0,Boston,MA,BRN-003,2025-11-02,12,Active,Affluent,582,0,0,0
+CUST-00499,Anita Luna,anita.luna798@yahoo.com,64,Female,Physician,311900.0,Boston,MA,BRN-003,2021-11-03,60,Active,High Net Worth,700,1,0,0
+CUST-00500,John Dillon,john.dillon485@yahoo.com,57,Male,Physician,36600.0,Detroit,MI,BRN-005,2025-09-02,14,Active,Mass Retail,658,1,1,0
+CUST-00501,Jennifer Peters,jennifer.peters22@hotmail.com,39,Female,Civil Engineer,53800.0,Boston,MA,BRN-003,2025-06-03,17,Active,Mass Retail,718,0,1,0
+CUST-00502,Sandra Torres,sandra.torres353@hotmail.com,48,Female,Civil Engineer,136600.0,Charlotte,NC,BRN-006,2025-12-02,11,Active,Affluent,596,1,1,0
+CUST-00503,Terry Newman,terry.newman542@gmail.com,68,Male,Software Engineer,40200.0,Chicago,IL,BRN-004,2024-04-03,31,Active,Mass Retail,733,1,0,0
+CUST-00504,Deanna Jennings,deanna.jennings369@hotmail.com,53,Female,Software Engineer,261600.0,New York,NY,BRN-002,2025-09-02,14,Active,High Net Worth,788,1,1,0
+CUST-00505,Francisco Johns,francisco.johns735@gmail.com,35,Male,Financial Analyst,68300.0,Chicago,IL,BRN-004,2024-05-03,30,Active,Mass Retail,615,1,0,0
+CUST-00506,Phillip George,phillip.george269@gmail.com,45,Male,Retired Executive,86900.0,Boston,MA,BRN-003,2019-12-05,83,Active,Loyal Traditional,829,0,1,0
+CUST-00507,Richard Jenkins,richard.jenkins293@gmail.com,46,Male,Marketing Manager,56700.0,Charlotte,NC,BRN-006,2025-12-02,11,Active,Mass Retail,671,0,1,0
+CUST-00508,Audrey Anderson,audrey.anderson192@gmail.com,53,Female,Physician,67400.0,Dallas,TX,BRN-008,2016-11-05,120,Active,Loyal Traditional,638,1,1,0
+CUST-00509,Scott Thomas,scott.thomas82@gmail.com,56,Male,Retired Executive,70700.0,Detroit,MI,BRN-005,2023-08-04,39,Active,Mass Retail,620,1,1,0
+CUST-00510,Amanda Keller,amanda.keller165@hotmail.com,31,Female,Sales Executive,110800.0,New York,NY,BRN-001,2024-11-02,24,Active,Affluent,667,1,1,0
+CUST-00511,Brent Martinez,brent.martinez563@hotmail.com,21,Male,Registered Nurse,450000.0,Atlanta,GA,BRN-007,2023-09-03,38,Inactive,High Net Worth,792,0,0,1
+CUST-00512,Paul Ramirez,paul.ramirez384@hotmail.com,37,Male,Graphic Designer,95800.0,Detroit,MI,BRN-005,2016-11-05,120,Active,Loyal Traditional,811,1,1,0
+CUST-00513,Tracey Jackson,tracey.jackson686@hotmail.com,39,Female,Operations Manager,66300.0,Boston,MA,BRN-003,2020-04-05,79,Active,Loyal Traditional,790,1,1,0
+CUST-00514,Cody Nunez,cody.nunez747@gmail.com,39,Male,Pharmacist,67000.0,Boston,MA,BRN-003,2024-02-02,33,Active,Mass Retail,780,1,1,0
+CUST-00515,Victoria Martinez,victoria.martinez67@gmail.com,50,Female,Operations Manager,83000.0,Dallas,TX,BRN-008,2026-05-03,6,Inactive,Mass Retail,842,0,0,1
+CUST-00516,James Bryant,james.bryant763@hotmail.com,38,Male,Retired Executive,135800.0,San Francisco,CA,BRN-010,2025-12-02,11,Active,Affluent,786,0,1,0
+CUST-00517,Todd Richardson,todd.richardson936@gmail.com,29,Male,Graphic Designer,29800.0,Boston,MA,BRN-003,2021-03-05,68,Active,Young Professional,656,1,1,0
+CUST-00518,Austin Hester,austin.hester446@yahoo.com,33,Male,Civil Engineer,51600.0,San Francisco,CA,BRN-010,2026-05-03,6,Active,Mass Retail,770,1,1,0
+CUST-00519,Phillip Miranda,phillip.miranda353@hotmail.com,51,Male,Accountant,102300.0,Chicago,IL,BRN-004,2022-02-03,57,Active,Affluent,742,1,1,0
+CUST-00520,Bryan Burns,bryan.burns820@gmail.com,34,Male,Software Engineer,115000.0,San Francisco,CA,BRN-010,2021-10-04,61,Active,Affluent,791,1,1,0
+CUST-00521,Erin Turner,erin.turner436@hotmail.com,46,Female,Data Scientist,146600.0,New York,NY,BRN-002,2026-02-01,9,Active,Affluent,661,1,1,0
+CUST-00522,Joshua Pacheco,joshua.pacheco635@hotmail.com,41,Male,Attorney,26000.0,Dallas,TX,BRN-008,2026-03-03,8,Active,Mass Retail,608,0,1,0
+CUST-00523,Andrew Hawkins,andrew.hawkins206@yahoo.com,31,Male,Graphic Designer,59900.0,Charlotte,NC,BRN-006,2021-03-05,68,Active,Loyal Traditional,716,1,1,0
+CUST-00524,Michael Keller,michael.keller125@hotmail.com,49,Male,Accountant,54100.0,Chicago,IL,BRN-004,2024-03-04,32,Active,Mass Retail,700,1,0,0
+CUST-00525,Erica Johnson,erica.johnson267@gmail.com,50,Female,Software Engineer,134500.0,Charlotte,NC,BRN-006,2026-04-03,7,Active,Affluent,704,1,1,0
+CUST-00526,William Jenkins,william.jenkins82@gmail.com,32,Male,Financial Analyst,38200.0,Boston,MA,BRN-003,2025-05-03,18,Active,Mass Retail,665,1,1,0
+CUST-00527,Alejandro Nguyen,alejandro.nguyen252@yahoo.com,52,Male,Registered Nurse,64500.0,New York,NY,BRN-002,2025-03-03,20,Active,Mass Retail,614,1,1,0
+CUST-00528,Jeanette Armstrong,jeanette.armstrong192@yahoo.com,40,Female,Marketing Manager,77000.0,Boston,MA,BRN-003,2023-06-04,41,Active,Mass Retail,716,1,1,0
+CUST-00529,Jack Graham,jack.graham882@yahoo.com,59,Male,Physician,31200.0,New York,NY,BRN-001,2026-01-01,10,Active,Mass Retail,715,0,1,0
+CUST-00530,James Perez,james.perez98@hotmail.com,55,Male,Attorney,303100.0,San Francisco,CA,BRN-010,2023-04-04,43,Active,High Net Worth,631,1,1,0
+CUST-00531,Robert Alvarez,robert.alvarez263@gmail.com,44,Male,Retired Executive,53100.0,Atlanta,GA,BRN-007,2025-07-03,16,Active,Mass Retail,769,1,1,0
+CUST-00532,Michael Kelley,michael.kelley445@gmail.com,49,Male,Operations Manager,85300.0,New York,NY,BRN-001,2024-02-02,33,Active,Mass Retail,804,1,1,0
+CUST-00533,Rhonda Farrell,rhonda.farrell312@yahoo.com,47,Female,Data Scientist,52500.0,Atlanta,GA,BRN-007,2025-05-03,18,Inactive,Mass Retail,595,0,0,1
+CUST-00534,Michael Evans,michael.evans905@yahoo.com,41,Male,Civil Engineer,90900.0,Dallas,TX,BRN-008,2026-03-03,8,Active,Mass Retail,653,1,1,0
+CUST-00535,Brittany Johnson,brittany.johnson553@yahoo.com,31,Female,Data Scientist,151500.0,New York,NY,BRN-002,2026-05-03,6,Active,Affluent,674,0,1,0
+CUST-00536,Christopher Phelps,christopher.phelps537@hotmail.com,42,Male,Financial Analyst,136100.0,New York,NY,BRN-002,2026-03-03,8,Active,Affluent,647,1,1,0
+CUST-00537,David Duncan,david.duncan584@hotmail.com,52,Male,Sales Executive,41600.0,Boston,MA,BRN-003,2025-03-03,20,Active,Mass Retail,697,1,1,0
+CUST-00538,Kyle Mejia,kyle.mejia338@yahoo.com,31,Male,Marketing Manager,117400.0,San Francisco,CA,BRN-010,2025-03-03,20,Active,Affluent,683,1,1,0
+CUST-00539,David Lawrence,david.lawrence491@yahoo.com,45,Male,Operations Manager,82900.0,Denver,CO,BRN-009,2024-08-03,27,Active,Mass Retail,700,1,1,0
+CUST-00540,Mike Underwood,mike.underwood92@gmail.com,51,Male,Accountant,70100.0,New York,NY,BRN-002,2024-11-02,24,Active,Mass Retail,843,1,1,0
+CUST-00541,Jack Burnett,jack.burnett310@gmail.com,60,Male,Operations Manager,133500.0,Chicago,IL,BRN-004,2026-05-03,6,Active,Affluent,748,1,1,0
+CUST-00542,Peter Evans,peter.evans902@gmail.com,31,Male,Financial Analyst,82800.0,Detroit,MI,BRN-005,2021-11-03,60,Active,Mass Retail,719,1,1,0
+CUST-00543,Michelle Mcdowell,michelle.mcdowell478@gmail.com,43,Female,Pharmacist,83100.0,Dallas,TX,BRN-008,2025-04-03,19,Active,Mass Retail,728,1,1,0
+CUST-00544,Robin Rojas,robin.rojas476@yahoo.com,38,Female,Marketing Manager,55000.0,New York,NY,BRN-001,2025-01-02,22,Active,Mass Retail,724,1,1,0
+CUST-00545,Kenneth Rodriguez,kenneth.rodriguez52@gmail.com,42,Male,Teacher,108100.0,Boston,MA,BRN-003,2024-08-03,27,Active,Affluent,621,1,1,0
+CUST-00546,Debbie Mcdaniel,debbie.mcdaniel469@yahoo.com,39,Female,Financial Analyst,29300.0,Charlotte,NC,BRN-006,2026-03-03,8,Inactive,Mass Retail,622,0,0,1
+CUST-00547,Maria Sims,maria.sims672@gmail.com,36,Female,Pharmacist,188000.0,Charlotte,NC,BRN-006,2020-12-04,71,Active,High Net Worth,689,1,0,0
+CUST-00548,Bruce Higgins,bruce.higgins152@yahoo.com,48,Male,Attorney,57500.0,New York,NY,BRN-002,2019-09-05,86,Active,Loyal Traditional,850,1,1,0
+CUST-00549,Carlos Gates,carlos.gates607@hotmail.com,50,Male,Physician,36400.0,New York,NY,BRN-001,2023-06-04,41,Active,Mass Retail,666,1,1,0
+CUST-00550,David Hayes,david.hayes512@gmail.com,36,Male,Retired Executive,167500.0,New York,NY,BRN-002,2025-03-03,20,Active,Affluent,767,1,1,0
+CUST-00551,Nancy Scott,nancy.scott22@gmail.com,26,Female,Graphic Designer,212700.0,Atlanta,GA,BRN-007,2022-06-04,53,Active,High Net Worth,727,1,1,0
+CUST-00552,Manuel Turner,manuel.turner835@yahoo.com,40,Male,Accountant,41300.0,Atlanta,GA,BRN-007,2026-03-03,8,Active,Mass Retail,623,1,1,0
+CUST-00553,Michelle Hamilton,michelle.hamilton77@yahoo.com,42,Female,Software Engineer,38100.0,Detroit,MI,BRN-005,2025-06-03,17,Active,Mass Retail,615,1,0,0
+CUST-00554,Steven Baker,steven.baker214@yahoo.com,27,Male,Graphic Designer,63500.0,Denver,CO,BRN-009,2024-10-02,25,Active,Young Professional,543,1,0,0
+CUST-00555,John Martin,john.martin37@yahoo.com,73,Male,Registered Nurse,121800.0,Denver,CO,BRN-009,2026-05-03,6,Inactive,Affluent,749,0,0,1
+CUST-00556,Dalton Mitchell,dalton.mitchell39@gmail.com,41,Male,Attorney,271500.0,Dallas,TX,BRN-008,2025-03-03,20,Active,High Net Worth,729,1,1,0
+CUST-00557,Patricia Rhodes,patricia.rhodes720@yahoo.com,51,Female,Graphic Designer,116600.0,Detroit,MI,BRN-005,2024-02-02,33,Active,Affluent,699,1,1,0
+CUST-00558,Alyssa Stevens,alyssa.stevens177@hotmail.com,44,Female,Software Engineer,138400.0,Dallas,TX,BRN-008,2024-02-02,33,Active,Affluent,666,1,1,0
+CUST-00559,Scott Solis,scott.solis793@yahoo.com,25,Male,Graphic Designer,28200.0,Denver,CO,BRN-009,2026-05-03,6,Inactive,Young Professional,779,0,0,1
+CUST-00560,Carla Chan,carla.chan853@yahoo.com,24,Female,Pharmacist,113100.0,Charlotte,NC,BRN-006,2024-06-03,29,Inactive,Affluent,759,0,1,1
+CUST-00561,Ronnie Hunt,ronnie.hunt861@yahoo.com,21,Male,Graphic Designer,42700.0,New York,NY,BRN-002,2026-03-03,8,Active,Young Professional,666,1,1,0
+CUST-00562,Mark Davis,mark.davis129@hotmail.com,31,Male,Marketing Manager,216700.0,New York,NY,BRN-002,2024-05-03,30,Active,High Net Worth,708,1,1,0
+CUST-00563,Victoria Sutton,victoria.sutton186@yahoo.com,42,Female,Accountant,85000.0,San Francisco,CA,BRN-010,2016-11-05,120,Inactive,Loyal Traditional,701,0,1,1
+CUST-00564,Jose Dixon,jose.dixon445@yahoo.com,33,Male,Pharmacist,47600.0,Boston,MA,BRN-003,2025-12-02,11,Active,Mass Retail,676,1,1,0
+CUST-00565,Brian Stanley,brian.stanley490@gmail.com,58,Male,Marketing Manager,105100.0,New York,NY,BRN-001,2023-09-03,38,Active,Affluent,736,1,1,0
+CUST-00566,Peter Cole,peter.cole199@yahoo.com,37,Male,Attorney,31500.0,San Francisco,CA,BRN-010,2022-11-03,48,Inactive,Mass Retail,817,1,1,1
+CUST-00567,Christopher Woods,christopher.woods111@hotmail.com,31,Male,Data Scientist,32300.0,San Francisco,CA,BRN-010,2018-07-06,100,Active,Loyal Traditional,697,1,1,0
+CUST-00568,Chad Lee,chad.lee956@gmail.com,21,Male,Teacher,90600.0,Denver,CO,BRN-009,2026-03-03,8,Active,Young Professional,755,1,1,0
+CUST-00569,Julie Wells,julie.wells398@gmail.com,31,Female,Registered Nurse,284400.0,New York,NY,BRN-002,2025-12-02,11,Active,High Net Worth,717,1,1,0
+CUST-00570,Elizabeth Gallegos,elizabeth.gallegos731@yahoo.com,49,Female,Financial Analyst,73300.0,Denver,CO,BRN-009,2022-10-04,49,Inactive,Mass Retail,609,1,0,1
+CUST-00571,Monique Duarte,monique.duarte307@gmail.com,39,Female,Retired Executive,58000.0,Dallas,TX,BRN-008,2021-03-05,68,Active,Loyal Traditional,850,1,1,0
+CUST-00572,Kristen Adams,kristen.adams698@hotmail.com,21,Female,Registered Nurse,50700.0,Boston,MA,BRN-003,2025-11-02,12,Active,Young Professional,709,1,1,0
+CUST-00573,Gregg Hall,gregg.hall382@gmail.com,23,Male,Registered Nurse,61500.0,New York,NY,BRN-002,2026-04-03,7,Active,Young Professional,744,1,1,0
+CUST-00574,Christine Vazquez,christine.vazquez374@gmail.com,46,Female,Sales Executive,75400.0,San Francisco,CA,BRN-010,2025-06-03,17,Active,Mass Retail,736,1,1,0
+CUST-00575,Anthony Smith,anthony.smith653@yahoo.com,68,Male,Operations Manager,30100.0,Detroit,MI,BRN-005,2026-03-03,8,Inactive,Mass Retail,725,0,0,1
+CUST-00576,Bryan Walker,bryan.walker788@yahoo.com,42,Male,Pharmacist,104500.0,Charlotte,NC,BRN-006,2018-11-05,96,Active,Affluent,677,1,1,0
+CUST-00577,Lisa Garrison,lisa.garrison838@gmail.com,47,Female,Financial Analyst,74000.0,Denver,CO,BRN-009,2021-12-04,59,Active,Mass Retail,709,0,1,0
+CUST-00578,Nicholas Erickson,nicholas.erickson43@hotmail.com,25,Male,Operations Manager,39100.0,Atlanta,GA,BRN-007,2023-03-05,44,Active,Young Professional,769,1,1,0
+CUST-00579,Danielle Lamb,danielle.lamb685@yahoo.com,29,Female,Operations Manager,99400.0,New York,NY,BRN-002,2023-10-04,37,Active,Young Professional,714,1,1,0
+CUST-00580,Jennifer Perez,jennifer.perez641@yahoo.com,62,Female,Software Engineer,109300.0,Detroit,MI,BRN-005,2025-08-02,15,Active,Affluent,701,1,1,0
+CUST-00581,James Barton,james.barton793@yahoo.com,25,Male,Teacher,108300.0,Charlotte,NC,BRN-006,2025-03-03,20,Active,Affluent,745,0,1,0
+CUST-00582,Mercedes Russo,mercedes.russo616@hotmail.com,51,Female,Accountant,66200.0,Chicago,IL,BRN-004,2026-04-03,7,Inactive,Mass Retail,658,1,1,1
+CUST-00583,Marissa Terry,marissa.terry283@hotmail.com,69,Female,Attorney,62300.0,Atlanta,GA,BRN-007,2026-01-01,10,Active,Mass Retail,665,1,1,0
+CUST-00584,Daniel Hunt,daniel.hunt354@yahoo.com,21,Male,Accountant,30500.0,New York,NY,BRN-002,2021-12-04,59,Active,Young Professional,610,1,1,0
+CUST-00585,Nicholas Skinner,nicholas.skinner870@yahoo.com,21,Male,Marketing Manager,140800.0,Dallas,TX,BRN-008,2021-07-05,64,Active,Affluent,741,0,1,0
+CUST-00586,Michael Briggs,michael.briggs616@hotmail.com,21,Male,Operations Manager,179200.0,New York,NY,BRN-002,2025-07-03,16,Active,Affluent,634,1,1,0
+CUST-00587,Cheryl Osborne,cheryl.osborne453@yahoo.com,42,Female,Marketing Manager,39300.0,Detroit,MI,BRN-005,2025-08-02,15,Active,Mass Retail,728,1,1,0
+CUST-00588,Daniel Miller,daniel.miller600@hotmail.com,39,Male,Marketing Manager,26900.0,Boston,MA,BRN-003,2023-09-03,38,Active,Mass Retail,843,0,1,0
+CUST-00589,Rodney Thomas,rodney.thomas544@gmail.com,63,Male,Graphic Designer,78300.0,Atlanta,GA,BRN-007,2025-05-03,18,Active,Mass Retail,765,1,1,0
+CUST-00590,Jaclyn Crane,jaclyn.crane283@hotmail.com,38,Female,Financial Analyst,183000.0,New York,NY,BRN-002,2024-05-03,30,Active,High Net Worth,688,1,1,0
+CUST-00591,Alyssa Thomas,alyssa.thomas442@hotmail.com,23,Female,Software Engineer,72600.0,Detroit,MI,BRN-005,2023-08-04,39,Inactive,Young Professional,679,1,0,1
+CUST-00592,Kenneth Knight,kenneth.knight996@yahoo.com,28,Male,Teacher,57600.0,Boston,MA,BRN-003,2026-03-03,8,Active,Young Professional,743,1,0,0
+CUST-00593,Robert Beck,robert.beck416@yahoo.com,21,Male,Registered Nurse,83200.0,Atlanta,GA,BRN-007,2021-02-03,69,Active,Young Professional,683,1,1,0
+CUST-00594,Kristina Martinez,kristina.martinez915@hotmail.com,54,Female,Teacher,143500.0,San Francisco,CA,BRN-010,2023-01-03,46,Active,Affluent,763,1,1,0
+CUST-00595,Steven Martinez,steven.martinez119@hotmail.com,21,Male,Operations Manager,90000.0,Chicago,IL,BRN-004,2024-08-03,27,Active,Young Professional,759,1,1,0
+CUST-00596,Frank Chapman,frank.chapman996@yahoo.com,21,Male,Graphic Designer,45500.0,Denver,CO,BRN-009,2025-04-03,19,Active,Young Professional,648,1,1,0
+CUST-00597,Brian Garcia,brian.garcia717@gmail.com,50,Male,Marketing Manager,34700.0,New York,NY,BRN-001,2022-02-03,57,Active,Mass Retail,698,1,1,0
+CUST-00598,Edward Garcia,edward.garcia888@gmail.com,56,Male,Registered Nurse,36700.0,New York,NY,BRN-002,2022-06-04,53,Inactive,Mass Retail,637,0,0,1
+CUST-00599,Janice Wilson,janice.wilson910@gmail.com,35,Female,Marketing Manager,98700.0,Boston,MA,BRN-003,2024-12-02,23,Active,Mass Retail,809,1,0,0
+CUST-00600,Megan Sanchez,megan.sanchez744@hotmail.com,21,Female,Data Scientist,49600.0,Dallas,TX,BRN-008,2023-12-03,35,Active,Young Professional,729,1,1,0
+CUST-00601,Jacqueline Galloway,jacqueline.galloway721@gmail.com,31,Female,Civil Engineer,102700.0,Denver,CO,BRN-009,2021-08-04,63,Active,Affluent,751,1,1,0
+CUST-00602,Taylor Olson,taylor.olson599@hotmail.com,43,Female,Graphic Designer,26000.0,Chicago,IL,BRN-004,2022-06-04,53,Active,Mass Retail,766,1,1,0
+CUST-00603,Michael Rivas,michael.rivas276@hotmail.com,37,Male,Physician,86000.0,Dallas,TX,BRN-008,2024-02-02,33,Active,Mass Retail,564,1,1,0
+CUST-00604,Glenn Stevens,glenn.stevens980@hotmail.com,44,Male,Retired Executive,147700.0,Atlanta,GA,BRN-007,2024-06-03,29,Active,Affluent,779,1,1,0
+CUST-00605,Rachel Banks,rachel.banks624@gmail.com,44,Female,Attorney,101100.0,Boston,MA,BRN-003,2022-04-04,55,Active,Affluent,687,1,1,0
+CUST-00606,James Combs,james.combs239@hotmail.com,50,Male,Marketing Manager,51600.0,Dallas,TX,BRN-008,2025-01-02,22,Active,Mass Retail,750,1,1,0
+CUST-00607,Diana Morse,diana.morse754@yahoo.com,47,Female,Pharmacist,121300.0,Chicago,IL,BRN-004,2022-04-04,55,Active,Affluent,756,1,1,0
+CUST-00608,Summer Mann,summer.mann606@gmail.com,43,Female,Accountant,26000.0,San Francisco,CA,BRN-010,2025-11-02,12,Active,Mass Retail,710,1,0,0
+CUST-00609,Mary Knight,mary.knight763@hotmail.com,51,Female,Software Engineer,127000.0,Chicago,IL,BRN-004,2024-11-02,24,Active,Affluent,711,1,1,0
+CUST-00610,Richard Lee,richard.lee15@hotmail.com,47,Male,Financial Analyst,121000.0,San Francisco,CA,BRN-010,2021-01-03,70,Active,Affluent,649,1,1,0
+CUST-00611,Margaret Hahn,margaret.hahn183@gmail.com,48,Female,Accountant,75500.0,New York,NY,BRN-001,2026-03-03,8,Active,Mass Retail,833,1,1,0
+CUST-00612,Thomas Patel,thomas.patel140@yahoo.com,42,Male,Retired Executive,62700.0,Detroit,MI,BRN-005,2021-04-05,67,Active,Loyal Traditional,732,1,0,0
+CUST-00613,Vanessa Coleman,vanessa.coleman924@gmail.com,21,Female,Sales Executive,149200.0,Detroit,MI,BRN-005,2025-12-02,11,Active,Affluent,642,1,1,0
+CUST-00614,Alexander Robles,alexander.robles245@yahoo.com,28,Male,Financial Analyst,93400.0,New York,NY,BRN-001,2021-05-05,66,Inactive,Young Professional,767,1,0,1
+CUST-00615,Pamela Garrett,pamela.garrett478@hotmail.com,50,Female,Registered Nurse,30100.0,Dallas,TX,BRN-008,2023-09-03,38,Active,Mass Retail,719,1,1,0
+CUST-00616,Jessica Turner,jessica.turner586@hotmail.com,33,Female,Sales Executive,38100.0,Boston,MA,BRN-003,2025-01-02,22,Active,Mass Retail,643,1,1,0
+CUST-00617,Adam Reyes,adam.reyes918@yahoo.com,22,Male,Financial Analyst,150700.0,Chicago,IL,BRN-004,2022-03-05,56,Inactive,Affluent,670,1,0,1
+CUST-00618,Kurt Jones,kurt.jones481@gmail.com,40,Male,Attorney,46300.0,Charlotte,NC,BRN-006,2024-08-03,27,Active,Mass Retail,775,1,1,0
+CUST-00619,Jeremy Sanchez,jeremy.sanchez226@gmail.com,27,Male,Pharmacist,163300.0,San Francisco,CA,BRN-010,2026-03-03,8,Active,Affluent,750,1,1,0
+CUST-00620,Patricia Hernandez,patricia.hernandez192@yahoo.com,40,Female,Registered Nurse,180200.0,Atlanta,GA,BRN-007,2023-03-05,44,Active,High Net Worth,789,1,1,0
+CUST-00621,William Davidson,william.davidson133@gmail.com,37,Male,Teacher,30900.0,Atlanta,GA,BRN-007,2022-01-03,58,Active,Mass Retail,695,1,0,0
+CUST-00622,Tonya Jensen,tonya.jensen284@yahoo.com,35,Female,Pharmacist,52600.0,Dallas,TX,BRN-008,2016-11-05,120,Active,Loyal Traditional,606,1,1,0
+CUST-00623,Cynthia Navarro,cynthia.navarro484@yahoo.com,42,Female,Retired Executive,44700.0,New York,NY,BRN-002,2025-10-02,13,Active,Mass Retail,813,1,1,0
+CUST-00624,Cory Willis,cory.willis938@yahoo.com,34,Male,Graphic Designer,48200.0,Detroit,MI,BRN-005,2025-01-02,22,Active,Mass Retail,825,1,1,0
+CUST-00625,Ryan Sanchez,ryan.sanchez532@gmail.com,22,Male,Teacher,47900.0,Denver,CO,BRN-009,2025-09-02,14,Inactive,Young Professional,601,1,1,1
+CUST-00626,Elizabeth Allen,elizabeth.allen193@yahoo.com,40,Female,Financial Analyst,135500.0,New York,NY,BRN-002,2016-11-05,120,Active,Affluent,631,1,1,0
+CUST-00627,Rebecca Lee,rebecca.lee359@yahoo.com,32,Female,Accountant,82000.0,Dallas,TX,BRN-008,2026-03-03,8,Active,Mass Retail,709,1,0,0
+CUST-00628,Mark Ramirez,mark.ramirez15@gmail.com,44,Male,Data Scientist,83100.0,New York,NY,BRN-002,2023-04-04,43,Active,Mass Retail,662,1,1,0
+CUST-00629,Cassidy Marquez,cassidy.marquez717@hotmail.com,25,Female,Pharmacist,125400.0,Dallas,TX,BRN-008,2026-05-03,6,Active,Affluent,792,1,1,0
+CUST-00630,Jesse Young,jesse.young889@gmail.com,55,Male,Financial Analyst,26300.0,New York,NY,BRN-002,2025-05-03,18,Active,Mass Retail,775,1,0,0
+CUST-00631,Heather Silva,heather.silva161@yahoo.com,55,Female,Operations Manager,87200.0,New York,NY,BRN-002,2017-02-05,117,Inactive,Loyal Traditional,701,0,0,1
+CUST-00632,Jessica Baker,jessica.baker62@gmail.com,45,Female,Financial Analyst,215700.0,Chicago,IL,BRN-004,2022-10-04,49,Inactive,High Net Worth,762,0,0,1
+CUST-00633,Kimberly Cook,kimberly.cook419@hotmail.com,39,Female,Physician,71100.0,Denver,CO,BRN-009,2023-08-04,39,Active,Mass Retail,693,1,1,0
+CUST-00634,Samantha Logan,samantha.logan924@yahoo.com,21,Female,Attorney,68100.0,Charlotte,NC,BRN-006,2020-08-04,75,Active,Young Professional,747,0,1,0
+CUST-00635,Jose Hartman,jose.hartman490@yahoo.com,49,Male,Retired Executive,37700.0,New York,NY,BRN-001,2016-11-05,120,Active,Loyal Traditional,658,1,0,0
+CUST-00636,Shelly Torres,shelly.torres992@hotmail.com,40,Female,Pharmacist,89800.0,Boston,MA,BRN-003,2024-08-03,27,Active,Mass Retail,727,1,0,0
+CUST-00637,Phillip Vaughn,phillip.vaughn693@yahoo.com,36,Male,Registered Nurse,26000.0,Chicago,IL,BRN-004,2022-05-05,54,Active,Mass Retail,716,1,0,0
+CUST-00638,Arthur Hughes,arthur.hughes28@yahoo.com,40,Male,Accountant,202700.0,Chicago,IL,BRN-004,2025-07-03,16,Active,High Net Worth,798,1,0,0
+CUST-00639,Christopher Serrano,christopher.serrano642@hotmail.com,35,Male,Pharmacist,86800.0,New York,NY,BRN-002,2025-09-02,14,Active,Mass Retail,738,1,1,0
+CUST-00640,Joseph Jackson,joseph.jackson733@yahoo.com,49,Male,Registered Nurse,46400.0,Detroit,MI,BRN-005,2025-07-03,16,Active,Mass Retail,658,1,1,0
+CUST-00641,Jeffrey Mckinney,jeffrey.mckinney181@yahoo.com,41,Male,Data Scientist,45900.0,New York,NY,BRN-002,2022-03-05,56,Active,Mass Retail,819,1,1,0
+CUST-00642,Judy Harris,judy.harris352@gmail.com,54,Female,Financial Analyst,95300.0,New York,NY,BRN-002,2020-12-04,71,Active,Loyal Traditional,744,1,1,0
+CUST-00643,Gregory Kirby,gregory.kirby97@yahoo.com,42,Male,Teacher,118500.0,Dallas,TX,BRN-008,2025-09-02,14,Active,Affluent,807,1,1,0
+CUST-00644,Michael Davis,michael.davis151@hotmail.com,50,Male,Graphic Designer,80800.0,Denver,CO,BRN-009,2026-03-03,8,Active,Mass Retail,826,1,1,0
+CUST-00645,Willie Tran,willie.tran744@yahoo.com,50,Male,Teacher,63800.0,Dallas,TX,BRN-008,2023-08-04,39,Active,Mass Retail,603,1,1,0
+CUST-00646,Joel Jones,joel.jones934@hotmail.com,45,Male,Marketing Manager,123800.0,Atlanta,GA,BRN-007,2022-12-04,47,Inactive,Affluent,697,1,0,1
+CUST-00647,Julia Miller,julia.miller941@hotmail.com,38,Female,Data Scientist,188100.0,Detroit,MI,BRN-005,2023-04-04,43,Inactive,High Net Worth,768,1,0,1
+CUST-00648,Sara Lawson,sara.lawson724@gmail.com,28,Female,Registered Nurse,26000.0,San Francisco,CA,BRN-010,2023-02-02,45,Active,Young Professional,582,1,1,0
+CUST-00649,Cindy Horton,cindy.horton228@hotmail.com,34,Female,Teacher,127900.0,Boston,MA,BRN-003,2024-07-03,28,Active,Affluent,670,1,1,0
+CUST-00650,Randall Mcfarland,randall.mcfarland862@yahoo.com,42,Male,Registered Nurse,122500.0,Denver,CO,BRN-009,2026-01-01,10,Active,Affluent,713,1,0,0
+CUST-00651,Michael Walker,michael.walker784@gmail.com,35,Male,Attorney,186900.0,Denver,CO,BRN-009,2023-01-03,46,Active,High Net Worth,669,1,1,0
+CUST-00652,Justin Lopez,justin.lopez368@gmail.com,35,Male,Data Scientist,104100.0,San Francisco,CA,BRN-010,2019-08-06,87,Active,Affluent,647,1,1,0
+CUST-00653,Christy Robinson,christy.robinson475@hotmail.com,49,Female,Registered Nurse,137200.0,Denver,CO,BRN-009,2026-01-01,10,Inactive,Affluent,649,1,0,1
+CUST-00654,Michelle Moody,michelle.moody703@hotmail.com,27,Female,Graphic Designer,78000.0,Chicago,IL,BRN-004,2023-12-03,35,Active,Young Professional,607,1,1,0
+CUST-00655,Pamela Watts,pamela.watts853@hotmail.com,24,Female,Data Scientist,31000.0,Dallas,TX,BRN-008,2020-10-04,73,Inactive,Young Professional,671,0,0,1
+CUST-00656,David Jensen,david.jensen976@gmail.com,55,Male,Registered Nurse,34700.0,Dallas,TX,BRN-008,2024-03-04,32,Active,Mass Retail,626,1,1,0
+CUST-00657,Maria Young,maria.young393@hotmail.com,39,Female,Software Engineer,42000.0,Boston,MA,BRN-003,2023-11-03,36,Inactive,Mass Retail,623,0,1,1
+CUST-00658,Paul Perez,paul.perez135@hotmail.com,42,Male,Financial Analyst,95900.0,Boston,MA,BRN-003,2020-08-04,75,Active,Loyal Traditional,770,1,1,0
+CUST-00659,Frank Ramos,frank.ramos790@gmail.com,47,Male,Civil Engineer,108500.0,Charlotte,NC,BRN-006,2024-08-03,27,Active,Affluent,643,1,0,0
+CUST-00660,Leslie Guerra,leslie.guerra406@gmail.com,46,Female,Data Scientist,38500.0,San Francisco,CA,BRN-010,2022-09-03,50,Active,Mass Retail,749,1,1,0
+CUST-00661,Danielle Thompson,danielle.thompson584@gmail.com,36,Female,Attorney,60400.0,New York,NY,BRN-001,2025-11-02,12,Active,Mass Retail,722,1,1,0
+CUST-00662,Jessica Wagner,jessica.wagner524@hotmail.com,64,Female,Software Engineer,60900.0,Denver,CO,BRN-009,2025-01-02,22,Active,Mass Retail,742,1,1,0
+CUST-00663,Elizabeth Campbell,elizabeth.campbell421@hotmail.com,39,Female,Financial Analyst,59800.0,San Francisco,CA,BRN-010,2024-02-02,33,Active,Mass Retail,622,1,1,0
+CUST-00664,Todd Waller,todd.waller111@yahoo.com,49,Male,Pharmacist,66500.0,Atlanta,GA,BRN-007,2025-07-03,16,Active,Mass Retail,676,1,1,0
+CUST-00665,Pamela Krueger,pamela.krueger195@hotmail.com,55,Female,Registered Nurse,284200.0,Boston,MA,BRN-003,2024-09-02,26,Active,High Net Worth,802,1,1,0
+CUST-00666,Thomas Ward,thomas.ward255@hotmail.com,21,Male,Sales Executive,148100.0,Atlanta,GA,BRN-007,2025-10-02,13,Active,Affluent,783,1,1,0
+CUST-00667,Dawn Guzman,dawn.guzman77@hotmail.com,21,Female,Marketing Manager,73300.0,New York,NY,BRN-001,2019-12-05,83,Active,Young Professional,750,1,1,0
+CUST-00668,Shawn Martin,shawn.martin321@yahoo.com,70,Male,Physician,86100.0,Denver,CO,BRN-009,2026-01-01,10,Active,Mass Retail,655,1,1,0
+CUST-00669,Paula Cooper,paula.cooper994@gmail.com,30,Female,Graphic Designer,56100.0,Boston,MA,BRN-003,2022-09-03,50,Active,Mass Retail,684,1,1,0
+CUST-00670,Patricia Butler,patricia.butler869@yahoo.com,25,Female,Attorney,67100.0,New York,NY,BRN-001,2024-03-04,32,Active,Young Professional,726,1,1,0
+CUST-00671,Tiffany Hayes,tiffany.hayes101@gmail.com,38,Female,Retired Executive,70800.0,Denver,CO,BRN-009,2021-06-04,65,Active,Loyal Traditional,712,1,1,0
+CUST-00672,Ashley Fields,ashley.fields780@gmail.com,32,Female,Teacher,273400.0,Charlotte,NC,BRN-006,2022-09-03,50,Active,High Net Worth,777,1,0,0
+CUST-00673,Deborah Moses,deborah.moses14@hotmail.com,45,Female,Pharmacist,229400.0,Boston,MA,BRN-003,2020-09-04,74,Active,High Net Worth,738,1,1,0
+CUST-00674,Nicole Munoz,nicole.munoz698@yahoo.com,46,Female,Accountant,26000.0,New York,NY,BRN-002,2021-06-04,65,Active,Loyal Traditional,702,1,1,0
+CUST-00675,Aaron Harrell,aaron.harrell465@yahoo.com,24,Male,Physician,64100.0,New York,NY,BRN-002,2020-04-05,79,Inactive,Young Professional,709,1,0,1
+CUST-00676,Mary Alvarez,mary.alvarez47@yahoo.com,55,Female,Physician,64900.0,Chicago,IL,BRN-004,2021-04-05,67,Active,Loyal Traditional,669,0,1,0
+CUST-00677,Jennifer Salazar,jennifer.salazar184@gmail.com,41,Female,Registered Nurse,75900.0,Detroit,MI,BRN-005,2026-03-03,8,Active,Mass Retail,697,1,1,0
+CUST-00678,Elizabeth Nunez,elizabeth.nunez206@hotmail.com,54,Female,Attorney,101000.0,San Francisco,CA,BRN-010,2026-03-03,8,Inactive,Affluent,717,1,0,1
+CUST-00679,Christopher Hickman,christopher.hickman884@yahoo.com,34,Male,Registered Nurse,83900.0,Atlanta,GA,BRN-007,2024-12-02,23,Active,Mass Retail,695,1,1,0
+CUST-00680,Austin Cooper,austin.cooper294@hotmail.com,59,Male,Financial Analyst,36300.0,New York,NY,BRN-001,2025-01-02,22,Active,Mass Retail,670,1,1,0
+CUST-00681,Natalie Pineda,natalie.pineda990@hotmail.com,33,Female,Registered Nurse,64900.0,New York,NY,BRN-001,2024-12-02,23,Active,Mass Retail,829,1,1,0
+CUST-00682,Emily Lawrence,emily.lawrence870@gmail.com,38,Female,Teacher,169100.0,New York,NY,BRN-001,2026-05-03,6,Active,Affluent,777,1,0,0
+CUST-00683,Sara Porter,sara.porter792@yahoo.com,50,Female,Retired Executive,34900.0,Chicago,IL,BRN-004,2024-04-03,31,Active,Mass Retail,732,1,1,0
+CUST-00684,Becky Shea,becky.shea66@hotmail.com,61,Female,Registered Nurse,181300.0,New York,NY,BRN-002,2022-01-03,58,Active,High Net Worth,741,1,1,0
+CUST-00685,Melody Williams,melody.williams248@gmail.com,43,Female,Operations Manager,182900.0,Atlanta,GA,BRN-007,2025-12-02,11,Active,High Net Worth,784,1,1,0
+CUST-00686,James Rose,james.rose474@yahoo.com,61,Male,Software Engineer,45800.0,San Francisco,CA,BRN-010,2025-09-02,14,Active,Mass Retail,749,1,1,0
+CUST-00687,Laura Ramos,laura.ramos373@yahoo.com,45,Female,Accountant,98800.0,Chicago,IL,BRN-004,2018-11-05,96,Active,Loyal Traditional,750,1,1,0
+CUST-00688,Tammy Davis,tammy.davis328@yahoo.com,60,Female,Accountant,121700.0,Detroit,MI,BRN-005,2023-09-03,38,Active,Affluent,735,1,1,0
+CUST-00689,David Wilson,david.wilson68@yahoo.com,28,Male,Financial Analyst,94700.0,New York,NY,BRN-001,2024-05-03,30,Active,Young Professional,650,1,0,0
+CUST-00690,Adam Wilson,adam.wilson693@gmail.com,54,Male,Graphic Designer,48500.0,Chicago,IL,BRN-004,2025-07-03,16,Active,Mass Retail,649,1,0,0
+CUST-00691,John Newman,john.newman475@yahoo.com,37,Male,Retired Executive,29300.0,Atlanta,GA,BRN-007,2018-11-05,96,Active,Loyal Traditional,625,1,1,0
+CUST-00692,Kristi Herrera,kristi.herrera762@hotmail.com,42,Female,Physician,84500.0,San Francisco,CA,BRN-010,2024-11-02,24,Active,Mass Retail,683,1,0,0
+CUST-00693,Robert Martinez,robert.martinez578@gmail.com,48,Male,Civil Engineer,142900.0,New York,NY,BRN-001,2021-05-05,66,Active,Affluent,775,1,1,0
+CUST-00694,Angela Martinez,angela.martinez188@yahoo.com,27,Female,Accountant,78000.0,New York,NY,BRN-001,2023-03-05,44,Active,Young Professional,711,1,1,0
+CUST-00695,Kenneth Neal,kenneth.neal398@hotmail.com,26,Male,Marketing Manager,40900.0,New York,NY,BRN-002,2025-09-02,14,Active,Young Professional,649,1,1,0
+CUST-00696,Elizabeth Wall,elizabeth.wall909@gmail.com,51,Female,Physician,27100.0,Boston,MA,BRN-003,2022-12-04,47,Inactive,Mass Retail,755,0,0,1
+CUST-00697,Dean Santos,dean.santos791@gmail.com,49,Male,Marketing Manager,109800.0,Atlanta,GA,BRN-007,2021-11-03,60,Active,Affluent,653,1,1,0
+CUST-00698,Mary Hoover,mary.hoover224@hotmail.com,60,Female,Accountant,54200.0,Detroit,MI,BRN-005,2025-06-03,17,Active,Mass Retail,710,1,1,0
+CUST-00699,Angela Martinez,angela.martinez193@gmail.com,46,Female,Operations Manager,26400.0,Denver,CO,BRN-009,2026-04-03,7,Active,Mass Retail,634,1,1,0
+CUST-00700,William Walker,william.walker234@gmail.com,57,Male,Physician,113100.0,San Francisco,CA,BRN-010,2016-11-05,120,Active,Affluent,696,1,0,0
+CUST-00701,Douglas Nelson,douglas.nelson147@gmail.com,46,Male,Physician,89800.0,Charlotte,NC,BRN-006,2025-07-03,16,Active,Mass Retail,669,1,1,0
+CUST-00702,Deanna Parks,deanna.parks428@hotmail.com,43,Female,Financial Analyst,155600.0,Atlanta,GA,BRN-007,2021-03-05,68,Active,Affluent,662,1,1,0
+CUST-00703,Margaret Wood,margaret.wood872@gmail.com,28,Female,Retired Executive,62400.0,New York,NY,BRN-002,2026-05-03,6,Active,Young Professional,793,1,1,0
+CUST-00704,Todd Keith,todd.keith701@gmail.com,34,Male,Physician,26000.0,Denver,CO,BRN-009,2023-01-03,46,Active,Mass Retail,756,1,0,0
+CUST-00705,Carmen Brown,carmen.brown298@hotmail.com,50,Female,Graphic Designer,173500.0,Denver,CO,BRN-009,2021-11-03,60,Active,Affluent,784,1,1,0
+CUST-00706,Cheryl Guerra,cheryl.guerra243@gmail.com,68,Female,Physician,137100.0,Denver,CO,BRN-009,2023-08-04,39,Active,Affluent,736,1,1,0
+CUST-00707,Ryan Palmer,ryan.palmer330@gmail.com,43,Male,Physician,74300.0,Dallas,TX,BRN-008,2021-12-04,59,Active,Mass Retail,829,1,0,0
+CUST-00708,Edward Lewis,edward.lewis322@hotmail.com,35,Male,Teacher,30300.0,Boston,MA,BRN-003,2023-07-04,40,Inactive,Mass Retail,679,1,0,1
+CUST-00709,Brian Bailey,brian.bailey591@hotmail.com,46,Male,Attorney,26000.0,Denver,CO,BRN-009,2025-08-02,15,Active,Mass Retail,787,1,1,0
+CUST-00710,Kayla Hernandez,kayla.hernandez75@gmail.com,49,Female,Teacher,114700.0,Atlanta,GA,BRN-007,2026-03-03,8,Active,Affluent,818,1,1,0
+CUST-00711,William Douglas,william.douglas42@yahoo.com,67,Male,Physician,52600.0,New York,NY,BRN-002,2022-10-04,49,Active,Mass Retail,751,1,0,0
+CUST-00712,Casey Fisher,casey.fisher475@yahoo.com,39,Male,Financial Analyst,73200.0,Chicago,IL,BRN-004,2022-09-03,50,Inactive,Mass Retail,632,1,1,1
+CUST-00713,Melanie Anderson,melanie.anderson988@yahoo.com,55,Female,Financial Analyst,174900.0,Dallas,TX,BRN-008,2025-05-03,18,Active,Affluent,741,1,1,0
+CUST-00714,William Mclaughlin,william.mclaughlin524@yahoo.com,28,Male,Accountant,33400.0,San Francisco,CA,BRN-010,2022-07-05,52,Active,Young Professional,739,1,0,0
+CUST-00715,Sharon Gamble,sharon.gamble481@gmail.com,67,Female,Teacher,51800.0,Chicago,IL,BRN-004,2020-08-04,75,Inactive,Loyal Traditional,749,0,0,1
+CUST-00716,James Hill,james.hill193@gmail.com,59,Male,Retired Executive,126800.0,San Francisco,CA,BRN-010,2021-04-05,67,Active,Affluent,747,1,1,0
+CUST-00717,Eric Schultz,eric.schultz290@gmail.com,42,Male,Data Scientist,105100.0,New York,NY,BRN-001,2024-04-03,31,Active,Affluent,643,1,0,0
+CUST-00718,Ashley Cox,ashley.cox88@yahoo.com,37,Female,Financial Analyst,26000.0,Atlanta,GA,BRN-007,2018-05-07,102,Active,Loyal Traditional,750,1,1,0
+CUST-00719,Susan Garcia,susan.garcia400@gmail.com,64,Female,Financial Analyst,203300.0,Dallas,TX,BRN-008,2025-01-02,22,Active,High Net Worth,662,1,1,0
+CUST-00720,Natalie Chapman,natalie.chapman506@hotmail.com,40,Female,Data Scientist,134000.0,Boston,MA,BRN-003,2019-08-06,87,Inactive,Affluent,731,0,1,1
+CUST-00721,Corey Griffin,corey.griffin631@gmail.com,27,Male,Data Scientist,109600.0,Boston,MA,BRN-003,2020-02-04,81,Active,Affluent,704,1,1,0
+CUST-00722,Kim Hernandez,kim.hernandez192@gmail.com,44,Female,Operations Manager,40900.0,Detroit,MI,BRN-005,2021-04-05,67,Active,Loyal Traditional,779,1,0,0
+CUST-00723,Autumn Graham,autumn.graham464@yahoo.com,45,Female,Pharmacist,124600.0,New York,NY,BRN-002,2016-11-05,120,Active,Affluent,792,1,1,0
+CUST-00724,Rebecca Benson,rebecca.benson38@hotmail.com,40,Female,Physician,65000.0,Chicago,IL,BRN-004,2026-03-03,8,Active,Mass Retail,683,0,1,0
+CUST-00725,Daniel Smith,daniel.smith435@hotmail.com,39,Male,Attorney,45000.0,Boston,MA,BRN-003,2026-03-03,8,Active,Mass Retail,672,1,1,0
+CUST-00726,Edward Adams,edward.adams375@gmail.com,32,Male,Financial Analyst,26000.0,New York,NY,BRN-002,2026-01-01,10,Active,Mass Retail,699,1,1,0
+CUST-00727,Tammy Nelson,tammy.nelson54@gmail.com,38,Female,Registered Nurse,62500.0,Detroit,MI,BRN-005,2016-11-05,120,Active,Loyal Traditional,604,1,1,0
+CUST-00728,Stephen Baker,stephen.baker624@gmail.com,35,Male,Teacher,49100.0,San Francisco,CA,BRN-010,2025-04-03,19,Active,Mass Retail,783,1,1,0
+CUST-00729,Joshua Irwin,joshua.irwin633@hotmail.com,35,Male,Sales Executive,58200.0,Dallas,TX,BRN-008,2025-06-03,17,Active,Mass Retail,804,1,0,0
+CUST-00730,Frederick Harris,frederick.harris765@hotmail.com,27,Male,Accountant,57100.0,San Francisco,CA,BRN-010,2025-02-01,21,Active,Young Professional,736,1,1,0
+CUST-00731,Keith Harding,keith.harding955@gmail.com,41,Male,Accountant,42100.0,Chicago,IL,BRN-004,2025-04-03,19,Active,Mass Retail,802,1,1,0
+CUST-00732,Ariel Rose,ariel.rose778@hotmail.com,45,Female,Sales Executive,85300.0,Denver,CO,BRN-009,2024-03-04,32,Active,Mass Retail,645,1,0,0
+CUST-00733,Pamela Newman,pamela.newman543@gmail.com,46,Female,Registered Nurse,38100.0,Chicago,IL,BRN-004,2025-05-03,18,Active,Mass Retail,659,0,1,0
+CUST-00734,Joshua Meyers,joshua.meyers616@hotmail.com,41,Male,Sales Executive,26000.0,Chicago,IL,BRN-004,2020-12-04,71,Active,Loyal Traditional,689,1,1,0
+CUST-00735,David Stephens,david.stephens630@yahoo.com,40,Male,Marketing Manager,48400.0,Chicago,IL,BRN-004,2024-06-03,29,Active,Mass Retail,750,1,1,0
+CUST-00736,Alexander Simmons,alexander.simmons492@gmail.com,63,Male,Pharmacist,152400.0,Charlotte,NC,BRN-006,2020-02-04,81,Active,Affluent,759,1,0,0
+CUST-00737,Billy Cook,billy.cook787@yahoo.com,47,Male,Sales Executive,26000.0,Atlanta,GA,BRN-007,2020-08-04,75,Active,Loyal Traditional,638,1,1,0
+CUST-00738,Jessica Barry,jessica.barry83@hotmail.com,35,Female,Accountant,221200.0,Dallas,TX,BRN-008,2024-04-03,31,Active,High Net Worth,710,0,1,0
+CUST-00739,Shannon Spence,shannon.spence972@hotmail.com,58,Female,Civil Engineer,70200.0,Charlotte,NC,BRN-006,2024-12-02,23,Active,Mass Retail,697,0,1,0
+CUST-00740,Tyler Ramirez,tyler.ramirez208@gmail.com,55,Male,Sales Executive,51900.0,New York,NY,BRN-002,2021-11-03,60,Active,Mass Retail,587,1,1,0
+CUST-00741,Jennifer Crawford,jennifer.crawford763@hotmail.com,38,Female,Data Scientist,60200.0,New York,NY,BRN-001,2016-11-05,120,Inactive,Loyal Traditional,732,0,1,1
+CUST-00742,Aaron Mcknight,aaron.mcknight22@gmail.com,25,Male,Data Scientist,58200.0,Boston,MA,BRN-003,2023-02-02,45,Active,Young Professional,850,1,0,0
+CUST-00743,Sara Arnold,sara.arnold268@yahoo.com,45,Female,Attorney,27300.0,Chicago,IL,BRN-004,2024-12-02,23,Active,Mass Retail,656,1,1,0
+CUST-00744,Traci Watson,traci.watson843@hotmail.com,47,Female,Data Scientist,31600.0,New York,NY,BRN-002,2025-05-03,18,Active,Mass Retail,733,1,0,0
+CUST-00745,Brenda Sanchez,brenda.sanchez547@gmail.com,34,Female,Accountant,51500.0,New York,NY,BRN-001,2020-11-04,72,Active,Loyal Traditional,739,1,1,0
+CUST-00746,Brittney Ibarra,brittney.ibarra590@gmail.com,39,Female,Pharmacist,76400.0,Boston,MA,BRN-003,2025-12-02,11,Active,Mass Retail,743,1,1,0
+CUST-00747,Jesse Dawson,jesse.dawson899@yahoo.com,57,Male,Marketing Manager,52400.0,Atlanta,GA,BRN-007,2024-12-02,23,Inactive,Mass Retail,722,1,1,1
+CUST-00748,Manuel Robinson,manuel.robinson19@gmail.com,31,Male,Registered Nurse,94900.0,Dallas,TX,BRN-008,2025-10-02,13,Active,Mass Retail,745,1,1,0
+CUST-00749,Amy Watson,amy.watson785@yahoo.com,27,Female,Civil Engineer,113900.0,Denver,CO,BRN-009,2025-08-02,15,Active,Affluent,691,0,0,0
+CUST-00750,Carla Rodriguez,carla.rodriguez635@gmail.com,49,Female,Software Engineer,88700.0,Charlotte,NC,BRN-006,2023-04-04,43,Active,Mass Retail,739,1,1,0
+CUST-00751,Karl Elliott,karl.elliott899@yahoo.com,33,Male,Teacher,98500.0,Boston,MA,BRN-003,2024-06-03,29,Active,Mass Retail,668,1,1,0
+CUST-00752,Cory Walton,cory.walton13@hotmail.com,38,Male,Software Engineer,125400.0,Denver,CO,BRN-009,2026-04-03,7,Active,Affluent,713,1,0,0
+CUST-00753,Dylan Hernandez,dylan.hernandez631@yahoo.com,29,Male,Teacher,47400.0,Charlotte,NC,BRN-006,2025-07-03,16,Active,Young Professional,710,1,0,0
+CUST-00754,Wendy Mason,wendy.mason631@hotmail.com,53,Female,Retired Executive,205700.0,New York,NY,BRN-002,2025-11-02,12,Active,High Net Worth,701,1,0,0
+CUST-00755,Lawrence Rubio,lawrence.rubio318@hotmail.com,21,Male,Accountant,52800.0,Boston,MA,BRN-003,2023-07-04,40,Active,Young Professional,791,0,0,0
+CUST-00756,Douglas Cox,douglas.cox184@gmail.com,37,Male,Financial Analyst,49500.0,Denver,CO,BRN-009,2024-02-02,33,Active,Mass Retail,642,0,1,0
+CUST-00757,Katherine Cox,katherine.cox235@yahoo.com,51,Female,Civil Engineer,84100.0,Charlotte,NC,BRN-006,2024-02-02,33,Active,Mass Retail,672,1,1,0
+CUST-00758,Shawn Esparza,shawn.esparza964@gmail.com,42,Male,Financial Analyst,75900.0,New York,NY,BRN-002,2024-08-03,27,Active,Mass Retail,681,0,1,0
+CUST-00759,James Hudson,james.hudson238@gmail.com,38,Male,Data Scientist,88100.0,Denver,CO,BRN-009,2026-05-03,6,Inactive,Mass Retail,614,0,0,1
+CUST-00760,John Miller,john.miller328@hotmail.com,38,Male,Teacher,86000.0,Charlotte,NC,BRN-006,2025-05-03,18,Active,Mass Retail,656,1,1,0
+CUST-00761,John Park,john.park119@yahoo.com,36,Male,Graphic Designer,35100.0,Boston,MA,BRN-003,2021-04-05,67,Active,Loyal Traditional,807,0,0,0
+CUST-00762,Erica Johnson,erica.johnson159@hotmail.com,34,Female,Attorney,90300.0,Dallas,TX,BRN-008,2025-07-03,16,Active,Mass Retail,685,1,1,0
+CUST-00763,Angela Jones,angela.jones656@yahoo.com,50,Female,Software Engineer,243200.0,Detroit,MI,BRN-005,2018-01-05,106,Active,High Net Worth,673,0,1,0
+CUST-00764,Brandon Valenzuela,brandon.valenzuela727@yahoo.com,39,Male,Graphic Designer,198200.0,Chicago,IL,BRN-004,2025-07-03,16,Inactive,High Net Worth,723,0,0,1
+CUST-00765,Kristina English,kristina.english355@gmail.com,39,Female,Financial Analyst,70100.0,Boston,MA,BRN-003,2016-11-05,120,Active,Loyal Traditional,747,1,1,0
+CUST-00766,Teresa Newton,teresa.newton109@hotmail.com,44,Female,Graphic Designer,114900.0,Chicago,IL,BRN-004,2022-10-04,49,Active,Affluent,619,0,1,0
+CUST-00767,Virginia Harding,virginia.harding308@gmail.com,53,Female,Data Scientist,54400.0,San Francisco,CA,BRN-010,2017-02-05,117,Active,Loyal Traditional,736,1,1,0
+CUST-00768,James Bailey,james.bailey395@gmail.com,48,Male,Retired Executive,39100.0,New York,NY,BRN-002,2016-11-05,120,Active,Loyal Traditional,651,1,1,0
+CUST-00769,Yvonne Gutierrez,yvonne.gutierrez617@yahoo.com,53,Female,Physician,190500.0,New York,NY,BRN-001,2016-11-05,120,Active,High Net Worth,644,1,1,0
+CUST-00770,Linda Daniels,linda.daniels804@yahoo.com,25,Female,Pharmacist,68100.0,San Francisco,CA,BRN-010,2025-06-03,17,Active,Young Professional,663,1,1,0
+CUST-00771,Timothy Garcia,timothy.garcia129@hotmail.com,54,Male,Software Engineer,54000.0,Dallas,TX,BRN-008,2017-09-05,110,Active,Loyal Traditional,684,1,0,0
+CUST-00772,Jennifer Walker,jennifer.walker505@yahoo.com,26,Female,Registered Nurse,35900.0,New York,NY,BRN-002,2016-11-05,120,Active,Young Professional,734,1,1,0
+CUST-00773,Jordan Adams,jordan.adams413@hotmail.com,43,Male,Operations Manager,26000.0,Denver,CO,BRN-009,2025-07-03,16,Active,Mass Retail,849,1,0,0
+CUST-00774,George Haley,george.haley195@yahoo.com,37,Male,Pharmacist,125000.0,New York,NY,BRN-002,2023-09-03,38,Active,Affluent,768,1,1,0
+CUST-00775,Tara Patterson,tara.patterson881@hotmail.com,29,Female,Teacher,227700.0,Boston,MA,BRN-003,2024-10-02,25,Inactive,High Net Worth,697,0,1,1
+CUST-00776,Richard Cameron,richard.cameron978@hotmail.com,49,Male,Operations Manager,35700.0,New York,NY,BRN-001,2025-09-02,14,Active,Mass Retail,775,1,1,0
+CUST-00777,Luke Stephens,luke.stephens714@gmail.com,35,Male,Marketing Manager,36800.0,Charlotte,NC,BRN-006,2024-08-03,27,Active,Mass Retail,729,1,1,0
+CUST-00778,Denise Donovan,denise.donovan294@hotmail.com,64,Female,Marketing Manager,70200.0,Denver,CO,BRN-009,2025-04-03,19,Active,Mass Retail,594,1,0,0
+CUST-00779,Ashley Campbell,ashley.campbell972@gmail.com,24,Female,Civil Engineer,266100.0,New York,NY,BRN-002,2025-11-02,12,Inactive,High Net Worth,722,0,1,1
+CUST-00780,Angel Chung,angel.chung851@gmail.com,28,Female,Registered Nurse,61100.0,Denver,CO,BRN-009,2022-03-05,56,Active,Young Professional,761,1,1,0
+CUST-00781,Edwin Berger,edwin.berger381@hotmail.com,49,Male,Marketing Manager,83300.0,Atlanta,GA,BRN-007,2020-12-04,71,Active,Loyal Traditional,839,1,1,0
+CUST-00782,David Martinez,david.martinez189@hotmail.com,52,Male,Registered Nurse,63500.0,Atlanta,GA,BRN-007,2025-02-01,21,Active,Mass Retail,770,1,1,0
+CUST-00783,Brian Robinson,brian.robinson928@yahoo.com,40,Male,Teacher,77700.0,Denver,CO,BRN-009,2023-09-03,38,Active,Mass Retail,648,1,1,0
+CUST-00784,Michelle Pearson,michelle.pearson498@yahoo.com,40,Female,Data Scientist,80600.0,Denver,CO,BRN-009,2022-02-03,57,Active,Mass Retail,670,1,1,0
+CUST-00785,Rebecca Matthews,rebecca.matthews734@gmail.com,42,Female,Accountant,63700.0,Detroit,MI,BRN-005,2024-01-03,34,Active,Mass Retail,601,1,1,0
+CUST-00786,Robert Dean,robert.dean322@hotmail.com,49,Male,Pharmacist,70100.0,Detroit,MI,BRN-005,2025-01-02,22,Active,Mass Retail,744,1,1,0
+CUST-00787,Larry Wiley,larry.wiley96@hotmail.com,36,Male,Financial Analyst,249400.0,Chicago,IL,BRN-004,2025-08-02,15,Active,High Net Worth,622,1,0,0
+CUST-00788,Jacob Chan,jacob.chan425@gmail.com,50,Male,Data Scientist,26000.0,Dallas,TX,BRN-008,2020-12-04,71,Active,Loyal Traditional,781,1,1,0
+CUST-00789,Austin Campbell,austin.campbell631@gmail.com,40,Male,Retired Executive,173100.0,Denver,CO,BRN-009,2025-01-02,22,Active,Affluent,789,1,1,0
+CUST-00790,Emily Flores,emily.flores517@gmail.com,35,Female,Graphic Designer,36300.0,Denver,CO,BRN-009,2026-02-01,9,Active,Mass Retail,673,1,1,0
+CUST-00791,Lindsay Garza,lindsay.garza228@gmail.com,22,Female,Retired Executive,26000.0,Detroit,MI,BRN-005,2020-08-04,75,Active,Young Professional,678,0,1,0
+CUST-00792,Amanda Ferguson,amanda.ferguson68@hotmail.com,25,Female,Teacher,100200.0,New York,NY,BRN-001,2024-11-02,24,Inactive,Affluent,745,1,1,1
+CUST-00793,Evan Reed,evan.reed451@gmail.com,21,Male,Registered Nurse,56800.0,Atlanta,GA,BRN-007,2017-11-05,108,Inactive,Young Professional,736,0,1,1
+CUST-00794,Alyssa Williams,alyssa.williams393@gmail.com,67,Female,Registered Nurse,71900.0,Detroit,MI,BRN-005,2024-10-02,25,Active,Mass Retail,681,0,1,0
+CUST-00795,Jackie Leach,jackie.leach15@gmail.com,47,Female,Software Engineer,38600.0,Boston,MA,BRN-003,2016-11-05,120,Active,Loyal Traditional,827,1,1,0
+CUST-00796,Lonnie Burnett,lonnie.burnett981@yahoo.com,48,Male,Financial Analyst,67000.0,New York,NY,BRN-001,2026-01-01,10,Active,Mass Retail,669,1,1,0
+CUST-00797,Tracy Gutierrez,tracy.gutierrez523@yahoo.com,49,Female,Accountant,81000.0,Boston,MA,BRN-003,2022-12-04,47,Active,Mass Retail,700,1,1,0
+CUST-00798,Frank Simon,frank.simon795@gmail.com,33,Male,Attorney,26000.0,Boston,MA,BRN-003,2020-09-04,74,Inactive,Loyal Traditional,789,0,0,1
+CUST-00799,Savannah Neal,savannah.neal263@gmail.com,47,Female,Physician,159200.0,Dallas,TX,BRN-008,2024-12-02,23,Active,Affluent,684,1,1,0
+CUST-00800,Shannon Hodges,shannon.hodges213@yahoo.com,38,Female,Attorney,36500.0,Chicago,IL,BRN-004,2022-11-03,48,Active,Mass Retail,598,1,0,0
+CUST-00801,Dale Ross,dale.ross420@gmail.com,34,Male,Attorney,83500.0,Boston,MA,BRN-003,2024-10-02,25,Active,Mass Retail,690,1,0,0
+CUST-00802,Cody Johnson,cody.johnson237@hotmail.com,37,Male,Marketing Manager,33500.0,Denver,CO,BRN-009,2019-09-05,86,Inactive,Loyal Traditional,696,1,0,1
+CUST-00803,Gene Alexander,gene.alexander196@yahoo.com,22,Male,Physician,90100.0,Atlanta,GA,BRN-007,2024-03-04,32,Inactive,Young Professional,737,1,1,1
+CUST-00804,Kendra Snyder,kendra.snyder382@yahoo.com,38,Female,Civil Engineer,178200.0,Atlanta,GA,BRN-007,2024-10-02,25,Active,Affluent,807,1,0,0
+CUST-00805,Laura Allen,laura.allen253@hotmail.com,44,Female,Registered Nurse,211200.0,Charlotte,NC,BRN-006,2022-11-03,48,Active,High Net Worth,820,0,1,0
+CUST-00806,Roger Holt,roger.holt207@yahoo.com,35,Male,Attorney,60200.0,New York,NY,BRN-002,2020-10-04,73,Active,Loyal Traditional,732,1,1,0
+CUST-00807,Terry Howell,terry.howell54@hotmail.com,57,Male,Retired Executive,80100.0,Chicago,IL,BRN-004,2024-08-03,27,Active,Mass Retail,762,1,1,0
+CUST-00808,Jessica Smith,jessica.smith546@yahoo.com,39,Female,Data Scientist,111900.0,Atlanta,GA,BRN-007,2024-04-03,31,Active,Affluent,684,0,1,0
+CUST-00809,Kaitlyn Williams,kaitlyn.williams516@gmail.com,21,Female,Operations Manager,80300.0,New York,NY,BRN-001,2023-09-03,38,Active,Young Professional,700,1,1,0
+CUST-00810,William Scott,william.scott198@yahoo.com,40,Male,Retired Executive,194800.0,Atlanta,GA,BRN-007,2025-01-02,22,Active,High Net Worth,670,0,1,0
+CUST-00811,Nicholas Smith,nicholas.smith313@yahoo.com,55,Male,Physician,106900.0,Denver,CO,BRN-009,2017-02-05,117,Active,Affluent,802,1,1,0
+CUST-00812,Melissa Jordan,melissa.jordan904@gmail.com,35,Female,Sales Executive,76700.0,Boston,MA,BRN-003,2023-01-03,46,Active,Mass Retail,693,1,1,0
+CUST-00813,Hannah Rivera,hannah.rivera749@hotmail.com,32,Female,Teacher,92500.0,Charlotte,NC,BRN-006,2017-08-06,111,Active,Loyal Traditional,743,0,1,0
+CUST-00814,Donna Montes,donna.montes190@yahoo.com,27,Female,Data Scientist,45900.0,Charlotte,NC,BRN-006,2023-11-03,36,Active,Young Professional,648,1,1,0
+CUST-00815,Amy Phillips,amy.phillips235@yahoo.com,26,Female,Accountant,60800.0,San Francisco,CA,BRN-010,2025-10-02,13,Active,Young Professional,812,1,1,0
+CUST-00816,Mary Smith,mary.smith195@yahoo.com,35,Female,Attorney,42300.0,Boston,MA,BRN-003,2026-05-03,6,Active,Mass Retail,700,1,1,0
+CUST-00817,Zachary Gonzalez,zachary.gonzalez847@hotmail.com,55,Male,Accountant,214500.0,New York,NY,BRN-001,2025-11-02,12,Active,High Net Worth,690,1,1,0
+CUST-00818,James Ross,james.ross754@gmail.com,35,Male,Software Engineer,49700.0,Atlanta,GA,BRN-007,2026-04-03,7,Inactive,Mass Retail,708,1,1,1
+CUST-00819,Jason Gonzalez,jason.gonzalez284@yahoo.com,21,Male,Pharmacist,172300.0,New York,NY,BRN-001,2026-04-03,7,Active,Affluent,703,0,0,0
+CUST-00820,Jeffrey Taylor,jeffrey.taylor152@yahoo.com,42,Male,Marketing Manager,47100.0,Charlotte,NC,BRN-006,2026-04-03,7,Active,Mass Retail,780,1,1,0
+CUST-00821,Tyler Fisher,tyler.fisher31@gmail.com,21,Male,Retired Executive,193200.0,Detroit,MI,BRN-005,2016-11-05,120,Inactive,High Net Worth,602,0,1,1
+CUST-00822,Julie Hines,julie.hines160@hotmail.com,46,Female,Civil Engineer,37700.0,New York,NY,BRN-001,2018-12-05,95,Active,Loyal Traditional,775,0,0,0
+CUST-00823,Patrick Craig,patrick.craig989@hotmail.com,53,Male,Registered Nurse,26000.0,Boston,MA,BRN-003,2026-04-03,7,Active,Mass Retail,793,1,0,0
+CUST-00824,Mark Moore,mark.moore448@hotmail.com,38,Male,Accountant,49800.0,New York,NY,BRN-001,2025-08-02,15,Active,Mass Retail,757,0,1,0
+CUST-00825,Anne Harris,anne.harris948@yahoo.com,40,Female,Pharmacist,40800.0,Detroit,MI,BRN-005,2025-02-01,21,Active,Mass Retail,759,1,0,0
+CUST-00826,Vickie Wilkins,vickie.wilkins467@hotmail.com,31,Female,Registered Nurse,72600.0,Boston,MA,BRN-003,2024-07-03,28,Active,Mass Retail,672,1,0,0
+CUST-00827,Jorge Lyons,jorge.lyons795@gmail.com,28,Male,Attorney,26000.0,New York,NY,BRN-002,2024-01-03,34,Active,Young Professional,731,1,1,0
+CUST-00828,Jennifer Coleman,jennifer.coleman561@gmail.com,26,Female,Financial Analyst,108600.0,Chicago,IL,BRN-004,2025-11-02,12,Active,Affluent,761,1,1,0
+CUST-00829,John Sharp,john.sharp380@yahoo.com,36,Male,Retired Executive,46600.0,Chicago,IL,BRN-004,2024-12-02,23,Active,Mass Retail,825,1,0,0
+CUST-00830,Matthew Bell,matthew.bell865@hotmail.com,30,Male,Physician,202600.0,Boston,MA,BRN-003,2025-09-02,14,Active,High Net Worth,659,1,1,0
+CUST-00831,Matthew Johnston,matthew.johnston722@hotmail.com,24,Male,Civil Engineer,121100.0,Boston,MA,BRN-003,2019-07-06,88,Active,Affluent,694,1,1,0
+CUST-00832,Kathryn Shelton,kathryn.shelton154@yahoo.com,49,Female,Accountant,53900.0,Boston,MA,BRN-003,2025-07-03,16,Inactive,Mass Retail,622,0,0,1
+CUST-00833,Tammy Brown,tammy.brown431@yahoo.com,54,Female,Marketing Manager,102200.0,Denver,CO,BRN-009,2022-11-03,48,Active,Affluent,690,1,1,0
+CUST-00834,Jerry Anderson,jerry.anderson21@hotmail.com,57,Male,Sales Executive,100000.0,San Francisco,CA,BRN-010,2025-01-02,22,Active,Mass Retail,669,1,1,0
+CUST-00835,Robin Stokes,robin.stokes963@gmail.com,26,Female,Financial Analyst,130700.0,Detroit,MI,BRN-005,2026-02-01,9,Active,Affluent,754,0,1,0
+CUST-00836,Heather Russell,heather.russell198@hotmail.com,56,Female,Graphic Designer,145000.0,San Francisco,CA,BRN-010,2025-05-03,18,Active,Affluent,729,1,1,0
+CUST-00837,Jonathan Kelly,jonathan.kelly832@hotmail.com,71,Male,Registered Nurse,48900.0,Atlanta,GA,BRN-007,2024-09-02,26,Active,Mass Retail,595,1,1,0
+CUST-00838,Edward Wilson,edward.wilson76@gmail.com,31,Male,Physician,153900.0,Chicago,IL,BRN-004,2025-09-02,14,Active,Affluent,728,1,1,0
+CUST-00839,Thomas King,thomas.king587@hotmail.com,44,Male,Software Engineer,96400.0,Detroit,MI,BRN-005,2020-12-04,71,Inactive,Loyal Traditional,810,0,0,1
+CUST-00840,Kimberly Snow,kimberly.snow753@hotmail.com,45,Female,Teacher,112600.0,Denver,CO,BRN-009,2025-06-03,17,Active,Affluent,667,1,1,0
+CUST-00841,Ruth Rivera,ruth.rivera498@hotmail.com,53,Female,Accountant,98100.0,Boston,MA,BRN-003,2025-03-03,20,Active,Mass Retail,773,1,1,0
+CUST-00842,Kyle Salazar,kyle.salazar836@gmail.com,63,Male,Sales Executive,210100.0,New York,NY,BRN-002,2023-09-03,38,Active,High Net Worth,774,1,1,0
+CUST-00843,Timothy Johnson,timothy.johnson357@gmail.com,21,Male,Retired Executive,52000.0,Charlotte,NC,BRN-006,2021-10-04,61,Active,Young Professional,762,1,1,0
+CUST-00844,Chad Kim,chad.kim590@hotmail.com,28,Male,Accountant,109300.0,San Francisco,CA,BRN-010,2022-01-03,58,Active,Affluent,629,1,1,0
+CUST-00845,Laura Ritter,laura.ritter331@gmail.com,45,Female,Teacher,38500.0,New York,NY,BRN-002,2020-06-05,77,Active,Loyal Traditional,696,1,1,0
+CUST-00846,Lindsey Zamora,lindsey.zamora675@yahoo.com,21,Female,Software Engineer,63800.0,Detroit,MI,BRN-005,2024-06-03,29,Active,Young Professional,749,1,1,0
+CUST-00847,Christine Thornton,christine.thornton385@yahoo.com,28,Female,Registered Nurse,253300.0,San Francisco,CA,BRN-010,2023-11-03,36,Active,High Net Worth,679,1,1,0
+CUST-00848,Fernando Weaver,fernando.weaver768@gmail.com,30,Male,Accountant,84300.0,New York,NY,BRN-001,2026-04-03,7,Active,Mass Retail,720,1,1,0
+CUST-00849,Sarah Meyer,sarah.meyer905@yahoo.com,44,Female,Operations Manager,134500.0,Atlanta,GA,BRN-007,2023-10-04,37,Active,Affluent,664,1,0,0
+CUST-00850,Jonathan Johnson,jonathan.johnson949@yahoo.com,42,Male,Financial Analyst,83100.0,New York,NY,BRN-002,2025-02-01,21,Active,Mass Retail,663,1,1,0
+CUST-00851,Courtney Gray,courtney.gray127@hotmail.com,39,Female,Operations Manager,120800.0,Dallas,TX,BRN-008,2025-12-02,11,Active,Affluent,650,1,1,0
+CUST-00852,Nicole Peterson,nicole.peterson818@hotmail.com,55,Female,Physician,251700.0,San Francisco,CA,BRN-010,2019-02-04,93,Active,High Net Worth,730,1,0,0
+CUST-00853,Randy Green,randy.green95@yahoo.com,50,Male,Graphic Designer,145500.0,Detroit,MI,BRN-005,2022-10-04,49,Inactive,Affluent,707,0,0,1
+CUST-00854,George Foster,george.foster104@hotmail.com,45,Male,Accountant,111800.0,Detroit,MI,BRN-005,2023-03-05,44,Active,Affluent,641,1,0,0
+CUST-00855,Joel Gonzales,joel.gonzales998@yahoo.com,38,Male,Graphic Designer,75400.0,Denver,CO,BRN-009,2022-04-04,55,Active,Mass Retail,790,1,1,0
+CUST-00856,Donald Bishop,donald.bishop341@yahoo.com,25,Male,Software Engineer,26000.0,New York,NY,BRN-002,2025-12-02,11,Active,Young Professional,761,1,1,0
+CUST-00857,Carrie Pitts,carrie.pitts279@hotmail.com,45,Female,Civil Engineer,111300.0,Charlotte,NC,BRN-006,2026-01-01,10,Active,Affluent,814,1,0,0
+CUST-00858,Crystal Lynn,crystal.lynn723@yahoo.com,33,Female,Teacher,57200.0,Chicago,IL,BRN-004,2026-05-03,6,Active,Mass Retail,732,1,1,0
+CUST-00859,Cynthia Nguyen,cynthia.nguyen26@yahoo.com,30,Female,Data Scientist,176500.0,New York,NY,BRN-001,2025-06-03,17,Active,Affluent,716,1,0,0
+CUST-00860,Amanda Richardson,amanda.richardson545@yahoo.com,38,Female,Financial Analyst,108600.0,Charlotte,NC,BRN-006,2026-02-01,9,Active,Affluent,850,1,1,0
+CUST-00861,Michelle Harmon,michelle.harmon659@hotmail.com,21,Female,Registered Nurse,129300.0,Atlanta,GA,BRN-007,2023-06-04,41,Active,Affluent,624,1,1,0
+CUST-00862,Rebecca Lawson,rebecca.lawson777@hotmail.com,34,Female,Sales Executive,60800.0,San Francisco,CA,BRN-010,2026-02-01,9,Active,Mass Retail,674,1,1,0
+CUST-00863,Nicole Wilson,nicole.wilson574@gmail.com,60,Female,Pharmacist,26000.0,Atlanta,GA,BRN-007,2019-11-05,84,Active,Loyal Traditional,678,0,1,0
+CUST-00864,Jerry Barnes,jerry.barnes529@hotmail.com,55,Male,Civil Engineer,43000.0,Atlanta,GA,BRN-007,2022-11-03,48,Active,Mass Retail,608,1,0,0
+CUST-00865,Donna Edwards,donna.edwards870@gmail.com,27,Female,Teacher,153200.0,New York,NY,BRN-001,2025-12-02,11,Active,Affluent,655,1,1,0
+CUST-00866,Jennifer Cannon,jennifer.cannon858@hotmail.com,46,Female,Accountant,225400.0,Denver,CO,BRN-009,2022-08-04,51,Active,High Net Worth,760,0,1,0
+CUST-00867,Thomas Strong,thomas.strong457@yahoo.com,48,Male,Sales Executive,92500.0,Atlanta,GA,BRN-007,2024-03-04,32,Active,Mass Retail,763,1,1,0
+CUST-00868,Leslie Jensen,leslie.jensen218@hotmail.com,60,Female,Software Engineer,54200.0,Detroit,MI,BRN-005,2023-05-05,42,Active,Mass Retail,602,1,1,0
+CUST-00869,Chad White,chad.white474@hotmail.com,37,Male,Physician,95900.0,San Francisco,CA,BRN-010,2025-12-02,11,Active,Mass Retail,850,1,1,0
+CUST-00870,Katie Chapman,katie.chapman798@gmail.com,33,Female,Civil Engineer,42000.0,Chicago,IL,BRN-004,2026-03-03,8,Active,Mass Retail,720,0,0,0
+CUST-00871,Fernando White,fernando.white299@gmail.com,44,Male,Retired Executive,40600.0,San Francisco,CA,BRN-010,2023-12-03,35,Inactive,Mass Retail,757,0,0,1
+CUST-00872,Emily Reed,emily.reed992@gmail.com,25,Female,Retired Executive,263300.0,New York,NY,BRN-001,2025-06-03,17,Inactive,High Net Worth,713,1,0,1
+CUST-00873,William Molina,william.molina685@gmail.com,53,Male,Teacher,26800.0,Boston,MA,BRN-003,2019-03-07,92,Active,Loyal Traditional,737,0,1,0
+CUST-00874,Jaclyn Campbell,jaclyn.campbell958@hotmail.com,58,Female,Pharmacist,43400.0,Denver,CO,BRN-009,2023-03-05,44,Inactive,Mass Retail,803,1,0,1
+CUST-00875,Dennis Lin,dennis.lin235@yahoo.com,24,Male,Operations Manager,66400.0,Chicago,IL,BRN-004,2022-08-04,51,Active,Young Professional,583,1,1,0
+CUST-00876,Jody Moss,jody.moss456@hotmail.com,52,Female,Accountant,57300.0,Detroit,MI,BRN-005,2021-10-04,61,Active,Loyal Traditional,704,1,0,0
+CUST-00877,Kelly Lee,kelly.lee179@hotmail.com,28,Female,Retired Executive,162700.0,Atlanta,GA,BRN-007,2022-11-03,48,Active,Affluent,807,1,1,0
+CUST-00878,Megan Baker,megan.baker449@gmail.com,34,Female,Operations Manager,26000.0,Charlotte,NC,BRN-006,2017-10-06,109,Active,Loyal Traditional,638,1,1,0
+CUST-00879,Michelle Williams,michelle.williams417@hotmail.com,35,Female,Teacher,58600.0,San Francisco,CA,BRN-010,2023-08-04,39,Active,Mass Retail,709,1,1,0
+CUST-00880,Michael Henry,michael.henry336@hotmail.com,46,Male,Attorney,65000.0,Boston,MA,BRN-003,2024-03-04,32,Active,Mass Retail,682,1,0,0
+CUST-00881,David Coleman,david.coleman549@gmail.com,47,Male,Attorney,38700.0,Atlanta,GA,BRN-007,2016-11-05,120,Active,Loyal Traditional,580,0,1,0
+CUST-00882,Allen Adams,allen.adams60@gmail.com,33,Male,Registered Nurse,40000.0,Charlotte,NC,BRN-006,2019-08-06,87,Active,Loyal Traditional,699,1,1,0
+CUST-00883,John Robinson,john.robinson301@hotmail.com,21,Male,Accountant,30300.0,Atlanta,GA,BRN-007,2023-01-03,46,Active,Young Professional,844,1,1,0
+CUST-00884,Mario Gould,mario.gould81@hotmail.com,31,Male,Marketing Manager,81800.0,Denver,CO,BRN-009,2016-11-05,120,Active,Loyal Traditional,748,1,1,0
+CUST-00885,Joseph Cox,joseph.cox412@gmail.com,40,Male,Graphic Designer,33600.0,Charlotte,NC,BRN-006,2023-07-04,40,Active,Mass Retail,598,1,1,0
+CUST-00886,Jason Tran,jason.tran340@gmail.com,61,Male,Registered Nurse,42500.0,New York,NY,BRN-001,2024-11-02,24,Active,Mass Retail,691,1,0,0
+CUST-00887,Eric Hall,eric.hall275@hotmail.com,48,Male,Marketing Manager,45600.0,Denver,CO,BRN-009,2025-09-02,14,Inactive,Mass Retail,720,1,0,1
+CUST-00888,Benjamin Bowen,benjamin.bowen607@hotmail.com,33,Male,Pharmacist,139700.0,Detroit,MI,BRN-005,2023-09-03,38,Active,Affluent,731,1,0,0
+CUST-00889,Patrick Turner,patrick.turner601@yahoo.com,56,Male,Pharmacist,50700.0,Dallas,TX,BRN-008,2023-12-03,35,Active,Mass Retail,723,1,1,0
+CUST-00890,Kristina Webb,kristina.webb581@hotmail.com,31,Female,Data Scientist,64000.0,Detroit,MI,BRN-005,2025-04-03,19,Active,Mass Retail,767,1,0,0
+CUST-00891,Vanessa Sanders,vanessa.sanders848@gmail.com,41,Female,Sales Executive,69600.0,New York,NY,BRN-001,2024-08-03,27,Active,Mass Retail,665,1,1,0
+CUST-00892,Daniel Mcmahon,daniel.mcmahon946@hotmail.com,44,Male,Operations Manager,159800.0,Dallas,TX,BRN-008,2026-02-01,9,Active,Affluent,735,1,1,0
+CUST-00893,Darlene Collins,darlene.collins178@yahoo.com,71,Female,Accountant,56200.0,Chicago,IL,BRN-004,2020-10-04,73,Active,Loyal Traditional,669,1,1,0
+CUST-00894,Kristina Burns,kristina.burns39@yahoo.com,53,Female,Marketing Manager,105200.0,New York,NY,BRN-001,2026-04-03,7,Active,Affluent,662,1,1,0
+CUST-00895,Jaime Sherman,jaime.sherman530@gmail.com,47,Female,Civil Engineer,26000.0,Chicago,IL,BRN-004,2023-08-04,39,Active,Mass Retail,727,1,0,0
+CUST-00896,Kelly Taylor,kelly.taylor552@hotmail.com,48,Female,Civil Engineer,179200.0,Chicago,IL,BRN-004,2016-11-05,120,Active,Affluent,709,1,1,0
+CUST-00897,Stacy Elliott,stacy.elliott254@gmail.com,33,Female,Financial Analyst,56300.0,New York,NY,BRN-002,2024-07-03,28,Active,Mass Retail,632,1,1,0
+CUST-00898,Timothy Ho,timothy.ho814@hotmail.com,61,Male,Data Scientist,79700.0,Detroit,MI,BRN-005,2019-01-05,94,Active,Loyal Traditional,676,1,1,0
+CUST-00899,Wendy Smith,wendy.smith883@hotmail.com,25,Female,Accountant,51700.0,San Francisco,CA,BRN-010,2024-07-03,28,Active,Young Professional,736,1,0,0
+CUST-00900,Brooke Bell,brooke.bell352@hotmail.com,57,Female,Accountant,153600.0,New York,NY,BRN-001,2023-11-03,36,Active,Affluent,678,1,0,0
+CUST-00901,Holly Wang,holly.wang904@yahoo.com,47,Female,Attorney,149600.0,Dallas,TX,BRN-008,2021-07-05,64,Active,Affluent,616,1,1,0
+CUST-00902,Cameron Boyd,cameron.boyd803@hotmail.com,64,Male,Operations Manager,75600.0,Denver,CO,BRN-009,2023-06-04,41,Active,Mass Retail,752,1,0,0
+CUST-00903,Brianna Martin,brianna.martin23@gmail.com,49,Female,Pharmacist,31900.0,Dallas,TX,BRN-008,2023-09-03,38,Active,Mass Retail,806,1,0,0
+CUST-00904,James Cruz,james.cruz161@yahoo.com,49,Male,Teacher,26800.0,Dallas,TX,BRN-008,2022-12-04,47,Active,Mass Retail,723,1,1,0
+CUST-00905,Jeremy Neal,jeremy.neal208@yahoo.com,40,Male,Retired Executive,43300.0,Atlanta,GA,BRN-007,2025-11-02,12,Active,Mass Retail,681,1,1,0
+CUST-00906,Julie Santiago,julie.santiago919@hotmail.com,34,Female,Physician,51500.0,Denver,CO,BRN-009,2024-10-02,25,Active,Mass Retail,706,1,1,0
+CUST-00907,Chloe Willis,chloe.willis590@yahoo.com,21,Female,Retired Executive,277700.0,San Francisco,CA,BRN-010,2024-11-02,24,Active,High Net Worth,702,1,1,0
+CUST-00908,Martin Sanders,martin.sanders320@hotmail.com,44,Male,Software Engineer,45600.0,Detroit,MI,BRN-005,2026-03-03,8,Inactive,Mass Retail,715,1,0,1
+CUST-00909,Lisa Reeves,lisa.reeves370@hotmail.com,64,Female,Accountant,251000.0,Dallas,TX,BRN-008,2019-10-05,85,Active,High Net Worth,750,1,1,0
+CUST-00910,Kimberly Lucero,kimberly.lucero156@gmail.com,42,Female,Marketing Manager,287000.0,Denver,CO,BRN-009,2026-04-03,7,Active,High Net Worth,753,1,1,0
+CUST-00911,Jason Contreras,jason.contreras924@gmail.com,36,Male,Civil Engineer,63400.0,Atlanta,GA,BRN-007,2025-10-02,13,Active,Mass Retail,608,1,1,0
+CUST-00912,Christina Wagner,christina.wagner577@gmail.com,43,Female,Sales Executive,90000.0,Chicago,IL,BRN-004,2025-12-02,11,Inactive,Mass Retail,723,1,0,1
+CUST-00913,Melissa Knight,melissa.knight720@yahoo.com,54,Female,Financial Analyst,26000.0,New York,NY,BRN-002,2026-02-01,9,Active,Mass Retail,642,1,0,0
+CUST-00914,Alexandra Little,alexandra.little100@yahoo.com,65,Female,Attorney,26000.0,Denver,CO,BRN-009,2026-05-03,6,Active,Mass Retail,693,1,1,0
+CUST-00915,Michele Thompson,michele.thompson138@gmail.com,28,Female,Operations Manager,52300.0,San Francisco,CA,BRN-010,2026-02-01,9,Inactive,Young Professional,722,0,1,1
+CUST-00916,Henry Cox,henry.cox851@hotmail.com,48,Male,Registered Nurse,40300.0,New York,NY,BRN-002,2024-11-02,24,Active,Mass Retail,788,1,1,0
+CUST-00917,Daniel Lyons,daniel.lyons585@hotmail.com,37,Male,Marketing Manager,63700.0,New York,NY,BRN-001,2025-10-02,13,Active,Mass Retail,755,1,1,0
+CUST-00918,Kevin Watson,kevin.watson127@yahoo.com,55,Male,Registered Nurse,29400.0,Dallas,TX,BRN-008,2018-04-06,103,Active,Loyal Traditional,850,1,1,0
+CUST-00919,Matthew Garcia,matthew.garcia958@yahoo.com,39,Male,Graphic Designer,58000.0,Denver,CO,BRN-009,2025-01-02,22,Active,Mass Retail,747,1,1,0
+CUST-00920,David Brooks,david.brooks452@yahoo.com,37,Male,Accountant,53000.0,Dallas,TX,BRN-008,2024-10-02,25,Active,Mass Retail,753,1,1,0
+CUST-00921,Troy Morales,troy.morales992@gmail.com,46,Male,Financial Analyst,70300.0,Dallas,TX,BRN-008,2025-10-02,13,Active,Mass Retail,676,1,1,0
+CUST-00922,Nicole Anderson,nicole.anderson478@yahoo.com,56,Female,Software Engineer,51000.0,Atlanta,GA,BRN-007,2023-09-03,38,Inactive,Mass Retail,818,0,0,1
+CUST-00923,Charles Andrade,charles.andrade376@yahoo.com,47,Male,Teacher,99600.0,Dallas,TX,BRN-008,2020-01-05,82,Active,Loyal Traditional,725,0,1,0
+CUST-00924,Haley Ruiz,haley.ruiz681@hotmail.com,37,Female,Marketing Manager,62200.0,Boston,MA,BRN-003,2023-11-03,36,Active,Mass Retail,645,1,1,0
+CUST-00925,Pamela Anderson,pamela.anderson995@yahoo.com,48,Female,Pharmacist,26000.0,New York,NY,BRN-002,2016-11-05,120,Active,Loyal Traditional,740,1,1,0
+CUST-00926,Patricia Wood,patricia.wood79@yahoo.com,31,Female,Operations Manager,38200.0,San Francisco,CA,BRN-010,2025-11-02,12,Inactive,Mass Retail,696,0,0,1
+CUST-00927,Amanda Turner,amanda.turner783@gmail.com,34,Female,Registered Nurse,34100.0,Chicago,IL,BRN-004,2022-11-03,48,Active,Mass Retail,544,1,1,0
+CUST-00928,Christopher Sanders,christopher.sanders955@hotmail.com,35,Male,Financial Analyst,153700.0,Charlotte,NC,BRN-006,2023-09-03,38,Active,Affluent,602,1,1,0
+CUST-00929,Laura Cruz,laura.cruz705@yahoo.com,40,Female,Pharmacist,32700.0,Chicago,IL,BRN-004,2023-11-03,36,Active,Mass Retail,624,1,1,0
+CUST-00930,Brian Roman,brian.roman924@yahoo.com,46,Male,Graphic Designer,160000.0,New York,NY,BRN-002,2023-10-04,37,Active,Affluent,674,1,1,0
+CUST-00931,George Villa,george.villa594@hotmail.com,53,Male,Pharmacist,36300.0,Denver,CO,BRN-009,2023-10-04,37,Active,Mass Retail,757,1,1,0
+CUST-00932,Stephen Parks,stephen.parks811@yahoo.com,52,Male,Attorney,61700.0,New York,NY,BRN-002,2025-12-02,11,Inactive,Mass Retail,850,0,1,1
+CUST-00933,Makayla Larson,makayla.larson79@yahoo.com,35,Female,Sales Executive,26400.0,Detroit,MI,BRN-005,2023-07-04,40,Active,Mass Retail,594,1,0,0
+CUST-00934,Nicholas Schultz,nicholas.schultz569@yahoo.com,43,Male,Civil Engineer,73000.0,Denver,CO,BRN-009,2025-05-03,18,Active,Mass Retail,700,1,1,0
+CUST-00935,William Little,william.little570@gmail.com,50,Male,Physician,79200.0,Charlotte,NC,BRN-006,2025-10-02,13,Active,Mass Retail,657,1,1,0
+CUST-00936,Riley Duncan,riley.duncan364@yahoo.com,41,Male,Retired Executive,127300.0,San Francisco,CA,BRN-010,2024-10-02,25,Active,Affluent,850,1,0,0
+CUST-00937,Denise Barker,denise.barker529@gmail.com,54,Female,Software Engineer,75600.0,New York,NY,BRN-001,2025-09-02,14,Active,Mass Retail,775,0,1,0
+CUST-00938,Rachael Sandoval,rachael.sandoval708@yahoo.com,44,Female,Software Engineer,165100.0,Chicago,IL,BRN-004,2024-08-03,27,Active,Affluent,740,1,1,0
+CUST-00939,Nicholas Lynch,nicholas.lynch458@yahoo.com,46,Male,Physician,83000.0,Atlanta,GA,BRN-007,2023-09-03,38,Active,Mass Retail,677,1,0,0
+CUST-00940,Gregory Wallace,gregory.wallace432@yahoo.com,31,Male,Attorney,48600.0,New York,NY,BRN-002,2025-04-03,19,Active,Mass Retail,666,1,1,0
+CUST-00941,Bradley Adkins,bradley.adkins139@hotmail.com,69,Male,Teacher,173700.0,Chicago,IL,BRN-004,2024-08-03,27,Active,Affluent,667,1,0,0
+CUST-00942,Jessica Forbes,jessica.forbes683@gmail.com,44,Female,Data Scientist,27800.0,Boston,MA,BRN-003,2025-05-03,18,Inactive,Mass Retail,721,0,0,1
+CUST-00943,Christine Rodriguez,christine.rodriguez974@yahoo.com,58,Female,Sales Executive,56500.0,Chicago,IL,BRN-004,2026-05-03,6,Active,Mass Retail,801,0,1,0
+CUST-00944,Emma Cox,emma.cox732@gmail.com,57,Female,Retired Executive,68200.0,New York,NY,BRN-002,2023-10-04,37,Active,Mass Retail,779,1,0,0
+CUST-00945,Tammy Thompson,tammy.thompson752@yahoo.com,58,Female,Civil Engineer,154100.0,Denver,CO,BRN-009,2017-11-05,108,Inactive,Affluent,757,0,0,1
+CUST-00946,Jennifer Barnes,jennifer.barnes317@gmail.com,37,Female,Operations Manager,61100.0,New York,NY,BRN-001,2025-08-02,15,Inactive,Mass Retail,744,1,0,1
+CUST-00947,Jason Johnson,jason.johnson685@hotmail.com,68,Male,Pharmacist,73200.0,Chicago,IL,BRN-004,2025-07-03,16,Inactive,Mass Retail,766,1,1,1
+CUST-00948,Corey Gentry,corey.gentry785@yahoo.com,52,Male,Pharmacist,43300.0,Charlotte,NC,BRN-006,2025-09-02,14,Active,Mass Retail,604,1,1,0
+CUST-00949,Julia Sanchez,julia.sanchez889@hotmail.com,42,Female,Marketing Manager,78600.0,New York,NY,BRN-002,2017-10-06,109,Active,Loyal Traditional,780,1,1,0
+CUST-00950,Nicole Fleming,nicole.fleming828@yahoo.com,32,Female,Pharmacist,119900.0,Chicago,IL,BRN-004,2016-11-05,120,Active,Affluent,783,1,1,0
+CUST-00951,Eileen Ross,eileen.ross685@hotmail.com,29,Female,Registered Nurse,60800.0,San Francisco,CA,BRN-010,2022-11-03,48,Active,Young Professional,749,1,1,0
+CUST-00952,Dennis Bryan,dennis.bryan460@gmail.com,63,Male,Financial Analyst,74200.0,Boston,MA,BRN-003,2025-03-03,20,Active,Mass Retail,620,1,0,0
+CUST-00953,Gary Benson,gary.benson461@yahoo.com,66,Male,Accountant,39500.0,San Francisco,CA,BRN-010,2022-02-03,57,Active,Mass Retail,682,1,1,0
+CUST-00954,Charles Roberts,charles.roberts198@gmail.com,23,Male,Software Engineer,42500.0,New York,NY,BRN-001,2021-07-05,64,Active,Young Professional,673,1,1,0
+CUST-00955,Natasha Neal,natasha.neal563@gmail.com,38,Female,Registered Nurse,118600.0,Detroit,MI,BRN-005,2022-01-03,58,Inactive,Affluent,616,0,1,1
+CUST-00956,Jennifer Montgomery,jennifer.montgomery859@gmail.com,26,Female,Retired Executive,72000.0,Chicago,IL,BRN-004,2026-01-01,10,Active,Young Professional,667,1,1,0
+CUST-00957,Casey Prince,casey.prince491@gmail.com,31,Female,Teacher,35400.0,Charlotte,NC,BRN-006,2021-03-05,68,Active,Loyal Traditional,690,1,0,0
+CUST-00958,Nicholas Wilson,nicholas.wilson837@gmail.com,51,Male,Physician,50700.0,New York,NY,BRN-001,2022-09-03,50,Active,Mass Retail,742,1,1,0
+CUST-00959,Jordan Nelson,jordan.nelson988@hotmail.com,43,Male,Attorney,92700.0,Boston,MA,BRN-003,2025-02-01,21,Active,Mass Retail,850,1,1,0
+CUST-00960,Michael Curtis,michael.curtis631@gmail.com,42,Male,Marketing Manager,37000.0,New York,NY,BRN-002,2025-03-03,20,Active,Mass Retail,716,1,1,0
+CUST-00961,Natalie Quinn,natalie.quinn246@gmail.com,46,Female,Operations Manager,89600.0,Charlotte,NC,BRN-006,2025-12-02,11,Active,Mass Retail,706,1,0,0
+CUST-00962,Kevin Marshall,kevin.marshall946@hotmail.com,46,Male,Operations Manager,159800.0,Charlotte,NC,BRN-006,2021-02-03,69,Active,Affluent,765,1,1,0
+CUST-00963,Ariel Lawrence,ariel.lawrence700@hotmail.com,40,Female,Pharmacist,91100.0,Boston,MA,BRN-003,2020-03-05,80,Active,Loyal Traditional,741,1,1,0
+CUST-00964,Wendy King,wendy.king657@yahoo.com,32,Female,Software Engineer,126700.0,Atlanta,GA,BRN-007,2025-06-03,17,Active,Affluent,789,1,1,0
+CUST-00965,Donald Hoffman,donald.hoffman900@yahoo.com,41,Male,Sales Executive,76700.0,Dallas,TX,BRN-008,2026-03-03,8,Inactive,Mass Retail,701,0,0,1
+CUST-00966,Timothy Ramos,timothy.ramos739@hotmail.com,65,Male,Data Scientist,58200.0,Charlotte,NC,BRN-006,2025-10-02,13,Active,Mass Retail,783,1,1,0
+CUST-00967,Kaitlyn Cohen,kaitlyn.cohen768@hotmail.com,44,Female,Data Scientist,162600.0,Dallas,TX,BRN-008,2025-10-02,13,Active,Affluent,720,1,1,0
+CUST-00968,Christopher Moore,christopher.moore617@hotmail.com,65,Male,Teacher,41800.0,Denver,CO,BRN-009,2020-10-04,73,Active,Loyal Traditional,850,1,1,0
+CUST-00969,Kaitlyn Chase,kaitlyn.chase359@yahoo.com,48,Female,Graphic Designer,126200.0,New York,NY,BRN-002,2026-01-01,10,Active,Affluent,745,0,1,0
+CUST-00970,Wayne Gomez,wayne.gomez450@gmail.com,54,Male,Registered Nurse,38700.0,Boston,MA,BRN-003,2019-09-05,86,Active,Loyal Traditional,806,1,1,0
+CUST-00971,Justin Stevenson,justin.stevenson305@gmail.com,34,Male,Retired Executive,90800.0,Dallas,TX,BRN-008,2024-10-02,25,Active,Mass Retail,719,1,1,0
+CUST-00972,David Benitez,david.benitez38@hotmail.com,44,Male,Software Engineer,29700.0,Denver,CO,BRN-009,2025-07-03,16,Inactive,Mass Retail,766,0,0,1
+CUST-00973,Erika Rowe,erika.rowe543@yahoo.com,40,Female,Operations Manager,89300.0,Detroit,MI,BRN-005,2021-09-04,62,Active,Loyal Traditional,648,0,1,0
+CUST-00974,Kenneth Farmer,kenneth.farmer372@yahoo.com,38,Male,Teacher,74300.0,Boston,MA,BRN-003,2016-11-05,120,Active,Loyal Traditional,697,1,1,0
+CUST-00975,John Murray,john.murray733@yahoo.com,23,Male,Registered Nurse,31100.0,Denver,CO,BRN-009,2025-01-02,22,Active,Young Professional,538,0,1,0
+CUST-00976,Jason Foster,jason.foster981@yahoo.com,54,Male,Graphic Designer,73900.0,Denver,CO,BRN-009,2024-03-04,32,Inactive,Mass Retail,783,0,0,1
+CUST-00977,Tyler Marks,tyler.marks761@yahoo.com,39,Male,Sales Executive,68200.0,Boston,MA,BRN-003,2022-12-04,47,Active,Mass Retail,614,1,1,0
+CUST-00978,Ryan Miller,ryan.miller737@yahoo.com,64,Male,Civil Engineer,181600.0,New York,NY,BRN-002,2025-09-02,14,Inactive,High Net Worth,690,0,0,1
+CUST-00979,Kenneth Gibson,kenneth.gibson906@hotmail.com,48,Male,Attorney,146600.0,Boston,MA,BRN-003,2024-09-02,26,Active,Affluent,607,1,1,0
+CUST-00980,Savannah Silva,savannah.silva343@yahoo.com,38,Female,Civil Engineer,77300.0,New York,NY,BRN-002,2025-03-03,20,Active,Mass Retail,822,1,1,0
+CUST-00981,Allison Guzman,allison.guzman713@gmail.com,52,Female,Software Engineer,67600.0,Dallas,TX,BRN-008,2025-01-02,22,Active,Mass Retail,623,1,1,0
+CUST-00982,Christine Turner,christine.turner445@yahoo.com,36,Female,Operations Manager,99800.0,Atlanta,GA,BRN-007,2025-11-02,12,Active,Mass Retail,759,1,1,0
+CUST-00983,Anthony Gonzales,anthony.gonzales596@gmail.com,46,Male,Attorney,81600.0,Detroit,MI,BRN-005,2024-08-03,27,Active,Mass Retail,717,1,1,0
+CUST-00984,Barbara Burns,barbara.burns944@hotmail.com,28,Female,Sales Executive,32800.0,New York,NY,BRN-001,2023-05-05,42,Active,Young Professional,618,1,1,0
+CUST-00985,Brian Bryant,brian.bryant307@gmail.com,34,Male,Physician,90600.0,Denver,CO,BRN-009,2026-04-03,7,Active,Mass Retail,708,1,1,0
+CUST-00986,Sherri Smith,sherri.smith820@yahoo.com,36,Female,Physician,50400.0,New York,NY,BRN-001,2024-07-03,28,Active,Mass Retail,786,1,1,0
+CUST-00987,Rebekah Cline,rebekah.cline144@hotmail.com,43,Female,Registered Nurse,275800.0,New York,NY,BRN-002,2020-02-04,81,Active,High Net Worth,701,1,1,0
+CUST-00988,Richard Johnson,richard.johnson107@gmail.com,61,Male,Pharmacist,72600.0,Atlanta,GA,BRN-007,2016-11-05,120,Active,Loyal Traditional,734,1,1,0
+CUST-00989,Thomas Williams,thomas.williams280@yahoo.com,31,Male,Financial Analyst,124900.0,Detroit,MI,BRN-005,2023-12-03,35,Active,Affluent,733,1,0,0
+CUST-00990,Wayne Marshall,wayne.marshall401@yahoo.com,34,Male,Data Scientist,29000.0,Dallas,TX,BRN-008,2021-01-03,70,Active,Loyal Traditional,681,1,1,0
+CUST-00991,Katherine Guerra,katherine.guerra498@hotmail.com,55,Female,Pharmacist,52900.0,Atlanta,GA,BRN-007,2026-05-03,6,Active,Mass Retail,645,1,1,0
+CUST-00992,Jared Eaton,jared.eaton95@gmail.com,31,Male,Software Engineer,85200.0,Chicago,IL,BRN-004,2025-04-03,19,Active,Mass Retail,628,1,1,0
+CUST-00993,Erin Brooks,erin.brooks715@gmail.com,21,Female,Data Scientist,32900.0,Charlotte,NC,BRN-006,2019-10-05,85,Active,Young Professional,713,1,1,0
+CUST-00994,Andrew Norton,andrew.norton339@gmail.com,53,Male,Retired Executive,45700.0,Dallas,TX,BRN-008,2016-11-05,120,Active,Loyal Traditional,694,1,1,0
+CUST-00995,Marc Gardner,marc.gardner180@gmail.com,40,Male,Civil Engineer,59100.0,New York,NY,BRN-001,2025-04-03,19,Inactive,Mass Retail,655,0,0,1
+CUST-00996,Michael Peterson,michael.peterson313@hotmail.com,35,Male,Sales Executive,56900.0,Denver,CO,BRN-009,2023-03-05,44,Active,Mass Retail,733,1,0,0
+CUST-00997,Cameron Bailey,cameron.bailey832@yahoo.com,44,Male,Attorney,170600.0,Boston,MA,BRN-003,2026-02-01,9,Active,Affluent,701,1,1,0
+CUST-00998,Christina Garner,christina.garner20@hotmail.com,44,Female,Registered Nurse,202900.0,Boston,MA,BRN-003,2017-10-06,109,Active,High Net Worth,719,0,1,0
+CUST-00999,Theresa Schmidt,theresa.schmidt348@yahoo.com,39,Female,Teacher,83900.0,Chicago,IL,BRN-004,2025-05-03,18,Active,Mass Retail,659,1,0,0
+CUST-01000,Amber Costa,amber.costa850@yahoo.com,22,Female,Attorney,134100.0,New York,NY,BRN-001,2025-11-02,12,Active,Affluent,569,1,0,0
