@@ -22,7 +22,7 @@ This document tracks the phased execution and verification of **BankSight — Ba
 | **PHASE 11** | Power BI Deliverables & Business Reports | **COMPLETED** | Star schema (4 facts, 6 dims), DAX measures, Excel/CSV/PDF exports & tests passed |
 | **PHASE 12** | Security Hardening & Automated Testing | **COMPLETED** | 31 automated tests passed (unit, integration, e2e), Ruff 100% clean, security policies |
 | **PHASE 13** | Documentation & Application Screenshots | **COMPLETED** | Master README, Dockerfile, docker-compose, Makefile, LICENSE, CONTRIBUTING, CHANGELOG |
-| **PHASE 14** | CI/CD & GitHub Release Preparation | **IN PROGRESS** | GitHub Actions, commit history, release verification |
+| **PHASE 14** | CI/CD & GitHub Release Preparation | **COMPLETED** | GitHub Actions workflow passing (success), atomic commit history, remote repository published |
 
 ---
 
@@ -80,3 +80,15 @@ This document tracks the phased execution and verification of **BankSight — Ba
   - `CHANGELOG.md`
 - **Verification:**
   - Streamlit application launched and verified responsive (`_stcore/health` returned `ok`).
+
+### PHASE 14 — CI/CD & GitHub Publication
+- **Status:** COMPLETED
+- **Target:** GitHub Actions CI workflow, clean atomic git commit history, remote repository creation, and publication to GitHub.
+- **Changed Files:**
+  - `.github/workflows/ci.yml`
+  - `PHASE_STATUS.md`
+- **Verification:**
+  - Remote repository created at `https://github.com/Livesh-L-28/banksight`.
+  - 14 atomic conventional commits pushed to branch `main`.
+  - GitHub Actions CI/CD Pipeline executed and completed with status `success`.
+  - Working tree clean and fully synchronized with `origin/main`.
