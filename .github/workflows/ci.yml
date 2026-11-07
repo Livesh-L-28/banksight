@@ -1,0 +1,61 @@
+name: BankSight CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    name: Build, Lint & Automated Tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: banksight_user
+          POSTGRES_PASSWORD: banksight_password
+          POSTGRES_DB: banksight_test_db
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Ruff Code Linter
+        run: |
+          ruff check .
+
+      - name: Run Database Migrations & Ingestion
+        env:
+          DATABASE_URL: sqlite:///backend/database/banksight.db
+        run: |
+          python scripts/init_db.py
+          python scripts/generate_synthetic_data.py
+          python scripts/seed_database.py
+          python scripts/export_powerbi_data.py
+
+      - name: Run Pytest Test Suite
+        env:
+          DATABASE_URL: sqlite:///backend/database/banksight.db
+        run: |
+          pytest -v --cov=backend --cov=analytics --cov=data_pipeline
