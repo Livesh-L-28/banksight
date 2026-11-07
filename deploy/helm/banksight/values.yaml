@@ -49,3 +49,4 @@ database:
 security:
   auditLoggingEnabled: true
   piiMaskingDefault: true
+

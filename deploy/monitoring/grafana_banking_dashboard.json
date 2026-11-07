@@ -1,0 +1,88 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 0 },
+      "id": 1,
+      "title": "API Request Throughput (Req/Sec)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "sum(rate(banksight_http_requests_total[1m])) by (endpoint)",
+          "legendFormat": "{{endpoint}}"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 0 },
+      "id": 2,
+      "title": "API P95 Latency (Seconds)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(banksight_http_request_duration_seconds_bucket[5m])) by (le))",
+          "legendFormat": "P95 Latency"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 0 },
+      "id": 3,
+      "title": "ML Churn Inference Latency (P99)",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.99, sum(rate(banksight_churn_inference_latency_seconds_bucket[5m])) by (le))",
+          "legendFormat": "P99 Inference Time"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "id": 4,
+      "title": "Active Retention Cases by Priority",
+      "type": "bargauge",
+      "targets": [
+        {
+          "expr": "sum(banksight_active_retention_cases) by (priority)",
+          "legendFormat": "{{priority}}"
+        }
+      ]
+    },
+    {
+      "collapsed": false,
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "id": 5,
+      "title": "Real-Time Capital Flight Stream Alerts",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "sum(banksight_capital_flight_alerts_total)",
+          "legendFormat": "Total Alerts"
+        }
+      ]
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": ["banking", "banksight", "fintech", "sre"],
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "title": "BankSight Enterprise Banking Intelligence — Operations & SRE",
+  "version": 1
+}

@@ -142,3 +142,4 @@ class ImmutableAuditLogger:
 
 # Global audit logger instance
 audit_logger = ImmutableAuditLogger()
+

@@ -69,3 +69,4 @@ def test_immutable_audit_logger_hash_chain():
         tamper_check = logger.verify_integrity()
         assert tamper_check["valid"] is False
         assert "Tampered record at line 2" in tamper_check["error"]
+

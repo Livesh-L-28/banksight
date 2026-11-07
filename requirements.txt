@@ -38,5 +38,7 @@ fastapi>=0.110.0
 uvicorn>=0.28.0
 pyjwt>=2.8.0
 cryptography>=42.0.0
+prometheus-client>=0.20.0
+
 
 

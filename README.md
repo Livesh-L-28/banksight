@@ -440,6 +440,10 @@ BankSight incorporates enterprise-grade governance compliant with OCC 2011-12, F
 - **Tamper-Evident WORM Audit Chain (`backend/security/audit_logger.py`):** SHA-256 hash-chained immutable ledger recording every profile access and status transition.
 - **Model Risk Management (SR 11-7 & Fair Lending Audits):** Disparate Impact Ratio (DIR) auditing across demographic subgroups, Population Stability Index (PSI) drift monitoring, and formal markdown validation report generation (`docs/governance/SR_11_7_Model_Validation_Report.md`).
 - **Cloud Infrastructure & High Availability (`deploy/`):** Kubernetes deployment manifests, Horizontal Pod Autoscaler (HPA), Ingress with TLS, Helm charts, and pgBouncer transaction connection pooling.
+- **Generative AI RM Briefing Copilot (`backend/copilot/rm_copilot.py`):** Synthesizes Customer 360 dossiers into executive briefing sheets, sentiment diagnoses, Do's & Don'ts talking points, and tailored client outreach email drafts.
+- **SOX 404 Four-Eyes Principle Dual-Authorization:** Concessions $> \$500$ or $> 50\text{ bps}$ require digital review and sign-off by a Branch Manager or Executive with enforced segregation of duties.
+- **Real-Time Event Streaming & Capital Flight Triggers (`backend/streaming/`):** Stream processor detecting run-on-balance velocity ($> 30\%$ drop or $\ge \$25,000$), critical service escalations, and dispatching instant webhook alerts.
+- **Enterprise SRE Observability & Prometheus Telemetry (`backend/monitoring/`):** Standard `/metrics` endpoint exporting HTTP throughput, P95/P99 latency histograms, and active retention gauges with pre-built Grafana dashboard (`deploy/monitoring/grafana_banking_dashboard.json`).
 
 To launch the Enterprise REST API:
 ```bash

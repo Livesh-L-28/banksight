@@ -6,3 +6,4 @@ metadata:
     app.kubernetes.io/name: banksight
     app.kubernetes.io/part-of: banksight-platform
     environment: production
+

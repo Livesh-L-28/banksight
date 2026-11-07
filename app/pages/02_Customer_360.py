@@ -20,6 +20,7 @@ from backend.services.customer_service import CustomerService
 from backend.services.branch_service import BranchService
 from backend.database.connection import get_db_session
 from backend.models import ChurnPrediction
+from backend.copilot.rm_copilot import RMCopilotService
 
 st.set_page_config(page_title="Customer 360 | BankSight", page_icon="👤", layout="wide")
 apply_banking_theme()
@@ -116,12 +117,13 @@ else:
         st.markdown("<br>", unsafe_allow_html=True)
 
         # Multi-tab dossier breakdown
-        tab_acc, tab_txn, tab_cmp, tab_timeline, tab_risk = st.tabs([
+        tab_acc, tab_txn, tab_cmp, tab_timeline, tab_risk, tab_copilot = st.tabs([
             "💳 Accounts & Loans",
             "📜 Transaction Ledger",
             "⚠️ Customer Service & Complaints",
             "⏱️ Activity Timeline",
-            "🛡️ Churn Risk & Retention Plan"
+            "🛡️ Churn Risk & Retention Plan",
+            "🤖 AI RM Meeting Copilot"
         ])
 
         with tab_acc:
@@ -255,4 +257,65 @@ else:
                 )
                 if st.button("🛡️ Open Operational Retention Case for this Customer"):
                     st.switch_page("pages/05_Retention_Management.py")
+
+        with tab_copilot:
+            st.markdown("##### 🤖 **Generative AI Relationship Manager Briefing Copilot**")
+            st.markdown("Synthesizes customer transactions, servicing friction, and churn drivers into an executive briefing dossier.")
+
+            actor_name = st.text_input("Relationship Manager Name", value="Senior Relationship Manager", key="copilot_rm_name")
+            if st.button("✨ Generate AI Meeting Briefing & Email Draft", type="primary"):
+                with st.spinner("Synthesizing Customer 360 intelligence into meeting brief..."):
+                    briefing = RMCopilotService.generate_meeting_briefing(dossier, actor_name=actor_name)
+
+                # Sentiment Banner
+                st.markdown(
+                    f"""
+                    <div style="background: #F1F5F9; border-left: 4px solid {BANK_BLUE}; padding: 14px 18px; border-radius: 6px; margin: 12px 0;">
+                        <div style="font-size: 11px; font-weight: 700; color: #64748B; text-transform: uppercase;">Customer Sentiment Diagnosis</div>
+                        <div style="font-size: 16px; font-weight: 700; color: {BANK_NAVY}; margin: 4px 0;">{briefing['sentiment_diagnosis']}</div>
+                        <div style="font-size: 13px; color: #334155;">{briefing['executive_summary']}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+                # Signals & Concession Strategy
+                b_col1, b_col2 = st.columns([1, 1])
+                with b_col1:
+                    st.markdown("###### **Key Attrition Signals:**")
+                    for sig in briefing["key_attrition_signals"]:
+                        st.markdown(f"- ⚠️ **{sig}**")
+
+                with b_col2:
+                    st.markdown("###### **Recommended Concession Strategy:**")
+                    strat = briefing["recommended_concession_strategy"]
+                    st.markdown(
+                        f"""
+                        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 6px; padding: 12px;">
+                            <div style="font-size: 13px; font-weight: 700; color: {BANK_BLUE};">{strat['primary_offer']}</div>
+                            <div style="font-size: 12px; color: #475569; margin-top: 4px;">• <b>Incentive Value:</b> {strat['incentive_value']}</div>
+                            <div style="font-size: 12px; color: #475569;">• <b>Rate Bonus:</b> {strat['interest_rate_bonus']}</div>
+                            <div style="font-size: 12px; color: #475569;">• <b>Fee Policy:</b> {strat['fee_waiver']}</div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True
+                    )
+
+                st.markdown("<br>", unsafe_allow_html=True)
+                # Talking Points Do's and Don'ts
+                st.markdown("###### **Executive Meeting Talking Points:**")
+                t_col1, t_col2 = st.columns([1, 1])
+                with t_col1:
+                    st.markdown("**✅ Recommended Actions & Phrasing (DO):**")
+                    for do_item in briefing["talking_points_dos"]:
+                        st.markdown(f"- ✅ {do_item}")
+                with t_col2:
+                    st.markdown("**❌ Pitfalls to Avoid (DON'T):**")
+                    for dont_item in briefing["talking_points_donts"]:
+                        st.markdown(f"- ❌ {dont_item}")
+
+                st.markdown("<br>", unsafe_allow_html=True)
+                st.markdown("###### **Ready-to-Send Client Outreach Email / Letter:**")
+                st.code(briefing["email_draft"], language="markdown")
+
 

@@ -190,6 +190,19 @@ class RetentionFunnelMetrics(BaseModel):
     funnel_counts: Dict[str, int]
 
 
+class ConcessionSubmissionRequest(BaseModel):
+    offer_name: str = Field(..., example="Premier High-Yield Savings Upgrade")
+    financial_concession_value: float = Field(..., example=750.0, description="Financial concession value in USD")
+    rate_adjustment_bps: int = Field(default=0, example=50, description="Interest rate bonus or cut in basis points")
+    notes: Optional[str] = Field(None, example="Client requested rate matching against external commercial bank.")
+
+
+class ConcessionApprovalRequest(BaseModel):
+    approved: bool = Field(..., example=True)
+    notes: Optional[str] = Field(None, example="Approved under branch executive pricing discretion.")
+
+
+
 # ==========================================
 # Governance & Audit Schemas
 # ==========================================

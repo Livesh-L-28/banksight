@@ -4,13 +4,18 @@ FastAPI Decoupled Backend Service with OpenAPI 3.1, JWT Authentication, and RBAC
 """
 
 import time
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from backend.api.routers import (
     auth_router, kpi_router, customer_router,
-    churn_router, retention_router, governance_router
+    churn_router, retention_router, governance_router,
+    copilot_router, streaming_router
+)
+from backend.monitoring.telemetry import (
+    http_requests_total, http_request_duration_seconds,
+    get_prometheus_metrics, get_metrics_content_type
 )
 
 app = FastAPI(
@@ -43,11 +48,22 @@ app.add_middleware(
 
 @app.middleware("http")
 async def add_process_time_and_audit_header(request: Request, call_next):
-    """Calculates request latency and attaches performance headers."""
+    """Calculates request latency, records Prometheus metrics, and attaches headers."""
     start_time = time.perf_counter()
     response = await call_next(request)
-    process_time = (time.perf_counter() - start_time) * 1000.0
-    response.headers["X-Process-Time-Ms"] = f"{process_time:.2f}"
+    duration_sec = time.perf_counter() - start_time
+    process_time_ms = duration_sec * 1000.0
+
+    # Record Prometheus metrics
+    endpoint = request.url.path
+    http_requests_total.labels(
+        method=request.method,
+        endpoint=endpoint,
+        status_code=str(response.status_code)
+    ).inc()
+    http_request_duration_seconds.labels(endpoint=endpoint).observe(duration_sec)
+
+    response.headers["X-Process-Time-Ms"] = f"{process_time_ms:.2f}"
     response.headers["X-Enterprise-Platform"] = "BankSight-v2.0"
     return response
 
@@ -59,6 +75,14 @@ app.include_router(customer_router.router, prefix="/api/v1")
 app.include_router(churn_router.router, prefix="/api/v1")
 app.include_router(retention_router.router, prefix="/api/v1")
 app.include_router(governance_router.router, prefix="/api/v1")
+app.include_router(copilot_router.router, prefix="/api/v1")
+app.include_router(streaming_router.router, prefix="/api/v1")
+
+
+@app.get("/metrics", tags=["Observability & Telemetry"])
+def prometheus_metrics():
+    """Exposes real-time Prometheus SLI/SLO metrics for scraping."""
+    return Response(content=get_prometheus_metrics(), media_type=get_metrics_content_type())
 
 
 @app.get("/health", tags=["Health & Readiness"])

@@ -50,3 +50,4 @@ class FieldEncryptionService:
 
 # Global singleton instance
 field_encryptor = FieldEncryptionService()
+

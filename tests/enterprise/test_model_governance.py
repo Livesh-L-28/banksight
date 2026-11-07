@@ -65,3 +65,4 @@ def test_full_sr11_7_validation_pipeline():
         content = report_file.read_text(encoding="utf-8")
         assert "Federal Reserve SR 11-7" in content
         assert "Champion Model Selection" in content
+

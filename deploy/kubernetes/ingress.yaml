@@ -39,3 +39,4 @@ spec:
                 name: banksight-api-service
                 port:
                   number: 8000
+

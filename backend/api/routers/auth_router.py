@@ -90,3 +90,4 @@ def get_current_user_profile(current_user: dict = Depends(get_current_user)):
         branch_id=current_user.get("branch_id"),
         rm_id=current_user.get("rm_id")
     )
+

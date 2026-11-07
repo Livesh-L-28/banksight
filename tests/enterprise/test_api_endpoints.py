@@ -123,3 +123,4 @@ def test_retention_funnel_api():
     funnel = res_funnel.json()
     assert "total_cases" in funnel
     assert "retained_count" in funnel
+
