@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: banksight_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: banksight_user
+      POSTGRES_PASSWORD: banksight_secure_password
+      POSTGRES_DB: banksight_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U banksight_user -d banksight_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: banksight_app
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - DATABASE_URL=postgresql://banksight_user:banksight_secure_password@db:5432/banksight_db
+      - APP_ENV=production
+      - HOST=0.0.0.0
+      - PORT=8501
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+
+volumes:
+  postgres_data:
