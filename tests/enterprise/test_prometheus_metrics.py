@@ -24,3 +24,4 @@ def test_prometheus_metrics_endpoint():
     assert "banksight_http_request_duration_seconds" in metrics_text
     assert "banksight_churn_inference_latency_seconds" in metrics_text
     assert "banksight_capital_flight_alerts_total" in metrics_text
+

@@ -50,3 +50,4 @@ def get_prometheus_metrics() -> bytes:
 def get_metrics_content_type() -> str:
     """Returns official Prometheus content type header."""
     return CONTENT_TYPE_LATEST
+

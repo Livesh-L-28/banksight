@@ -3,13 +3,14 @@ BankSight Churn Intelligence & ML Inference Router
 """
 
 from typing import List
-from fastapi import APIRouter, Depends, Request
+from fastapi import APIRouter, Depends, Request, HTTPException, status
 from sqlalchemy.orm import Session
 from backend.api.dependencies import get_db, require_roles, log_api_action
 from backend.api.schemas import (
     ChurnInferenceRequest, ChurnInferenceResponse
 )
 from backend.services.churn_service import ChurnService
+from backend.models import Customer, Account, Complaint
 
 router = APIRouter(prefix="/churn", tags=["Machine Learning & Churn Intelligence"])
 
@@ -81,6 +82,41 @@ def predict_churn(
 
     log_api_action(request, user, "SCORE_CHURN_PREDICTION", "CUSTOMER", payload.customer_id)
     return response
+
+
+@router.post("/predict-customer/{customer_id}", response_model=ChurnInferenceResponse)
+def predict_customer_churn_by_id(
+    customer_id: str,
+    request: Request,
+    db: Session = Depends(get_db),
+    user: dict = Depends(require_roles(["Admin", "Executive", "BranchManager", "RelationshipManager", "DataAnalyst"]))
+):
+    """
+    Executes real-time machine learning inference for an existing customer in the database by customer_id.
+    """
+    customer = db.query(Customer).filter(Customer.customer_id == customer_id).first()
+    if not customer:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Customer '{customer_id}' not found.")
+
+    accounts = db.query(Account).filter(Account.customer_id == customer_id).all()
+    cur_bal = sum(a.current_balance for a in accounts) if accounts else 0.0
+    complaints = db.query(Complaint).filter(Complaint.customer_id == customer_id).count()
+
+    req = ChurnInferenceRequest(
+        customer_id=customer_id,
+        tenure_months=customer.customer_tenure_months or 24,
+        age=customer.age or 40,
+        annual_income=customer.annual_income or 65000.0,
+        current_balance=cur_bal,
+        balance_to_income_ratio=round(cur_bal / max(customer.annual_income or 65000.0, 1.0), 3),
+        txn_frequency_12m=24,
+        total_spend_12m=12000.0,
+        recency_days=15,
+        complaints_count=complaints,
+        digital_banking_active=bool(customer.digital_banking_active),
+        mobile_banking_active=bool(customer.mobile_banking_active)
+    )
+    return predict_churn(req, request, db, user)
 
 
 @router.get("/models", response_model=List[dict])

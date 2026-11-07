@@ -444,6 +444,11 @@ BankSight incorporates enterprise-grade governance compliant with OCC 2011-12, F
 - **SOX 404 Four-Eyes Principle Dual-Authorization:** Concessions $> \$500$ or $> 50\text{ bps}$ require digital review and sign-off by a Branch Manager or Executive with enforced segregation of duties.
 - **Real-Time Event Streaming & Capital Flight Triggers (`backend/streaming/`):** Stream processor detecting run-on-balance velocity ($> 30\%$ drop or $\ge \$25,000$), critical service escalations, and dispatching instant webhook alerts.
 - **Enterprise SRE Observability & Prometheus Telemetry (`backend/monitoring/`):** Standard `/metrics` endpoint exporting HTTP throughput, P95/P99 latency histograms, and active retention gauges with pre-built Grafana dashboard (`deploy/monitoring/grafana_banking_dashboard.json`).
+- **Official Python Client SDK (`sdk/banksight_client.py`):** Fully typed, production-grade client library for Core Banking platforms (Temenos T24, Finacle, FIS) and CRM systems (Salesforce FSC) supporting OAuth2 session tokens, correlation IDs, and complete API coverage.
+- **W3C Distributed Tracing Engine (`backend/monitoring/tracing.py`):** End-to-end transaction tracing compliant with the W3C Trace Context standard (`traceparent` headers), propagating 128-bit trace IDs across API gateways and ML services.
+- **Multi-Tenant Branch & Portfolio Scoping Engine (`backend/security/tenancy.py`):** Institutional Fine-Grained Row-Level Security (RLS) enforcing strict cross-branch data isolation for Branch Managers and portfolio-restricted Relationship Managers.
+- **Automated BCBS 239 / OCC Disaster Recovery Drill (`scripts/disaster_recovery_drill.py`):** Generates AES-256 encrypted point-in-time database snapshots with SHA-256 integrity manifests, executes ephemeral sandbox restores, verifies zero financial balance drift ($0.0000 variance), audits tamper-evident WORM hash-chains, and emits a signed compliance certificate (`docs/compliance/disaster_recovery_attestation.md`).
+- **Executive Board & Regulatory Oversight Packet Exporter (`backend/reporting/regulatory_exporter.py`):** Programmatic export of formal Board-level and Regulatory packets in JSON, GitHub-flavored Markdown, and printable institutional HTML (`GET /api/v1/governance/board-report`).
 
 To launch the Enterprise REST API:
 ```bash

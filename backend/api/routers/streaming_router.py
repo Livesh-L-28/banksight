@@ -62,3 +62,4 @@ def get_dispatched_webhooks(
 ):
     """Returns history of dispatched retention webhook alerts."""
     return stream_processor.get_dispatched_webhooks(limit=limit)
+

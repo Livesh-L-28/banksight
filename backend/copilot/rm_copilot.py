@@ -152,3 +152,4 @@ BankSight Institutional Banking Group
             "email_draft": email_draft,
             "recommended_meeting_duration": "15 to 20 minutes (Virtual or Phone)"
         }
+

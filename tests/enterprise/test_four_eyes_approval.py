@@ -75,3 +75,4 @@ def test_four_eyes_threshold_and_approval_workflow():
     assert res_mgr_approve.status_code == 200
     assert res_mgr_approve.json()["decision"] == "APPROVED"
     assert res_mgr_approve.json()["new_status"] == "Offer Proposed"
+

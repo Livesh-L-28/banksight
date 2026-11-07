@@ -66,3 +66,37 @@ def test_full_sr11_7_validation_pipeline():
         assert "Federal Reserve SR 11-7" in content
         assert "Champion Model Selection" in content
 
+
+def test_regulatory_board_report_api():
+    """Validates generation of formal board report in JSON, Markdown, and HTML via API."""
+    from fastapi.testclient import TestClient
+    from backend.api.main import app
+
+    client = TestClient(app)
+
+    # 1. Login as Admin
+    login_resp = client.post("/api/v1/auth/token", data={"username": "admin", "password": "Admin@123"})
+    assert login_resp.status_code == 200
+    token = login_resp.json()["access_token"]
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # 2. JSON Format
+    resp_json = client.get("/api/v1/governance/board-report?format=json", headers=headers)
+    assert resp_json.status_code == 200
+    data = resp_json.json()
+    assert "report_id" in data
+    assert "executive_kpis" in data
+    assert "model_governance" in data
+    assert data["model_governance"]["standard"] == "Federal Reserve SR 11-7 / OCC 2011-12"
+
+    # 3. Markdown Format
+    resp_md = client.get("/api/v1/governance/board-report?format=markdown", headers=headers)
+    assert resp_md.status_code == 200
+    assert "BankSight Institutional Board & Regulatory Oversight Packet" in resp_md.text
+
+    # 4. HTML Format
+    resp_html = client.get("/api/v1/governance/board-report?format=html", headers=headers)
+    assert resp_html.status_code == 200
+    assert "<!DOCTYPE html>" in resp_html.text
+    assert "BankSight Executive Board & Regulatory Oversight Report" in resp_html.text
+

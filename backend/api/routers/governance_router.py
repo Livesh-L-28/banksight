@@ -71,3 +71,28 @@ def get_sr11_7_validation_summary(
         ]
     }
 
+
+@router.get("/board-report")
+def get_executive_board_report(
+    request: Request,
+    format: str = Query("json", regex="^(json|markdown|html)$"),
+    user: dict = Depends(require_roles(["Admin", "Executive", "ComplianceOfficer"]))
+):
+    """
+    Generates unified Board of Directors and Supervisory Examination compliance packet.
+    Supports formats: json, markdown, html.
+    """
+    from backend.reporting.regulatory_exporter import RegulatoryBoardReportExporter
+    from fastapi.responses import HTMLResponse, PlainTextResponse
+
+    log_api_action(request, user, "EXPORT_BOARD_GOVERNANCE_REPORT", "REPORTING", f"format={format}")
+
+    if format == "markdown":
+        md_text = RegulatoryBoardReportExporter.export_as_markdown()
+        return PlainTextResponse(content=md_text, media_type="text/markdown")
+    elif format == "html":
+        html_text = RegulatoryBoardReportExporter.export_as_html()
+        return HTMLResponse(content=html_text)
+
+    return RegulatoryBoardReportExporter.generate_board_report_data()
+

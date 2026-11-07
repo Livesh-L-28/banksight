@@ -56,3 +56,4 @@ def test_rm_copilot_api_endpoint():
     assert "sentiment_diagnosis" in data
     assert "email_draft" in data
     assert len(data["talking_points_dos"]) >= 2
+

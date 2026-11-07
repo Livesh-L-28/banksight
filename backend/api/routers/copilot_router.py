@@ -36,3 +36,4 @@ def generate_customer_briefing(
 
     log_api_action(request, user, "GENERATE_AI_RM_BRIEFING", "CUSTOMER", customer_id)
     return briefing
+

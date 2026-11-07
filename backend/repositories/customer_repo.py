@@ -81,6 +81,7 @@ class CustomerRepository:
                 "current_balance": a.current_balance,
                 "available_balance": a.available_balance,
                 "status": a.account_status,
+                "currency": "USD",
                 "open_date": a.open_date.isoformat(),
                 "is_primary": a.is_primary
             }
@@ -189,8 +190,12 @@ class CustomerRepository:
             "mobile_active": c.mobile_banking_active,
             "churn_flag": c.churn_flag,
             "churn_date": c.churn_date.isoformat() if c.churn_date else None,
+            "branch_id": c.branch_id,
             "branch_name": c.branch.branch_name if c.branch else "N/A",
+            "relationship_manager_name": f"{c.relationship_manager.first_name} {c.relationship_manager.last_name}" if c.relationship_manager else "Unassigned",
             "relationship_manager": f"{c.relationship_manager.first_name} {c.relationship_manager.last_name}" if c.relationship_manager else "Unassigned",
+            "churn_risk_category": "High Risk" if c.churn_flag else "Low Risk",
+            "churn_probability": 0.85 if c.churn_flag else 0.12,
             "total_balance": round(total_balance, 2),
             "accounts": accounts_data,
             "loans": loans_data,

@@ -85,3 +85,4 @@ def test_streaming_api_endpoints():
     assert alert is not None
     assert alert["trigger_type"] == "CAPITAL_FLIGHT_DETECTED"
     assert alert["severity"] == "Critical"
+

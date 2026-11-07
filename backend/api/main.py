@@ -17,6 +17,7 @@ from backend.monitoring.telemetry import (
     http_requests_total, http_request_duration_seconds,
     get_prometheus_metrics, get_metrics_content_type
 )
+from backend.monitoring.tracing import DistributedTraceContext
 
 app = FastAPI(
     title="BankSight Enterprise Intelligence & Retention API",
@@ -48,7 +49,16 @@ app.add_middleware(
 
 @app.middleware("http")
 async def add_process_time_and_audit_header(request: Request, call_next):
-    """Calculates request latency, records Prometheus metrics, and attaches headers."""
+    """Calculates request latency, records Prometheus metrics, traces W3C context, and attaches headers."""
+    # Parse or initialize W3C distributed trace context
+    incoming_traceparent = request.headers.get("traceparent")
+    incoming_corr_id = request.headers.get("X-Correlation-ID")
+    trace_id, parent_span_id, flags = DistributedTraceContext.parse_traceparent(incoming_traceparent)
+    active_span_id = DistributedTraceContext.generate_span_id()
+    DistributedTraceContext.set_active_trace(trace_id, active_span_id)
+
+    correlation_id = incoming_corr_id or f"CORR-{trace_id[:12]}"
+
     start_time = time.perf_counter()
     response = await call_next(request)
     duration_sec = time.perf_counter() - start_time
@@ -63,6 +73,12 @@ async def add_process_time_and_audit_header(request: Request, call_next):
     ).inc()
     http_request_duration_seconds.labels(endpoint=endpoint).observe(duration_sec)
 
+    # Attach W3C Trace Context and Banking Headers
+    outgoing_traceparent = DistributedTraceContext.format_traceparent(trace_id, active_span_id, flags)
+    response.headers["traceparent"] = outgoing_traceparent
+    response.headers["X-Trace-ID"] = trace_id
+    response.headers["X-Span-ID"] = active_span_id
+    response.headers["X-Correlation-ID"] = correlation_id
     response.headers["X-Process-Time-Ms"] = f"{process_time_ms:.2f}"
     response.headers["X-Enterprise-Platform"] = "BankSight-v2.0"
     return response
