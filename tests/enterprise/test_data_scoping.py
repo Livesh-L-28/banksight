@@ -69,3 +69,4 @@ def test_in_memory_customer_access_validation():
     # Admin
     assert BranchScopingPolicy.can_access_customer(cust_br1, admin_user) is True
     assert BranchScopingPolicy.can_access_customer(cust_br2, admin_user) is True
+

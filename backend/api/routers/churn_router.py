@@ -132,3 +132,20 @@ def get_registered_models(
     models = service.get_model_registry()
     log_api_action(request, user, "VIEW_MODEL_REGISTRY", "MODELS", "ALL")
     return models
+
+
+@router.post("/retrain")
+def trigger_model_retraining(
+    request: Request,
+    auto_promote: bool = True,
+    user: dict = Depends(require_roles(["Admin", "DataAnalyst"]))
+):
+    """
+    Triggers an automated MLOps model retraining cycle.
+    Evaluates candidate Challenger against incumbent Champion and enforces Fair Lending DIR gating.
+    """
+    from analytics.churn.retrainer import EnterpriseModelRetrainer
+
+    result = EnterpriseModelRetrainer.retrain_and_evaluate(auto_promote=auto_promote)
+    log_api_action(request, user, "TRIGGER_MODEL_RETRAINING", "MODEL_REGISTRY", result.get("model_id", "FAILED"))
+    return result

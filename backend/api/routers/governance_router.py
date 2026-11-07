@@ -75,7 +75,7 @@ def get_sr11_7_validation_summary(
 @router.get("/board-report")
 def get_executive_board_report(
     request: Request,
-    format: str = Query("json", regex="^(json|markdown|html)$"),
+    format: str = Query("json", pattern="^(json|markdown|html)$"),
     user: dict = Depends(require_roles(["Admin", "Executive", "ComplianceOfficer"]))
 ):
     """

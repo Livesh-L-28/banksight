@@ -201,6 +201,14 @@ class BankSightClient:
         """Returns fleet-wide churn risk tier distribution counts."""
         return self._request("GET", "/api/v1/churn/risk-distribution")
 
+    def retrain_model(self, auto_promote: bool = True) -> Dict[str, Any]:
+        """
+        Triggers MLOps candidate model retraining, Fair Lending DIR compliance verification,
+        and automatic champion promotion.
+        """
+        params = {"auto_promote": auto_promote}
+        return self._request("POST", "/api/v1/churn/retrain", params=params)
+
     # --- Operational Retention & Dual Authorization ---
 
     def get_retention_funnel(self) -> Dict[str, Any]:

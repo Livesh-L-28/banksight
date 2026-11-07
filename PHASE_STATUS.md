@@ -25,7 +25,7 @@ This document tracks the phased execution and verification of **BankSight — Ba
 | **PHASE 14** | CI/CD & GitHub Release Preparation | **COMPLETED** | GitHub Actions workflow passing (success), atomic commit history, remote repository published |
 | **PHASE 15** | Enterprise Tier-1 Hardening & Governance | **COMPLETED** | Decoupled FastAPI, JWT RBAC, PII masking, AES encryption, WORM audit chain, SR 11-7 validator, K8s manifests, 43 tests passed |
 | **PHASE 16** | Next-Level Enterprise Innovations | **COMPLETED** | GenAI RM Copilot, SOX 404 Four-Eyes Dual-Approval, Real-Time Event Streaming & Webhooks, Prometheus Telemetry, 50 tests passed |
-| **PHASE 17** | Operational Scale, SDK & Distributed Resilience | **COMPLETED** | Python Client SDK, W3C Distributed Tracing, Branch Scoping RLS, Automated DR Drill, Board Exporter, 68 tests passed |
+| **PHASE 17** | Operational Scale, MLOps Retraining & Distributed Resilience | **COMPLETED** | Python Client SDK, W3C Tracing, RLS Scoping, DR Drill, MLOps Auto-Promotion, Performance Benchmark, 70 tests passed |
 
 ---
 
@@ -143,17 +143,22 @@ This document tracks the phased execution and verification of **BankSight — Ba
   - Run-on-balance (>30% drop) streaming capital flight triggers verified.
   - Prometheus `/metrics` exposition verified.
 
-### PHASE 17 — Operational Scale, SDK & Distributed Resilience
+### PHASE 17 — Operational Scale, MLOps Retraining & Distributed Resilience
 - **Status:** COMPLETED
-- **Target:** Official Python Client SDK, W3C Distributed Tracing, Branch Scoping RLS Policy Engine, Automated BCBS 239 Disaster Recovery Drill, Executive Board & Regulatory HTML/Markdown Exporter, and Streamlit Retention Management UI Enhancement.
+- **Target:** Official Python Client SDK, W3C Distributed Tracing, Branch Scoping RLS Policy Engine, Automated BCBS 239 Disaster Recovery Drill, Executive Board & Regulatory HTML/Markdown Exporter, MLOps Automated Model Retraining & Champion-Challenger Auto-Promotion Engine, and API Concurrency Benchmark Suite.
 - **Changed Files:**
   - `sdk/banksight_client.py` & `sdk/__init__.py` & `sdk/README.md`
   - `backend/monitoring/tracing.py`
   - `backend/security/tenancy.py`
   - `backend/reporting/regulatory_exporter.py`
+  - `analytics/churn/retrainer.py`
   - `scripts/disaster_recovery_drill.py`
+  - `scripts/trigger_model_retraining.py`
+  - `scripts/benchmark_api.py`
   - `docs/compliance/disaster_recovery_attestation.md`
+  - `docs/architecture/performance_benchmark_report.md`
   - `app/pages/05_Retention_Management.py`
+  - `app/pages/10_Reports.py`
   - `backend/api/main.py`
   - `backend/api/routers/governance_router.py`
   - `backend/api/routers/churn_router.py`
@@ -161,13 +166,16 @@ This document tracks the phased execution and verification of **BankSight — Ba
   - `tests/enterprise/test_distributed_tracing.py`
   - `tests/enterprise/test_data_scoping.py`
   - `tests/enterprise/test_model_governance.py`
+  - `tests/enterprise/test_model_retraining.py`
   - `PHASE_STATUS.md`
   - `README.md`
 - **Verification:**
-  - 68 / 68 automated tests passing (100% pass rate).
+  - 70 / 70 automated tests passing (100% pass rate).
   - Ruff linter passing with zero errors across entire repository.
   - Official SDK verified against authenticated REST API endpoints.
   - W3C `traceparent` distributed context propagation verified.
   - Multi-tenant branch isolation verified against cross-branch leakage.
   - Automated DR drill completed with bit-for-bit SHA-256 match and $0.00 balance drift.
-  - Streamlit UI verified with Senior Manager Queue and Live Event Simulator.
+  - Automated MLOps retraining verified with Fair Lending DIR gating and auto-promotion.
+  - API concurrency benchmark completed with 100% SLA compliance.
+  - Streamlit UI verified with Senior Manager Queue, Live Event Simulator, and Board Packet Studio.

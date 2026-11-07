@@ -80,3 +80,4 @@ class DistributedTraceContext:
             sid = cls.generate_span_id()
             _current_span_id.set(sid)
         return sid
+

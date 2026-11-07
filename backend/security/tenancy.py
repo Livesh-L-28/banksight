@@ -114,3 +114,4 @@ class BranchScopingPolicy:
             return customer_dict.get("rm_id") == user.get("rm_id")
 
         return False
+

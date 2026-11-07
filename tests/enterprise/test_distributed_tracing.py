@@ -60,3 +60,4 @@ def test_http_distributed_trace_propagation():
     assert resp.headers["X-Trace-ID"] == custom_trace_id
     assert resp.headers["X-Correlation-ID"] == "MY-CORR-123"
     assert resp.headers["traceparent"].startswith(f"00-{custom_trace_id}-")
+
