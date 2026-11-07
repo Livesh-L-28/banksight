@@ -1,0 +1,11 @@
+branch_id,branch_name,branch_code,address,city,state,postal_code,region,is_active,created_at
+BRN-001,Downtown Central Branch,DCB-101,100 Financial Way,New York,NY,10005,Northeast,True,2020-01-01T09:00:00
+BRN-002,Midtown Commercial Branch,MCB-102,450 Lexington Ave,New York,NY,10017,Northeast,True,2020-01-01T09:00:00
+BRN-003,Boston Harbor Branch,BHB-103,200 State Street,Boston,MA,02109,Northeast,True,2020-01-01T09:00:00
+BRN-004,Chicago Loop Branch,CLB-104,120 S LaSalle St,Chicago,IL,60603,Midwest,True,2020-01-01T09:00:00
+BRN-005,Detroit Metro Branch,DMB-105,500 Woodward Ave,Detroit,MI,48226,Midwest,True,2020-01-01T09:00:00
+BRN-006,Charlotte Financial Center,CFC-106,300 S Tryon St,Charlotte,NC,28202,Southeast,True,2020-01-01T09:00:00
+BRN-007,Atlanta Midtown Branch,AMB-107,1075 Peachtree St NE,Atlanta,GA,30309,Southeast,True,2020-01-01T09:00:00
+BRN-008,Dallas Uptown Branch,DUB-108,2100 McKinney Ave,Dallas,TX,75201,South,True,2020-01-01T09:00:00
+BRN-009,Denver Capitol Branch,DCB-109,1700 Lincoln St,Denver,CO,80203,West,True,2020-01-01T09:00:00
+BRN-010,San Francisco Financial Branch,SFF-110,555 California St,San Francisco,CA,94104,West,True,2020-01-01T09:00:00

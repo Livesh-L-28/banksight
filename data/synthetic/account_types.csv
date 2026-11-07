@@ -1,0 +1,7 @@
+type_id,type_name,category,interest_rate_pct,monthly_fee,minimum_balance_req,description
+TYP-CHK-STD,Standard Checking,Deposit,0.05,12.0,500.0,Day-to-day transaction checking with debit card
+TYP-CHK-PRM,Premium Interest Checking,Deposit,1.25,25.0,5000.0,High-tier interest earning checking with fee waivers
+TYP-SAV-HY,High-Yield Savings,Deposit,4.15,0.0,1000.0,Competitive high-yield digital liquid savings
+TYP-SAV-STD,Standard Regular Savings,Deposit,0.5,5.0,200.0,Basic emergency fund savings account
+TYP-CD-12M,12-Month Certificate of Deposit,Investment,5.0,0.0,2500.0,Fixed 12-month guaranteed return deposit certificate
+TYP-MMA,Money Market Premier,Deposit,3.75,15.0,10000.0,Tiered money market with check-writing capabilities

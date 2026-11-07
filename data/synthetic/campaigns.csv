@@ -1,0 +1,6 @@
+campaign_id,campaign_name,campaign_code,objective,target_segment,start_date,end_date,budget,channel,status,created_at
+CMP-2026-Q1-RET,Q1 Win-Back & Retention Nudge,RET_Q1,Retention,At Risk,2026-01-15,2026-03-31,45000.0,RM Call,Completed,2026-01-01T09:00:00
+CMP-2026-Q2-DEP,Q2 High-Yield CD Spring Boost,DEP_Q2,Deposit Growth,Affluent,2026-04-01,2026-06-30,60000.0,Email,Completed,2026-01-01T09:00:00
+CMP-2026-Q3-CRD,Q3 Platinum Card Upgrade Wave,CRD_Q3,Cross-Sell,Young Professional,2026-07-01,2026-09-30,35000.0,Mobile Push,Completed,2026-01-01T09:00:00
+CMP-2026-Q4-AUT,Fall Auto Refinance Blitz,AUT_Q4,Cross-Sell,Mass Retail,2026-10-01,2026-11-15,40000.0,SMS,Active,2026-01-01T09:00:00
+CMP-2026-VIP-WLT,Private Wealth Advisory Invitations,VIP_WLT,Retention,High Net Worth,2026-02-01,2026-10-31,80000.0,Direct Mail,Completed,2026-01-01T09:00:00

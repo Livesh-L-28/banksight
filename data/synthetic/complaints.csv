@@ -1,0 +1,190 @@
+complaint_id,customer_id,category,priority,status,resolution_days,description,logged_date,resolved_date,created_at
+CMP-00001,CUST-00008,Customer Service,Low,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-14T00:00:00,2026-05-25T00:00:00,2026-05-14T00:00:00
+CMP-00002,CUST-00012,Customer Service,High,Resolved,10.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-10T00:00:00,2026-10-20T00:00:00,2026-10-10T00:00:00
+CMP-00003,CUST-00019,Loan Processing,Low,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-08T00:00:00,2026-08-12T00:00:00,2026-08-08T00:00:00
+CMP-00004,CUST-00024,Customer Service,Low,Resolved,13.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-05T00:00:00,2026-06-18T00:00:00,2026-06-05T00:00:00
+CMP-00005,CUST-00025,Customer Service,Low,Resolved,21.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-22T00:00:00,2026-10-13T00:00:00,2026-09-22T00:00:00
+CMP-00006,CUST-00027,Digital Outage,Medium,Resolved,5.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-22T00:00:00,2026-07-27T00:00:00,2026-07-22T00:00:00
+CMP-00007,CUST-00032,Customer Service,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-17T00:00:00,2026-05-20T00:00:00,2026-05-17T00:00:00
+CMP-00008,CUST-00033,Card Declined,Low,Resolved,8.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-11T00:00:00,2026-07-19T00:00:00,2026-07-11T00:00:00
+CMP-00009,CUST-00034,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-16T00:00:00,,2026-08-16T00:00:00
+CMP-00010,CUST-00035,Loan Processing,Medium,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-11T00:00:00,2026-09-18T00:00:00,2026-09-11T00:00:00
+CMP-00011,CUST-00036,Fees,Low,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-29T00:00:00,2026-06-01T00:00:00,2026-05-29T00:00:00
+CMP-00012,CUST-00038,Customer Service,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-22T00:00:00,2026-06-25T00:00:00,2026-06-22T00:00:00
+CMP-00013,CUST-00054,Card Declined,High,Resolved,18.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-16T00:00:00,2026-06-03T00:00:00,2026-05-16T00:00:00
+CMP-00014,CUST-00057,Fees,Low,Resolved,18.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-24T00:00:00,2026-08-11T00:00:00,2026-07-24T00:00:00
+CMP-00015,CUST-00059,Card Declined,Medium,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-04T00:00:00,2026-08-10T00:00:00,2026-08-04T00:00:00
+CMP-00016,CUST-00075,Fees,Medium,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-10T00:00:00,2026-10-14T00:00:00,2026-10-10T00:00:00
+CMP-00017,CUST-00080,Customer Service,Medium,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-16T00:00:00,2026-10-05T00:00:00,2026-09-16T00:00:00
+CMP-00018,CUST-00086,Digital Outage,Low,Resolved,10.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-13T00:00:00,2026-07-23T00:00:00,2026-07-13T00:00:00
+CMP-00019,CUST-00088,Fees,High,Resolved,15.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-17T00:00:00,2026-09-01T00:00:00,2026-08-17T00:00:00
+CMP-00020,CUST-00089,Fees,High,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-25T00:00:00,2026-10-07T00:00:00,2026-09-25T00:00:00
+CMP-00021,CUST-00092,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-05T00:00:00,,2026-08-05T00:00:00
+CMP-00022,CUST-00097,Card Declined,Low,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-08T00:00:00,2026-09-20T00:00:00,2026-09-08T00:00:00
+CMP-00023,CUST-00113,Fees,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-25T00:00:00,,2026-06-25T00:00:00
+CMP-00024,CUST-00151,Digital Outage,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-25T00:00:00,,2026-06-25T00:00:00
+CMP-00025,CUST-00152,Customer Service,High,Resolved,15.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-03T00:00:00,2026-09-18T00:00:00,2026-09-03T00:00:00
+CMP-00026,CUST-00162,Fees,Medium,Resolved,18.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-07T00:00:00,2026-07-25T00:00:00,2026-07-07T00:00:00
+CMP-00027,CUST-00164,Loan Processing,Medium,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-02T00:00:00,2026-06-09T00:00:00,2026-06-02T00:00:00
+CMP-00028,CUST-00167,Customer Service,Medium,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-07T00:00:00,2026-07-14T00:00:00,2026-07-07T00:00:00
+CMP-00029,CUST-00169,Card Declined,Medium,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-02T00:00:00,2026-06-08T00:00:00,2026-06-02T00:00:00
+CMP-00030,CUST-00172,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-08T00:00:00,,2026-05-08T00:00:00
+CMP-00031,CUST-00177,Digital Outage,Medium,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-11T00:00:00,2026-05-14T00:00:00,2026-05-11T00:00:00
+CMP-00032,CUST-00179,Wire Delay,High,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-21T00:00:00,2026-07-28T00:00:00,2026-07-21T00:00:00
+CMP-00033,CUST-00182,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-06T00:00:00,,2026-06-06T00:00:00
+CMP-00034,CUST-00194,Wire Delay,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-25T00:00:00,2026-08-28T00:00:00,2026-08-25T00:00:00
+CMP-00035,CUST-00199,Loan Processing,Medium,Resolved,10.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-13T00:00:00,2026-06-23T00:00:00,2026-06-13T00:00:00
+CMP-00036,CUST-00200,Fees,High,Resolved,10.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-20T00:00:00,2026-05-30T00:00:00,2026-05-20T00:00:00
+CMP-00037,CUST-00207,Loan Processing,High,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-11T00:00:00,2026-10-27T00:00:00,2026-10-11T00:00:00
+CMP-00038,CUST-00225,Wire Delay,High,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-24T00:00:00,2026-09-13T00:00:00,2026-08-24T00:00:00
+CMP-00039,CUST-00227,Wire Delay,Low,Resolved,18.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-04T00:00:00,2026-06-22T00:00:00,2026-06-04T00:00:00
+CMP-00040,CUST-00228,Wire Delay,High,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-01T00:00:00,2026-06-20T00:00:00,2026-06-01T00:00:00
+CMP-00041,CUST-00236,Digital Outage,Medium,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-15T00:00:00,2026-07-27T00:00:00,2026-07-15T00:00:00
+CMP-00042,CUST-00238,Digital Outage,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-10T00:00:00,,2026-09-10T00:00:00
+CMP-00043,CUST-00241,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-28T00:00:00,,2026-05-28T00:00:00
+CMP-00044,CUST-00248,Loan Processing,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-26T00:00:00,2026-09-29T00:00:00,2026-09-26T00:00:00
+CMP-00045,CUST-00252,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-06T00:00:00,,2026-09-06T00:00:00
+CMP-00046,CUST-00254,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-15T00:00:00,,2026-08-15T00:00:00
+CMP-00047,CUST-00255,Fees,High,Resolved,23.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-15T00:00:00,2026-08-07T00:00:00,2026-07-15T00:00:00
+CMP-00048,CUST-00259,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-05T00:00:00,,2026-06-05T00:00:00
+CMP-00049,CUST-00260,Card Declined,Low,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-22T00:00:00,2026-09-26T00:00:00,2026-09-22T00:00:00
+CMP-00050,CUST-00262,Customer Service,Medium,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-26T00:00:00,2026-05-30T00:00:00,2026-05-26T00:00:00
+CMP-00051,CUST-00263,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-08T00:00:00,,2026-05-08T00:00:00
+CMP-00052,CUST-00268,Loan Processing,Medium,Resolved,18.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-13T00:00:00,2026-08-31T00:00:00,2026-08-13T00:00:00
+CMP-00053,CUST-00273,Fees,Low,Resolved,2.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-11T00:00:00,2026-08-13T00:00:00,2026-08-11T00:00:00
+CMP-00054,CUST-00276,Fees,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-16T00:00:00,,2026-06-16T00:00:00
+CMP-00055,CUST-00279,Customer Service,Low,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-08T00:00:00,2026-06-20T00:00:00,2026-06-08T00:00:00
+CMP-00056,CUST-00280,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-20T00:00:00,,2026-09-20T00:00:00
+CMP-00057,CUST-00285,Customer Service,Medium,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-08T00:00:00,2026-06-17T00:00:00,2026-06-08T00:00:00
+CMP-00058,CUST-00286,Loan Processing,High,Resolved,21.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-14T00:00:00,2026-09-04T00:00:00,2026-08-14T00:00:00
+CMP-00059,CUST-00288,Customer Service,High,Resolved,24.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-10T00:00:00,2026-08-03T00:00:00,2026-07-10T00:00:00
+CMP-00060,CUST-00293,Digital Outage,High,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-10T00:00:00,2026-09-30T00:00:00,2026-09-10T00:00:00
+CMP-00061,CUST-00314,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-11T00:00:00,,2026-05-11T00:00:00
+CMP-00062,CUST-00320,Card Declined,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-22T00:00:00,,2026-05-22T00:00:00
+CMP-00063,CUST-00324,Customer Service,High,Resolved,14.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-19T00:00:00,2026-06-02T00:00:00,2026-05-19T00:00:00
+CMP-00064,CUST-00346,Digital Outage,High,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-07T00:00:00,2026-08-19T00:00:00,2026-08-07T00:00:00
+CMP-00065,CUST-00356,Digital Outage,Low,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-05T00:00:00,2026-08-11T00:00:00,2026-08-05T00:00:00
+CMP-00066,CUST-00359,Digital Outage,High,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-30T00:00:00,2026-10-06T00:00:00,2026-09-30T00:00:00
+CMP-00067,CUST-00363,Card Declined,Low,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-15T00:00:00,2026-08-04T00:00:00,2026-07-15T00:00:00
+CMP-00068,CUST-00369,Loan Processing,Low,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-02T00:00:00,2026-07-21T00:00:00,2026-07-02T00:00:00
+CMP-00069,CUST-00373,Card Declined,High,Resolved,14.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-25T00:00:00,2026-06-08T00:00:00,2026-05-25T00:00:00
+CMP-00070,CUST-00383,Loan Processing,High,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-10T00:00:00,2026-10-21T00:00:00,2026-10-10T00:00:00
+CMP-00071,CUST-00384,Digital Outage,High,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-24T00:00:00,2026-07-01T00:00:00,2026-06-24T00:00:00
+CMP-00072,CUST-00386,Fees,Medium,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-04T00:00:00,2026-10-08T00:00:00,2026-10-04T00:00:00
+CMP-00073,CUST-00391,Card Declined,Low,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-27T00:00:00,2026-08-03T00:00:00,2026-07-27T00:00:00
+CMP-00074,CUST-00393,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-14T00:00:00,,2026-08-14T00:00:00
+CMP-00075,CUST-00408,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-05T00:00:00,,2026-08-05T00:00:00
+CMP-00076,CUST-00422,Fees,High,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-10T00:00:00,2026-08-16T00:00:00,2026-08-10T00:00:00
+CMP-00077,CUST-00424,Loan Processing,High,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-27T00:00:00,2026-10-08T00:00:00,2026-09-27T00:00:00
+CMP-00078,CUST-00438,Loan Processing,Low,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-05T00:00:00,2026-08-17T00:00:00,2026-08-05T00:00:00
+CMP-00079,CUST-00440,Loan Processing,Medium,Resolved,17.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-29T00:00:00,2026-06-15T00:00:00,2026-05-29T00:00:00
+CMP-00080,CUST-00441,Loan Processing,High,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-29T00:00:00,2026-06-14T00:00:00,2026-05-29T00:00:00
+CMP-00081,CUST-00458,Fees,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-17T00:00:00,,2026-06-17T00:00:00
+CMP-00082,CUST-00462,Wire Delay,Medium,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-06T00:00:00,2026-09-18T00:00:00,2026-09-06T00:00:00
+CMP-00083,CUST-00464,Digital Outage,High,Resolved,24.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-31T00:00:00,2026-09-24T00:00:00,2026-08-31T00:00:00
+CMP-00084,CUST-00465,Digital Outage,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-18T00:00:00,,2026-05-18T00:00:00
+CMP-00085,CUST-00469,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-07T00:00:00,,2026-05-07T00:00:00
+CMP-00086,CUST-00472,Digital Outage,Medium,Resolved,10.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-08T00:00:00,2026-10-18T00:00:00,2026-10-08T00:00:00
+CMP-00087,CUST-00473,Card Declined,High,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-21T00:00:00,2026-09-09T00:00:00,2026-08-21T00:00:00
+CMP-00088,CUST-00477,Card Declined,Low,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-29T00:00:00,2026-06-14T00:00:00,2026-05-29T00:00:00
+CMP-00089,CUST-00478,Fees,High,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-09T00:00:00,2026-08-13T00:00:00,2026-08-09T00:00:00
+CMP-00090,CUST-00480,Digital Outage,Medium,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-01T00:00:00,2026-10-20T00:00:00,2026-10-01T00:00:00
+CMP-00091,CUST-00490,Card Declined,Low,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-31T00:00:00,2026-09-11T00:00:00,2026-08-31T00:00:00
+CMP-00092,CUST-00493,Card Declined,Low,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-10T00:00:00,2026-08-22T00:00:00,2026-08-10T00:00:00
+CMP-00093,CUST-00496,Digital Outage,Low,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-10T00:00:00,2026-09-30T00:00:00,2026-09-10T00:00:00
+CMP-00094,CUST-00497,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-01T00:00:00,,2026-08-01T00:00:00
+CMP-00095,CUST-00500,Fees,High,Resolved,14.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-14T00:00:00,2026-09-28T00:00:00,2026-09-14T00:00:00
+CMP-00096,CUST-00505,Card Declined,Medium,Resolved,17.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-30T00:00:00,2026-06-16T00:00:00,2026-05-30T00:00:00
+CMP-00097,CUST-00506,Digital Outage,High,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-12T00:00:00,2026-09-28T00:00:00,2026-09-12T00:00:00
+CMP-00098,CUST-00508,Digital Outage,Medium,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-18T00:00:00,2026-09-27T00:00:00,2026-09-18T00:00:00
+CMP-00099,CUST-00511,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-06T00:00:00,,2026-07-06T00:00:00
+CMP-00100,CUST-00515,Fees,High,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-06T00:00:00,2026-08-15T00:00:00,2026-08-06T00:00:00
+CMP-00101,CUST-00527,Digital Outage,Medium,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-19T00:00:00,2026-05-25T00:00:00,2026-05-19T00:00:00
+CMP-00102,CUST-00529,Loan Processing,Low,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-22T00:00:00,2026-05-29T00:00:00,2026-05-22T00:00:00
+CMP-00103,CUST-00531,Wire Delay,Low,Resolved,5.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-21T00:00:00,2026-05-26T00:00:00,2026-05-21T00:00:00
+CMP-00104,CUST-00542,Wire Delay,Medium,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-07T00:00:00,2026-08-14T00:00:00,2026-08-07T00:00:00
+CMP-00105,CUST-00546,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-12T00:00:00,,2026-07-12T00:00:00
+CMP-00106,CUST-00550,Wire Delay,High,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-18T00:00:00,2026-05-29T00:00:00,2026-05-18T00:00:00
+CMP-00107,CUST-00559,Digital Outage,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-12T00:00:00,,2026-08-12T00:00:00
+CMP-00108,CUST-00563,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-24T00:00:00,,2026-09-24T00:00:00
+CMP-00109,CUST-00568,Wire Delay,High,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-04T00:00:00,2026-07-24T00:00:00,2026-07-04T00:00:00
+CMP-00110,CUST-00570,Fees,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-01T00:00:00,,2026-09-01T00:00:00
+CMP-00111,CUST-00571,Customer Service,Medium,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-14T00:00:00,2026-08-23T00:00:00,2026-08-14T00:00:00
+CMP-00112,CUST-00575,Digital Outage,High,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-03T00:00:00,2026-06-10T00:00:00,2026-06-03T00:00:00
+CMP-00113,CUST-00576,Card Declined,Low,Resolved,2.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-22T00:00:00,2026-06-24T00:00:00,2026-06-22T00:00:00
+CMP-00114,CUST-00583,Digital Outage,Low,Resolved,18.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-16T00:00:00,2026-06-03T00:00:00,2026-05-16T00:00:00
+CMP-00115,CUST-00585,Fees,Medium,Resolved,5.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-22T00:00:00,2026-07-27T00:00:00,2026-07-22T00:00:00
+CMP-00116,CUST-00591,Digital Outage,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-13T00:00:00,,2026-06-13T00:00:00
+CMP-00117,CUST-00592,Loan Processing,Low,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-24T00:00:00,2026-05-28T00:00:00,2026-05-24T00:00:00
+CMP-00118,CUST-00593,Fees,Medium,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-07T00:00:00,2026-07-18T00:00:00,2026-07-07T00:00:00
+CMP-00119,CUST-00598,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-07T00:00:00,,2026-09-07T00:00:00
+CMP-00120,CUST-00601,Loan Processing,High,Resolved,5.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-07T00:00:00,2026-07-12T00:00:00,2026-07-07T00:00:00
+CMP-00121,CUST-00614,Card Declined,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-29T00:00:00,,2026-08-29T00:00:00
+CMP-00122,CUST-00616,Fees,Medium,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-28T00:00:00,2026-06-09T00:00:00,2026-05-28T00:00:00
+CMP-00123,CUST-00617,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-04T00:00:00,,2026-08-04T00:00:00
+CMP-00124,CUST-00619,Fees,Low,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-29T00:00:00,2026-10-05T00:00:00,2026-09-29T00:00:00
+CMP-00125,CUST-00622,Digital Outage,Medium,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-13T00:00:00,2026-09-19T00:00:00,2026-09-13T00:00:00
+CMP-00126,CUST-00623,Digital Outage,Medium,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-02T00:00:00,2026-10-06T00:00:00,2026-10-02T00:00:00
+CMP-00127,CUST-00625,Wire Delay,High,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-30T00:00:00,2026-06-06T00:00:00,2026-05-30T00:00:00
+CMP-00128,CUST-00630,Digital Outage,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-07T00:00:00,2026-10-10T00:00:00,2026-10-07T00:00:00
+CMP-00129,CUST-00631,Customer Service,High,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-22T00:00:00,2026-10-12T00:00:00,2026-09-22T00:00:00
+CMP-00130,CUST-00632,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-23T00:00:00,,2026-07-23T00:00:00
+CMP-00131,CUST-00644,Wire Delay,High,Resolved,25.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-22T00:00:00,2026-06-16T00:00:00,2026-05-22T00:00:00
+CMP-00132,CUST-00647,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-18T00:00:00,,2026-08-18T00:00:00
+CMP-00133,CUST-00650,Loan Processing,Low,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-15T00:00:00,2026-05-27T00:00:00,2026-05-15T00:00:00
+CMP-00134,CUST-00653,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-21T00:00:00,,2026-06-21T00:00:00
+CMP-00135,CUST-00655,Wire Delay,High,Resolved,23.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-17T00:00:00,2026-09-09T00:00:00,2026-08-17T00:00:00
+CMP-00136,CUST-00657,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-13T00:00:00,,2026-09-13T00:00:00
+CMP-00137,CUST-00659,Fees,Medium,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-12T00:00:00,2026-10-18T00:00:00,2026-10-12T00:00:00
+CMP-00138,CUST-00668,Card Declined,High,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-09T00:00:00,2026-05-15T00:00:00,2026-05-09T00:00:00
+CMP-00139,CUST-00675,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-06T00:00:00,,2026-08-06T00:00:00
+CMP-00140,CUST-00678,Wire Delay,High,Resolved,24.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-23T00:00:00,2026-10-17T00:00:00,2026-09-23T00:00:00
+CMP-00141,CUST-00681,Customer Service,High,Resolved,6.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-23T00:00:00,2026-08-29T00:00:00,2026-08-23T00:00:00
+CMP-00142,CUST-00688,Wire Delay,Medium,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-08T00:00:00,2026-05-15T00:00:00,2026-05-08T00:00:00
+CMP-00143,CUST-00692,Customer Service,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-17T00:00:00,2026-05-20T00:00:00,2026-05-17T00:00:00
+CMP-00144,CUST-00696,Card Declined,High,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-17T00:00:00,2026-09-02T00:00:00,2026-08-17T00:00:00
+CMP-00145,CUST-00717,Digital Outage,High,Resolved,11.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-19T00:00:00,2026-09-30T00:00:00,2026-09-19T00:00:00
+CMP-00146,CUST-00720,Digital Outage,High,Resolved,25.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-19T00:00:00,2026-08-13T00:00:00,2026-07-19T00:00:00
+CMP-00147,CUST-00744,Card Declined,High,Resolved,8.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-23T00:00:00,2026-05-31T00:00:00,2026-05-23T00:00:00
+CMP-00148,CUST-00754,Fees,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-27T00:00:00,2026-08-30T00:00:00,2026-08-27T00:00:00
+CMP-00149,CUST-00756,Wire Delay,Medium,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-11T00:00:00,2026-10-01T00:00:00,2026-09-11T00:00:00
+CMP-00150,CUST-00760,Customer Service,High,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-28T00:00:00,2026-08-16T00:00:00,2026-07-28T00:00:00
+CMP-00151,CUST-00772,Wire Delay,High,Resolved,2.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-11T00:00:00,2026-08-13T00:00:00,2026-08-11T00:00:00
+CMP-00152,CUST-00789,Card Declined,Medium,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-17T00:00:00,2026-06-26T00:00:00,2026-06-17T00:00:00
+CMP-00153,CUST-00792,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-21T00:00:00,,2026-07-21T00:00:00
+CMP-00154,CUST-00796,Loan Processing,High,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-31T00:00:00,2026-06-16T00:00:00,2026-05-31T00:00:00
+CMP-00155,CUST-00800,Customer Service,Low,Resolved,25.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-12T00:00:00,2026-09-06T00:00:00,2026-08-12T00:00:00
+CMP-00156,CUST-00802,Customer Service,High,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-28T00:00:00,2026-10-07T00:00:00,2026-09-28T00:00:00
+CMP-00157,CUST-00803,Customer Service,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-03T00:00:00,,2026-10-03T00:00:00
+CMP-00158,CUST-00804,Loan Processing,High,Resolved,25.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-07T00:00:00,2026-08-01T00:00:00,2026-07-07T00:00:00
+CMP-00159,CUST-00805,Digital Outage,Low,Resolved,14.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-25T00:00:00,2026-06-08T00:00:00,2026-05-25T00:00:00
+CMP-00160,CUST-00808,Fees,Medium,Resolved,7.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-22T00:00:00,2026-07-29T00:00:00,2026-07-22T00:00:00
+CMP-00161,CUST-00809,Loan Processing,Low,Resolved,17.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-10T00:00:00,2026-07-27T00:00:00,2026-07-10T00:00:00
+CMP-00162,CUST-00839,Digital Outage,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-09T00:00:00,,2026-06-09T00:00:00
+CMP-00163,CUST-00843,Fees,Low,Resolved,22.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-14T00:00:00,2026-10-06T00:00:00,2026-09-14T00:00:00
+CMP-00164,CUST-00860,Loan Processing,Low,Resolved,8.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-07T00:00:00,2026-09-15T00:00:00,2026-09-07T00:00:00
+CMP-00165,CUST-00871,Card Declined,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-25T00:00:00,,2026-08-25T00:00:00
+CMP-00166,CUST-00872,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-24T00:00:00,,2026-09-24T00:00:00
+CMP-00167,CUST-00874,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-29T00:00:00,,2026-05-29T00:00:00
+CMP-00168,CUST-00876,Customer Service,Medium,Resolved,24.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-17T00:00:00,2026-08-10T00:00:00,2026-07-17T00:00:00
+CMP-00169,CUST-00878,Customer Service,Medium,Resolved,8.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-19T00:00:00,2026-05-27T00:00:00,2026-05-19T00:00:00
+CMP-00170,CUST-00889,Card Declined,High,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-28T00:00:00,2026-05-31T00:00:00,2026-05-28T00:00:00
+CMP-00171,CUST-00903,Digital Outage,Low,Resolved,19.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-16T00:00:00,2026-08-04T00:00:00,2026-07-16T00:00:00
+CMP-00172,CUST-00906,Card Declined,Low,Resolved,23.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-23T00:00:00,2026-09-15T00:00:00,2026-08-23T00:00:00
+CMP-00173,CUST-00908,Digital Outage,High,Resolved,20.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-08-07T00:00:00,2026-08-27T00:00:00,2026-08-07T00:00:00
+CMP-00174,CUST-00909,Customer Service,Medium,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-10-06T00:00:00,2026-10-22T00:00:00,2026-10-06T00:00:00
+CMP-00175,CUST-00914,Digital Outage,Low,Resolved,21.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-24T00:00:00,2026-07-15T00:00:00,2026-06-24T00:00:00
+CMP-00176,CUST-00915,Wire Delay,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-31T00:00:00,,2026-05-31T00:00:00
+CMP-00177,CUST-00926,Fees,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-12T00:00:00,,2026-06-12T00:00:00
+CMP-00178,CUST-00931,Customer Service,Low,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-08T00:00:00,2026-05-24T00:00:00,2026-05-08T00:00:00
+CMP-00179,CUST-00952,Fees,High,Resolved,16.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-29T00:00:00,2026-10-15T00:00:00,2026-09-29T00:00:00
+CMP-00180,CUST-00955,Digital Outage,High,Resolved,14.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-15T00:00:00,2026-07-29T00:00:00,2026-07-15T00:00:00
+CMP-00181,CUST-00963,Loan Processing,High,Resolved,17.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-17T00:00:00,2026-10-04T00:00:00,2026-09-17T00:00:00
+CMP-00182,CUST-00965,Card Declined,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-15T00:00:00,,2026-06-15T00:00:00
+CMP-00183,CUST-00966,Customer Service,High,Resolved,4.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-11T00:00:00,2026-06-15T00:00:00,2026-06-11T00:00:00
+CMP-00184,CUST-00971,Customer Service,Low,Resolved,3.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-05T00:00:00,2026-06-08T00:00:00,2026-06-05T00:00:00
+CMP-00185,CUST-00973,Digital Outage,Medium,Resolved,2.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-27T00:00:00,2026-07-29T00:00:00,2026-07-27T00:00:00
+CMP-00186,CUST-00979,Customer Service,Low,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-05-18T00:00:00,2026-05-27T00:00:00,2026-05-18T00:00:00
+CMP-00187,CUST-00985,Digital Outage,High,Resolved,9.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-06-10T00:00:00,2026-06-19T00:00:00,2026-06-10T00:00:00
+CMP-00188,CUST-00995,Loan Processing,High,Open,,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-09-04T00:00:00,,2026-09-04T00:00:00
+CMP-00189,CUST-00999,Card Declined,Medium,Resolved,12.0,Customer reported dissatisfaction regarding unexpected fee or mobile connectivity.,2026-07-18T00:00:00,2026-07-30T00:00:00,2026-07-18T00:00:00
