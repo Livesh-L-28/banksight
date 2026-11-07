@@ -182,3 +182,24 @@ def list_pending_approvals(
     log_api_action(request, user, "LIST_PENDING_APPROVALS", "RETENTION_PORTFOLIO", f"count={len(cases)}")
     return [RetentionCaseSchema(**c) for c in cases]
 
+
+@router.post("/optimize-concession/{customer_id}")
+def optimize_customer_concession(
+    customer_id: str,
+    request: Request,
+    user: dict = Depends(require_roles(["Admin", "Executive", "BranchManager", "RelationshipManager", "DataAnalyst"]))
+):
+    """
+    Executes algorithmic pricing optimization balancing customer retention uplift against concession cost
+    to determine the net-margin-maximizing retention incentive package.
+    """
+    from analytics.retention.pricing_optimizer import ConcessionPricingOptimizer
+
+    res = ConcessionPricingOptimizer.optimize_for_customer_id(customer_id)
+    if "error" in res:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=res["error"])
+
+    log_api_action(request, user, "OPTIMIZE_CONCESSION_PRICING", "CUSTOMER", customer_id)
+    return res
+
+

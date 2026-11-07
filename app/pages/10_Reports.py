@@ -19,6 +19,7 @@ from app.components.ui_components import (
 )
 from backend.services.reporting_service import ReportingService, REPORT_TYPES
 from backend.reporting.regulatory_exporter import RegulatoryBoardReportExporter
+from backend.compliance.sar_generator import FinCENSARGenerator
 
 st.set_page_config(page_title="Business Reports | BankSight", page_icon="📑", layout="wide")
 apply_banking_theme()
@@ -31,8 +32,9 @@ render_page_header(
 
 reporting_service = ReportingService()
 
-tab_board, tab_standard = st.tabs([
+tab_board, tab_aml_sar, tab_standard = st.tabs([
     "🏛️ Board of Directors & Regulatory Oversight Packet",
+    "🚨 BSA/AML & FinCEN SAR Regulatory Workspace",
     "📊 Standard Executive Business Reports"
 ])
 
@@ -109,7 +111,87 @@ with tab_board:
 
 
 # =========================================================================
-# TAB 2: STANDARD EXECUTIVE BUSINESS REPORTS
+# TAB 2: BSA/AML & FINCEN SAR REGULATORY WORKSPACE
+# =========================================================================
+with tab_aml_sar:
+    st.markdown("#### 🚨 **Bank Secrecy Act (BSA) & FinCEN Suspicious Activity Report (SAR) Studio**")
+    st.markdown("""
+    Automated transaction monitoring scanner compliant with **FinCEN Form 111 (SAR)** and **OCC Bank Secrecy Act / Anti-Money Laundering (BSA/AML)** guidelines.
+    Flags rapid capital flight, CTR avoidance structuring ($8,500–$9,999), and pre-churn balance extraction velocity.
+    """)
+
+    aml_alerts = FinCENSARGenerator.scan_portfolio_for_alerts(limit=50)
+
+    # Top Metric Banner
+    am1, am2, am3, am4 = st.columns(4)
+    with am1:
+        render_metric_card("Flagged Accounts", f"{len(aml_alerts)}", "Anomalous Transaction Flow")
+    with am2:
+        tot_suspicious = sum(a["total_debit_outflow_usd"] for a in aml_alerts)
+        render_metric_card("Total Flagged Volume", f"${tot_suspicious:,.2f}", "Cumulative Outflows")
+    with am3:
+        structuring_n = sum(1 for a in aml_alerts if any(f["code"] == "AML_STRUCTURING" for f in a.get("red_flags", [])))
+        render_metric_card("Suspected Structuring", f"{structuring_n}", "$8,500 - $9,999 CTR Evading")
+    with am4:
+        sar_rec_n = sum(1 for a in aml_alerts if a.get("sar_filing_recommended"))
+        render_metric_card("SAR Filing Required", f"{sar_rec_n}", "Risk Score ≥ 50 Threshold")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    if aml_alerts:
+        import pandas as pd
+        alert_rows = [
+            {
+                "Customer ID": a["customer_id"],
+                "Customer Name": a["customer_name"],
+                "Branch ID": a["branch_id"],
+                "Occupation": a["occupation"],
+                "Total Debits": f"${a['total_debit_outflow_usd']:,.2f}",
+                "Remaining Balance": f"${a['total_balance_usd']:,.2f}",
+                "AML Risk Score": f"{a['aml_risk_score']} / 100",
+                "SAR Filing": "⚠️ MANDATORY" if a["sar_filing_recommended"] else "Monitor",
+                "Primary Alert": a["red_flags"][0]["title"] if a["red_flags"] else "N/A"
+            }
+            for a in aml_alerts
+        ]
+        st.markdown("##### 📋 **Prioritized Compliance Alert Queue**")
+        st.dataframe(pd.DataFrame(alert_rows), use_container_width=True, hide_index=True)
+
+        st.markdown("<br>", unsafe_allow_html=True)
+        st.markdown("##### 📝 **FinCEN Form 111 Regulatory Narrative Dossier**")
+
+        flagged_options = {f"{a['customer_name']} ({a['customer_id']}) — Score: {a['aml_risk_score']}": a['customer_id'] for a in aml_alerts}
+        picked_alert_label = st.selectbox("Select Customer to Review and Generate SAR Narrative:", options=list(flagged_options.keys()))
+        picked_cust_id = flagged_options[picked_alert_label]
+
+        sar_dossier = FinCENSARGenerator.generate_fincen_sar_packet(picked_cust_id, compliance_officer="BSA/AML Officer")
+
+        st.markdown(
+            f"""
+            <div style="background: white; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px; margin: 12px 0;">
+                <div style="font-weight: 700; color: #1E293B;">FinCEN Reference: {sar_dossier['sar_reference_id']}</div>
+                <div style="font-size: 13px; color: #64748B;">Subject: {sar_dossier['customer_name']} | Filing Date: {sar_dossier['filing_date']} | Status: Audit Ready</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        with st.expander("📄 **Inspect Generated FinCEN SAR Narrative Text**", expanded=True):
+            st.markdown(sar_dossier["narrative_markdown"])
+
+        sar_md_bytes = sar_dossier["narrative_markdown"].encode("utf-8")
+        st.download_button(
+            label=f"📥 Download FinCEN SAR Filing Narrative ({picked_cust_id}.md)",
+            data=sar_md_bytes,
+            file_name=f"fincen_sar_{picked_cust_id}_{sar_dossier['filing_date']}.md",
+            mime="text/markdown"
+        )
+    else:
+        st.info("Zero AML red flags detected across scanned customer accounts.")
+
+
+# =========================================================================
+# TAB 3: STANDARD EXECUTIVE BUSINESS REPORTS
 # =========================================================================
 with tab_standard:
     # Select Report

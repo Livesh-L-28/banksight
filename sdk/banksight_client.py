@@ -387,3 +387,29 @@ class BankSightClient:
         """Retrieves recent webhook delivery logs with delivery receipts and timestamps."""
         return self._request("GET", "/api/v1/webhooks/deliveries", params={"limit": limit})
 
+    # --- Algorithmic Concession Pricing Optimization ---
+
+    def optimize_concession(self, customer_id: str) -> Dict[str, Any]:
+        """
+        Executes dynamic concession pricing optimization balancing retention probability uplift
+        against annual concession cost to identify the profit-maximizing offer.
+        """
+        return self._request("POST", f"/api/v1/retention/optimize-concession/{customer_id}")
+
+    # --- BSA/AML Compliance & FinCEN SAR Generation ---
+
+    def scan_aml_risks(self, limit: int = 100) -> Dict[str, Any]:
+        """
+        Scans portfolio for Bank Secrecy Act / Anti-Money Laundering red flags,
+        including rapid capital flight surges and structuring under CTR limits.
+        """
+        return self._request("POST", "/api/v1/governance/aml-sar/scan", params={"limit": limit})
+
+    def generate_sar_narrative(self, customer_id: str) -> Dict[str, Any]:
+        """
+        Generates a formal FinCEN Form 111-compliant Suspicious Activity Report (SAR) narrative
+        with chronological transaction evidence and compliance attestation.
+        """
+        return self._request("POST", f"/api/v1/governance/aml-sar/generate/{customer_id}")
+
+

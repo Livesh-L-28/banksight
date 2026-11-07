@@ -1,8 +1,8 @@
 # BankSight REST API Performance & Latency Benchmark Report
 
-**Benchmark Suite Execution:** `Python Concurrent ThreadPool Executor`  
-**Target Environment:** Local macOS / In-Memory Microservices  
-**Verified Platform Version:** `2.0.0-enterprise`  
+**Benchmark Suite Execution:** `Python Concurrent ThreadPool Executor`
+**Target Environment:** Local macOS / In-Memory Microservices
+**Verified Platform Version:** `2.0.0-enterprise`
 
 ---
 
@@ -20,11 +20,11 @@ All microservices adhere strictly to Tier-1 institutional banking latency SLAs:
 
 | Endpoint | Total Reqs | Concurrency | Throughput | Mean Latency | P50 (Median) | P95 Latency | P99 Latency | SLA Availability |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `GET /health` | 200 | 20 | **447.3 req/s** | 43.44ms | 40.35ms | **77.80ms** | 82.57ms | `100.0%` |
-| `GET /api/v1/kpi/executive` | 50 | 8 | **7.7 req/s** | 1023.27ms | 1051.35ms | **1159.66ms** | 1241.67ms | `100.0%` |
-| `POST /api/v1/churn/predict-customer/CUST-00001` | 60 | 10 | **301.2 req/s** | 32.14ms | 31.94ms | **41.33ms** | 43.49ms | `100.0%` |
-| `POST /api/v1/streaming/events/withdrawal` | 60 | 10 | **224.0 req/s** | 36.83ms | 27.45ms | **79.11ms** | 171.73ms | `100.0%` |
-| `POST /api/v1/copilot/briefing/CUST-00001` | 40 | 8 | **161.1 req/s** | 48.01ms | 50.10ms | **63.56ms** | 68.13ms | `100.0%` |
+| `GET /health` | 200 | 20 | **384.9 req/s** | 50.05ms | 46.27ms | **95.28ms** | 104.77ms | `100.0%` |
+| `GET /api/v1/kpi/executive` | 50 | 8 | **8.1 req/s** | 974.16ms | 999.61ms | **1132.06ms** | 1197.14ms | `100.0%` |
+| `POST /api/v1/churn/predict-customer/CUST-00001` | 60 | 10 | **166.1 req/s** | 57.88ms | 52.36ms | **92.92ms** | 101.17ms | `100.0%` |
+| `POST /api/v1/streaming/events/withdrawal` | 60 | 10 | **194.5 req/s** | 47.42ms | 37.92ms | **126.45ms** | 152.94ms | `100.0%` |
+| `POST /api/v1/copilot/briefing/CUST-00001` | 40 | 8 | **107.0 req/s** | 73.42ms | 63.18ms | **138.67ms** | 143.04ms | `100.0%` |
 
 ---
 

@@ -142,6 +142,28 @@ with tab_cases:
             rm_map = {f"{rm.first_name} {rm.last_name} ({rm.rm_id})": rm.rm_id for rm in rms}
             session.close()
 
+            # Algorithmic Concession Pricing Optimization
+            from analytics.retention.pricing_optimizer import ConcessionPricingOptimizer
+            pricing_rec = ConcessionPricingOptimizer.optimize_for_customer_id(target_case["customer_id"])
+            if "optimal_recommendation" in pricing_rec:
+                opt_rec = pricing_rec["optimal_recommendation"]
+                prof_rec = pricing_rec["customer_profile"]
+                with st.expander("🤖 **AI Concession Pricing Recommendation**", expanded=True):
+                    st.markdown(
+                        f"""
+                        <div style="background: #F8FAFC; border: 1px solid #CBD5E1; border-left: 4px solid #20BF6B; border-radius: 6px; padding: 12px; margin-bottom: 8px;">
+                            <div style="font-weight: 700; color: #1E293B; font-size: 14px;">🎯 Recommended: {opt_rec['offer_name']}</div>
+                            <div style="font-size: 13px; color: #475569; margin-top: 4px;">
+                                <strong>Expected Net Gain:</strong> ${opt_rec['expected_net_gain_usd']:,.2f} &nbsp;|&nbsp;
+                                <strong>Projected Retention:</strong> {opt_rec['projected_retention_probability']:.1%} &nbsp;|&nbsp;
+                                <strong>Allowable Cap:</strong> ${prof_rec['max_allowable_concession_usd']:,.2f} ({prof_rec['retention_quadrant']})
+                            </div>
+                            <div style="font-size: 12px; color: #64748B; margin-top: 4px;"><em>{opt_rec['rationale']}</em></div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True
+                    )
+
             with st.form("retention_action_form"):
                 st.markdown(f"**Customer:** {target_case['customer_name']} (`{target_case['customer_id']}`)")
                 st.markdown(f"**Churn Risk:** `{target_case['churn_probability']:.1%}` — Reason: *{target_case['churn_reason']}*")

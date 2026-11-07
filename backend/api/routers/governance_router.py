@@ -3,7 +3,7 @@ BankSight Governance, Audit & Model Risk Router (SR 11-7 / BCBS 239)
 """
 
 from typing import List, Optional
-from fastapi import APIRouter, Depends, Query, Request
+from fastapi import APIRouter, Depends, Query, Request, HTTPException, status
 from pydantic import BaseModel, Field
 from backend.api.dependencies import require_roles, log_api_action
 from backend.api.schemas import AuditLogItem, AuditIntegrityResponse
@@ -146,5 +146,48 @@ def benchmark_all_stress_scenarios(
 
     log_api_action(request, user, "BENCHMARK_CCAR_STRESS_TESTS", "RISK_SIMULATION", f"hqla={hqla_buffer_usd}")
     return results
+
+
+@router.post("/aml-sar/scan")
+def scan_portfolio_aml_risks(
+    request: Request,
+    limit: int = Query(100, le=500),
+    user: dict = Depends(require_roles(["Admin", "ComplianceOfficer", "Executive"]))
+):
+    """
+    Scans depository accounts for BSA/AML structuring, sudden capital flight surges,
+    and returns prioritized accounts requiring compliance investigation.
+    """
+    from backend.compliance.sar_generator import FinCENSARGenerator
+
+    alerts = FinCENSARGenerator.scan_portfolio_for_alerts(limit=limit)
+    log_api_action(request, user, "SCAN_AML_RISKS", "BSA_AML", f"limit={limit}")
+    return {
+        "scanned_limit": limit,
+        "flagged_accounts_count": len(alerts),
+        "alerts": alerts
+    }
+
+
+@router.post("/aml-sar/generate/{customer_id}")
+def generate_fincen_sar_narrative(
+    customer_id: str,
+    request: Request,
+    user: dict = Depends(require_roles(["Admin", "ComplianceOfficer"]))
+):
+    """
+    Generates a formal FinCEN Form 111-compliant Suspicious Activity Report (SAR) narrative
+    with chronological suspicious transaction evidence and compliance attestation.
+    """
+    from backend.compliance.sar_generator import FinCENSARGenerator
+
+    officer_name = user.get("username", "BSA/AML Compliance Officer")
+    sar_packet = FinCENSARGenerator.generate_fincen_sar_packet(customer_id, compliance_officer=officer_name)
+    if "error" in sar_packet:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=sar_packet["error"])
+
+    log_api_action(request, user, "GENERATE_FINCEN_SAR_NARRATIVE", "SAR_FILING", customer_id)
+    return sar_packet
+
 
 

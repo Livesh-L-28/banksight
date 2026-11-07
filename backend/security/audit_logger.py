@@ -7,6 +7,7 @@ import os
 import json
 import uuid
 import hashlib
+import threading
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional, Dict, Any, List
@@ -18,11 +19,13 @@ AUDIT_LOG_PATH = AUDIT_LOG_DIR / "audit_trail.jsonl"
 class ImmutableAuditLogger:
     """
     Appends audit events into a SHA-256 hash-chained JSON-Lines ledger.
+    Thread-safe with atomic locking to prevent fork race conditions in concurrent execution.
     """
 
     def __init__(self, log_path: Path = AUDIT_LOG_PATH):
         self.log_path = log_path
         self.log_path.parent.mkdir(parents=True, exist_ok=True)
+        self._lock = threading.Lock()
         self._last_hash = self._get_latest_hash()
 
     def _get_latest_hash(self) -> str:
@@ -56,31 +59,33 @@ class ImmutableAuditLogger:
         event_id = f"EVT-{uuid.uuid4().hex[:12]}"
         timestamp = datetime.now(timezone.utc).isoformat()
 
-        record_payload = {
-            "event_id": event_id,
-            "timestamp_utc": timestamp,
-            "prev_hash": self._last_hash,
-            "user_id": user_id,
-            "role": role,
-            "action": action,
-            "resource_type": resource_type,
-            "resource_id": resource_id,
-            "details": details or {},
-            "client_ip": client_ip,
-            "status": status
-        }
+        with self._lock:
+            record_payload = {
+                "event_id": event_id,
+                "timestamp_utc": timestamp,
+                "prev_hash": self._last_hash,
+                "user_id": user_id,
+                "role": role,
+                "action": action,
+                "resource_type": resource_type,
+                "resource_id": resource_id,
+                "details": details or {},
+                "client_ip": client_ip,
+                "status": status
+            }
 
-        # Compute SHA-256 cryptographic signature
-        serialized = json.dumps(record_payload, sort_keys=True)
-        record_hash = hashlib.sha256(serialized.encode("utf-8")).hexdigest()
-        record_payload["record_hash"] = record_hash
+            # Compute SHA-256 cryptographic signature
+            serialized = json.dumps(record_payload, sort_keys=True)
+            record_hash = hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+            record_payload["record_hash"] = record_hash
 
-        # Atomic append to ledger
-        with open(self.log_path, "a", encoding="utf-8") as f:
-            f.write(json.dumps(record_payload) + "\n")
+            # Atomic append to ledger
+            with open(self.log_path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(record_payload) + "\n")
+                f.flush()
 
-        self._last_hash = record_hash
-        return record_payload
+            self._last_hash = record_hash
+            return record_payload
 
     def read_logs(self, limit: int = 100) -> List[Dict[str, Any]]:
         """Returns the most recent audit records."""

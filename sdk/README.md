@@ -19,6 +19,8 @@ Designed for enterprise Core Banking systems (Temenos T24, Finacle, FIS), CRM pl
 - **Customer Lifetime Value (CLV) & Uplift Modeling:** 12m & 36m DCF Net Present Value valuations and causal retention quadrant classification.
 - **Federal Reserve CCAR & Basel III Stress Testing:** Macroeconomic scenario shocks (Baseline, Adverse, Severely Adverse) and Liquidity Coverage Ratio (LCR) modeling.
 - **HMAC-SHA256 Webhook Event Bus:** Real-time event notifications for Core Banking integration (FIS, Temenos, Fiserv).
+- **Algorithmic Concession Pricing Optimizer:** Evaluates candidate retention offers and identifies net-margin-maximizing incentives.
+- **BSA/AML & FinCEN Form 111 SAR Generator:** Automated transaction structuring scanner and formal SAR narrative packet builder.
 
 ---
 

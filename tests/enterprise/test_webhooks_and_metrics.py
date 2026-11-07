@@ -159,3 +159,4 @@ def test_prometheus_institutional_telemetry_metrics(api_client):
     assert "banksight_clv_at_risk_usd" in content
     assert "banksight_basel_iii_lcr_pct" in content
     assert "banksight_webhook_deliveries_total" in content
+
