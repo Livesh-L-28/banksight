@@ -46,15 +46,21 @@ def seed_database():
     start_time = datetime.now()
 
     with get_db_context() as session:
-        # Disable foreign keys temporarily if truncating
+        # Disable foreign keys temporarily or delete in strict reverse-FK order
         print("[-] Clearing existing records to ensure idempotent seed...")
+        if session.bind.dialect.name == "sqlite":
+            session.execute(text("PRAGMA foreign_keys = OFF;"))
         for tbl in [
+            "retention_actions", "retention_cases", "churn_predictions",
+            "customer_segments", "data_quality_results", "data_import_jobs",
             "campaign_responses", "campaign_assignments", "campaigns",
             "complaints", "customer_interactions", "loans", "customer_products",
             "transactions", "accounts", "customers", "relationship_managers",
-            "branches", "account_types", "products"
+            "branches", "account_types", "products", "model_versions"
         ]:
             session.execute(text(f"DELETE FROM {tbl};"))
+        if session.bind.dialect.name == "sqlite":
+            session.execute(text("PRAGMA foreign_keys = ON;"))
         session.commit()
 
         # 1. Branches

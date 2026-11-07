@@ -412,7 +412,7 @@ def generate_loans(customers_df, products_df, n_loans=250):
     """Generates installment and mortgage loan portfolio."""
     records = []
     loan_products = products_df[products_df["category"] == "Loan"]["product_id"].tolist()
-    cust_ids = customers_df[not customers_df["churn_flag"]]["customer_id"].tolist()
+    cust_ids = customers_df[~customers_df["churn_flag"]]["customer_id"].tolist()
 
     for i in range(1, n_loans + 1):
         c_id = random.choice(cust_ids)
