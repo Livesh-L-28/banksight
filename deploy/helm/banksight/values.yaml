@@ -1,0 +1,51 @@
+# Default values for BankSight Enterprise Helm Deployment
+replicaCount: 3
+
+image:
+  repository: ghcr.io/livesh-l-28/banksight
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 8000
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  hosts:
+    - host: banksight.internal.bank
+      paths:
+        - path: /api
+          pathType: Prefix
+  tls:
+    - secretName: banksight-tls-cert
+      hosts:
+        - banksight.internal.bank
+
+resources:
+  limits:
+    cpu: 1000m
+    memory: 1Gi
+  requests:
+    cpu: 250m
+    memory: 512Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 80
+
+database:
+  host: "pgbouncer-service"
+  port: 5432
+  name: "banksight_db"
+  user: "banksight_admin"
+
+security:
+  auditLoggingEnabled: true
+  piiMaskingDefault: true

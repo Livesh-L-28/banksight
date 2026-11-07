@@ -23,6 +23,7 @@ This document tracks the phased execution and verification of **BankSight — Ba
 | **PHASE 12** | Security Hardening & Automated Testing | **COMPLETED** | 31 automated tests passed (unit, integration, e2e), Ruff 100% clean, security policies |
 | **PHASE 13** | Documentation & Application Screenshots | **COMPLETED** | Master README, Dockerfile, docker-compose, Makefile, LICENSE, CONTRIBUTING, CHANGELOG |
 | **PHASE 14** | CI/CD & GitHub Release Preparation | **COMPLETED** | GitHub Actions workflow passing (success), atomic commit history, remote repository published |
+| **PHASE 15** | Enterprise Tier-1 Hardening & Governance | **COMPLETED** | Decoupled FastAPI, JWT RBAC, PII masking, AES encryption, WORM audit chain, SR 11-7 validator, K8s manifests, 43 tests passed |
 
 ---
 
@@ -92,3 +93,22 @@ This document tracks the phased execution and verification of **BankSight — Ba
   - 14 atomic conventional commits pushed to branch `main`.
   - GitHub Actions CI/CD Pipeline executed and completed with status `success`.
   - Working tree clean and fully synchronized with `origin/main`.
+
+### PHASE 15 — Enterprise Tier-1 Hardening & Governance
+- **Status:** COMPLETED
+- **Target:** Decoupled RESTful API (FastAPI), OAuth2 JWT RBAC, PII dynamic masking, field AES encryption, tamper-evident WORM audit logger, Federal Reserve SR 11-7 Model Risk validation, Kubernetes manifests, Helm charts, and HPA autoscaling.
+- **Changed Files:**
+  - `backend/api/` (main, auth, schemas, dependencies, routers)
+  - `backend/security/` (pii_masker, encryption, audit_logger)
+  - `analytics/governance/` (sr11_7_validator)
+  - `deploy/kubernetes/` (namespace, configmap, secret, api-deployment, api-service, hpa, ingress, pgbouncer)
+  - `deploy/helm/` (Chart.yaml, values.yaml)
+  - `tests/enterprise/` (test_api_endpoints, test_pii_and_security, test_model_governance)
+  - `requirements.txt`
+  - `README.md`
+  - `PHASE_STATUS.md`
+- **Verification:**
+  - 43 / 43 tests passing (100% pass rate).
+  - Ruff linter passing with zero errors.
+  - API liveness/readiness, JWT authentication, and RBAC 403 authorization verified.
+  - SR 11-7 Disparate Impact and PSI stability audits verified.

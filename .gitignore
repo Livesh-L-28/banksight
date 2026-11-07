@@ -65,3 +65,9 @@ data/exports/*.csv
 !data/processed/.gitkeep
 !data/synthetic/.gitkeep
 
+# Application & Audit Logs
+logs/*.jsonl
+logs/*.log
+!logs/.gitkeep
+
+

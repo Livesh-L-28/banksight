@@ -1,0 +1,9 @@
+apiVersion: v2
+name: banksight
+description: Helm chart for BankSight Enterprise Banking Intelligence & Retention Platform
+type: application
+version: 2.0.0
+appVersion: "2.0.0-enterprise"
+maintainers:
+  - name: BankSight Architecture Team
+    email: architecture@banksight.internal

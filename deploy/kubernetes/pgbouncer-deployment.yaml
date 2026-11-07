@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pgbouncer
+  namespace: banksight-production
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pgbouncer
+  template:
+    metadata:
+      labels:
+        app: pgbouncer
+    spec:
+      containers:
+        - name: pgbouncer
+          image: edoburu/pgbouncer:v1.21.0
+          ports:
+            - containerPort: 5432
+              name: pgbouncer
+          env:
+            - name: DB_USER
+              value: "banksight_admin"
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: banksight-secrets
+                  key: POSTGRES_PASSWORD
+            - name: DB_HOST
+              value: "postgres-cluster-primary"
+            - name: DB_NAME
+              value: "banksight_db"
+            - name: POOL_MODE
+              value: "transaction"
+            - name: MAX_CLIENT_CONN
+              value: "1000"
+            - name: DEFAULT_POOL_SIZE
+              value: "50"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pgbouncer-service
+  namespace: banksight-production
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+      name: pgbouncer
+  selector:
+    app: pgbouncer

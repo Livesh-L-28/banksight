@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: banksight-api-service
+  namespace: banksight-production
+  labels:
+    app.kubernetes.io/name: banksight-api
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8000
+      targetPort: 8000
+      name: http
+      protocol: TCP
+  selector:
+    app: banksight-api
