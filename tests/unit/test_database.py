@@ -191,3 +191,4 @@ def test_retention_case_lifecycle(test_db):
     assert case.status == "Contacted"
     assert len(case.actions) == 1
     assert case.actions[0].new_status == "Contacted"
+

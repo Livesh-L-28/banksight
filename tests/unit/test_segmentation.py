@@ -89,3 +89,4 @@ def test_segmentation_service_end_to_end():
     count = session.query(CustomerSegment).count()
     session.close()
     assert count == 2000  # 1000 RFM + 1000 KMeans
+

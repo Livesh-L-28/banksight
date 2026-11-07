@@ -28,3 +28,4 @@
 | **FR-BRN-01** | Branch Performance | Branch Benchmarking | Region, Branch ID | Aggregate deposits, customer acquisition, attrition, and loan volume per branch | Branch ranking table, regional performance radar chart, underperforming alerts |
 | **FR-PRD-01** | Product Intelligence | Cross-Sell Rule Engine | Customer profile holdings | Evaluate cross-sell matrix rules against active customer product map | Personalized product opportunity recommendations with expected value |
 | **FR-REP-01** | Reporting Engine | Multi-Format Export | Report Type, Filters, Format (CSV/XLSX/PDF) | Generate structured report with executive summary, metadata, KPI snapshot, and recommendations | Downloadable formatted file with proper headers, styling, and disclaimers |
+

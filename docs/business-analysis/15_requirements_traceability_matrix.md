@@ -21,3 +21,4 @@
 | **BR-10 (Reporting Engine)** | FR-REP-01 | `app/pages/10_Reports.py`, `backend/services/reporting_service.py` | All Fact & Dim Tables | `TC-REP-001` | Mapped |
 | **BR-11 (Data Management)** | FR-DATA-01 | `app/pages/11_Data_Management.py`, `data_pipeline/` | `data_import_jobs`, `data_quality_results` | `TC-DATA-001` | Mapped |
 | **BR-12 (Power BI Deliverables)** | FR-PBI-01 | `powerbi/datasets/`, `powerbi/dax/`, `powerbi/sql_views/` | Power BI Star Schema Views | `TC-PBI-001` | Mapped |
+

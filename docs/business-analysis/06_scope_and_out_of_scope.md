@@ -71,3 +71,4 @@ BankSight is designed as an analytical decision-support and operational intellig
    - Direct automatic dialing, interactive voice response (IVR) hosting, or SMS gateway delivery are excluded; RMs utilize BankSight to view queues and record outcomes.
 5. **Real Customer PII Data Processing:**
    - Production personally identifiable information (PII) is strictly prohibited. The platform operates on realistic, high-fidelity synthetic data preserving privacy.
+

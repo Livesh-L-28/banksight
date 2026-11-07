@@ -28,3 +28,4 @@ class CustomerService:
         with get_db_context() as session:
             repo = CustomerRepository(session)
             return repo.get_customer_dossier(customer_id)
+

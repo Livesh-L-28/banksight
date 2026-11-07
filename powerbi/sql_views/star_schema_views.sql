@@ -167,3 +167,4 @@ SELECT
     CASE WHEN rc.status = 'Retained' THEN 1 ELSE 0 END AS IsRetained,
     CASE WHEN rc.status = 'Not Retained' THEN 1 ELSE 0 END AS IsLost
 FROM retention_cases rc;
+

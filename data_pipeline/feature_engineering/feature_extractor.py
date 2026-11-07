@@ -122,3 +122,4 @@ class FeatureExtractor:
         features["loan_balance"] = features["customer_id"].map(loan_balance).fillna(0.0).round(2)
 
         return features
+

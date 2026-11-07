@@ -55,3 +55,4 @@ The primary business goals of BankSight are:
 ## 6. Regulatory & Ethical Considerations
 - **Synthetic Data Standard:** To guarantee zero customer privacy exposure in demonstration and training environments, all identities, account numbers, and transaction flows are synthetically generated while strictly preserving realistic banking distributions, Benford's law compliance, and inter-table referential integrity.
 - **Advisory Retention Mandate:** Algorithmic scores and retention recommendations are strictly advisory and must undergo verification by authorized Relationship Managers before customer outreach.
+

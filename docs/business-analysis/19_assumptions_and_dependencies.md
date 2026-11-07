@@ -31,3 +31,4 @@
    - Docker and Docker Compose v2 for multi-container deployment (PostgreSQL db service + BankSight Streamlit app service).
 4. **CI/CD Platform:**
    - GitHub Actions runner with Python 3.12 and PostgreSQL service container for automated regression testing and linting.
+

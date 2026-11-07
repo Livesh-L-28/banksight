@@ -127,3 +127,4 @@ class KMeansSegmenter:
                 "avg_recency_days": round(float(row["recency_days"]), 1)
             })
         return summary
+

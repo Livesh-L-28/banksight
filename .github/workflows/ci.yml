@@ -59,3 +59,4 @@ jobs:
           DATABASE_URL: sqlite:///backend/database/banksight.db
         run: |
           pytest -v --cov=backend --cov=analytics --cov=data_pipeline
+

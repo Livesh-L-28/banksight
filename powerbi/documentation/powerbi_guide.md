@@ -106,3 +106,4 @@ erDiagram
 ## 5. Refresh Strategy & Governance
 - **Scheduled Refresh:** In Power BI Service, configure daily scheduled refresh at 02:00 AM UTC following nightly batch data pipeline execution.
 - **Data Privacy Standard:** Datasets are 100% compliant with synthetic data confidentiality; safe for distribution across external stakeholders and cloud workspaces.
+

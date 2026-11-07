@@ -103,3 +103,4 @@ def test_churn_service_end_to_end():
     case_count = session.query(RetentionCase).count()
     assert case_count > 0
     session.close()
+

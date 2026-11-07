@@ -34,3 +34,4 @@
 ## 6. Maintainability & Code Quality
 - **NFR-MNT-01 Automated Test Coverage:** Automated unit and integration test coverage must exceed 80% across backend models, data transformation pipelines, KPI calculation logic, and ML evaluation routines.
 - **NFR-MNT-02 Code Quality Standards:** Codebase must conform to modern Python PEP 8 standards enforced by Ruff with 0 critical linting or formatting errors.
+

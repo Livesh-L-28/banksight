@@ -68,3 +68,4 @@ def test_powerbi_excel_workbook():
     required_sheets = ["DimBranch", "DimProduct", "DimCustomer", "FactTransactions", "FactCustomerSnapshot"]
     for s in required_sheets:
         assert s in sheet_names, f"Missing sheet {s} in Power BI Excel workbook"
+

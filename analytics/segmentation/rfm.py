@@ -138,3 +138,4 @@ class RFMSegmenter:
             "recommended_actions": ["Conduct standard periodic review"],
             "campaign_affinity": "Standard Marketing"
         })
+

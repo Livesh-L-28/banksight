@@ -433,3 +433,4 @@ banksight/
 
 ## 22. License
 This project is licensed under the MIT License — see the [LICENSE](file:///Users/livesh/BankSight/LICENSE) file for details.
+

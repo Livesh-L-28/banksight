@@ -70,3 +70,4 @@ def test_customer_service():
     assert dossier["customer_id"] == "CUST-00001"
     assert len(dossier["accounts"]) >= 1
     assert len(dossier["timeline"]) > 0
+

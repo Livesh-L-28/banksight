@@ -65,3 +65,4 @@ class ChurnPrediction(Base):
     # Relationships
     customer = relationship("Customer", back_populates="churn_predictions")
     model_version = relationship("ModelVersion", back_populates="predictions")
+

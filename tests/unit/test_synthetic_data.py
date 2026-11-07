@@ -61,3 +61,4 @@ def test_persisted_synthetic_files_referential_integrity():
 
     # Balance positivity / reasonable range
     assert (acc_df["current_balance"] >= 0).all()
+

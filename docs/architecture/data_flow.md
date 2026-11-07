@@ -54,3 +54,4 @@ flowchart LR
 ### Stage 7: Analytical Serving & Semantic Layer
 - Precomputes RFM quintiles, executes K-Means clustering, and generates calibrated churn predictions.
 - Populates star schema views for Power BI (`FactTransactions`, `FactCustomerSnapshot`, `DimCustomer`, `DimDate`, `DimBranch`, `DimProduct`).
+

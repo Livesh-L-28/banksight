@@ -103,3 +103,4 @@ class PipelineManager:
                 session.commit()
         except Exception as e:
             print(f"[!] Warning: Could not record audit metrics to DB: {e}")
+

@@ -161,3 +161,4 @@ def test_feature_extractor():
     assert features.iloc[0]["txn_frequency_12m"] == 2
     assert features.iloc[0]["total_spend_12m"] == 150.0
     assert features.iloc[0]["recency_days"] == (cutoff - datetime(2026, 10, 15, 10, 0, 0)).days
+

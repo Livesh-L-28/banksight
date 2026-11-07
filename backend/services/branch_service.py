@@ -26,3 +26,4 @@ class BranchService:
         with get_db_context() as session:
             repo = BranchRepository(session)
             return repo.get_regional_summary()
+

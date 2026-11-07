@@ -43,3 +43,4 @@ Thank you for your interest in contributing to **BankSight — Banking Customer 
 5. **Commit & Pull Request:**
    - Use conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`, `chore:`).
    - Link any associated issue numbers in your PR description.
+

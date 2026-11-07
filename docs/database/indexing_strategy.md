@@ -29,3 +29,4 @@ BankSight serves both operational point updates (such as updating a retention ca
 ## 3. Maintenance & Vacuuming
 - For PostgreSQL deployments, automated `VACUUM ANALYZE` runs nightly after batch ETL loading to keep planner statistics calibrated.
 - For SQLite deployments, `PRAGMA optimize;` is executed periodically to maintain index tree balance.
+

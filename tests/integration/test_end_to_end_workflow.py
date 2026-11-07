@@ -90,3 +90,4 @@ def test_full_platform_lifecycle():
     assert len(csv_bytes) > 0
     assert len(xlsx_bytes) > 1000
     assert len(pdf_bytes) > 1000
+

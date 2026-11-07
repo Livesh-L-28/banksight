@@ -97,3 +97,4 @@ flowchart TD
 | **Reporting** | OpenPyXL, ReportLab | Native generation of styled Excel workbooks and audit-ready PDF documents. |
 | **Semantic / BI** | Power BI Star Schema, DAX | Native corporate BI distribution and enterprise data democratization. |
 | **Infrastructure & CI** | Docker, Docker Compose, GitHub Actions, Pytest, Ruff | Reproducible containerized execution, automated quality gates, zero regression. |
+

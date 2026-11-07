@@ -90,3 +90,4 @@ JOIN branches b ON c.branch_id = b.branch_id
 LEFT JOIN relationship_managers rm ON rc.rm_id = rm.rm_id
 WHERE rc.status IN ('Identified', 'Assigned', 'Contacted')
 ORDER BY rc.churn_probability DESC;
+

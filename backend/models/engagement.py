@@ -41,3 +41,4 @@ class Complaint(Base):
 
     # Relationships
     customer = relationship("Customer", back_populates="complaints")
+

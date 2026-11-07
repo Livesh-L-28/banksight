@@ -32,3 +32,4 @@ Marketing teams run campaigns without robust baseline controls or attribution mo
 
 ## 3. Desired Future State
 BankSight solves these fundamental challenges by providing a unified, explainable, closed-loop banking intelligence and retention platform that integrates multi-tier predictive modeling directly with operational case management, deep customer 360 dossiers, branch benchmarking, and auditable reporting.
+

@@ -24,3 +24,4 @@ All notable changes to the BankSight platform are documented in this file in adh
 - **Power BI Semantic Layer:** Star Schema views (FactTransactions, FactCustomerSnapshot, FactCampaign, FactRetention, DimCustomer, DimDate, DimBranch, DimProduct, DimAccount), DAX measures library, and multi-tab Excel model workbook.
 - **Testing & Quality:** Pytest test suite with 31 automated unit, integration, and e2e smoke tests passing; Ruff linting at 100% compliance.
 - **DevOps & Infrastructure:** Multi-container `docker-compose.yml` with PostgreSQL 16 Alpine and Streamlit application, `Dockerfile`, `Makefile`, and GitHub Actions CI workflow.
+

@@ -96,3 +96,4 @@ if models:
             st.rerun()
 else:
     st.info("No registered model versions found. Please run Churn Intelligence training first.")
+

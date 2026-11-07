@@ -127,3 +127,4 @@ with e_col3:
 
 st.markdown("<br>", unsafe_allow_html=True)
 st.caption(f"Governance Notice: {report_data['data_limitations']}")
+

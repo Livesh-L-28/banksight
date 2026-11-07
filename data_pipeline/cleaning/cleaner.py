@@ -56,3 +56,4 @@ class DataCleaner:
         df_clean["balance_after"] = df_clean["balance_after"].astype(float).round(2)
 
         return df_clean
+

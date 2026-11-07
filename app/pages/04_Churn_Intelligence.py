@@ -145,3 +145,4 @@ st.dataframe(pd.DataFrame(table_rows), use_container_width=True, hide_index=True
 
 if st.button("🛡️ Open Retention Management Queue"):
     st.switch_page("pages/05_Retention_Management.py")
+

@@ -55,3 +55,4 @@
   - *Tier 1 ($< \$5,000$):* Standard fee waiver up to $\$50$.
   - *Tier 2 ($\$5,000 - \$50,000$):* Fee waiver up to $\$150$ or $+0.25\%$ APY savings boost for 6 months.
   - *Tier 3 ($> \$50,000$):* Dedicated Private Banker assignment, custom term deposit rate boost ($+0.50\%$ APY), and waived premium card annual fees.
+

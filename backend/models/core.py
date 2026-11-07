@@ -163,3 +163,4 @@ class Transaction(Base):
         Index("idx_txn_cust_date", "customer_id", "transaction_date"),
         Index("idx_txn_channel_type", "channel", "transaction_type"),
     )
+

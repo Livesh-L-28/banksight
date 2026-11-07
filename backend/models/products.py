@@ -66,3 +66,4 @@ class Loan(Base):
     # Relationships
     customer = relationship("Customer", back_populates="loans")
     product = relationship("Product", back_populates="loans")
+

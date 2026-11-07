@@ -64,3 +64,4 @@ def test_branch_rankings(db_session):
     # First ranked branch should have >= deposits than subsequent
     assert rankings[0]["total_deposits"] >= rankings[1]["total_deposits"]
     assert rankings[0]["rank"] == 1
+

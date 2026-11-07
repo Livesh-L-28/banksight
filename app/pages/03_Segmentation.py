@@ -185,3 +185,4 @@ st.download_button(
     file_name=f"banksight_segment_{picked_seg.lower().replace(' ', '_')}.csv",
     mime="text/csv"
 )
+

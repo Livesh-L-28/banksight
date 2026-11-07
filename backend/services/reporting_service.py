@@ -258,3 +258,4 @@ class ReportingService:
         doc.build(elements)
         buf.seek(0)
         return buf.getvalue()
+

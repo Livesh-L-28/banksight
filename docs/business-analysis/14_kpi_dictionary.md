@@ -107,3 +107,4 @@ This KPI Dictionary standardizes all metric formulas, operational definitions, d
   - *New Customers:* $R \ge 4, F \le 2, M \le 2$
   - *At Risk:* $R \le 2, F \ge 3, M \ge 3$
   - *Dormant:* $R \le 2, F \le 2, M \le 2$
+

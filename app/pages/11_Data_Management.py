@@ -105,3 +105,4 @@ if dq_records:
     st.dataframe(pd.DataFrame(log_rows), use_container_width=True, hide_index=True)
 else:
     st.info("No prior data quality check logs recorded.")
+

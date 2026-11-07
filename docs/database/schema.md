@@ -111,3 +111,4 @@ The BankSight database schema consists of 21 normalized relational tables design
 - Composite Indexes: `(customer_id, transaction_date)`, `(channel, transaction_type)`.
 
 *(Refer to `docs/database/data_dictionary.md` for complete specification of all 21 tables).*
+

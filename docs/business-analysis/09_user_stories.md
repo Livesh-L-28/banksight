@@ -35,3 +35,4 @@
 ### Persona: Banking Data Analyst
 - **US-DA-01:** As a Data Analyst, I want to train, compare, and validate multiple machine learning models (Logistic Regression, Random Forest, Gradient Boosting) using standard evaluation metrics (AUC, F1, Precision, Recall) so that I can ensure model rigor and absence of data leakage.
 - **US-DA-02:** As a Data Analyst, I want star-schema analytical tables and verified DAX measures exported for Power BI so that our business intelligence team can build custom reporting views effortlessly.
+

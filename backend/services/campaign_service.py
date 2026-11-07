@@ -14,3 +14,4 @@ class CampaignService:
         with get_db_context() as session:
             repo = CampaignRepository(session)
             return repo.get_campaign_analytics()
+

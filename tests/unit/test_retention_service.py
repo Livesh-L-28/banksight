@@ -82,3 +82,4 @@ def test_retention_case_crud_and_status_transitions():
     funnel = service.get_funnel_analytics()
     assert funnel["total_cases"] > 0
     assert funnel["retained_count"] >= 1
+

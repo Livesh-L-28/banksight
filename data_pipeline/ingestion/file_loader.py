@@ -50,3 +50,4 @@ class FileLoader:
             return pd.read_excel(file_path, engine="openpyxl" if suffix == ".xlsx" else None)
         else:
             raise ValueError(f"Unsupported format: {suffix}")
+

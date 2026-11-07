@@ -88,3 +88,4 @@
   - *Given* any of the 8 standard reports (Executive, Segmentation, Churn, Retention, Campaign, Branch, Product, Behavior),
   - *When* the user requests an export in CSV, Excel, or PDF,
   - *Then* a valid, non-corrupt file is generated and downloaded containing header metadata, active filters, KPI table, and executive business recommendations.
+

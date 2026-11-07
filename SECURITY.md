@@ -34,3 +34,4 @@ BankSight is engineered for enterprise banking analytics and retention intellige
 If you discover a potential security vulnerability within BankSight, please report it privately by contacting:
 - **Security Contact:** `liveshjaidj@gmail.com`
 - Do not disclose suspected security vulnerabilities publicly in GitHub issues.
+

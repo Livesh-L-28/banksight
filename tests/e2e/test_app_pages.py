@@ -29,3 +29,4 @@ def test_app_pages_syntax_compilation():
     for file_path in files:
         res = subprocess.run([sys.executable, "-m", "py_compile", file_path], capture_output=True, text=True)
         assert res.returncode == 0, f"Failed compilation on {file_path}: {res.stderr}"
+

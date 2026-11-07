@@ -59,3 +59,4 @@ class CampaignResponse(Base):
 
     # Relationships
     assignment = relationship("CampaignAssignment", back_populates="response")
+

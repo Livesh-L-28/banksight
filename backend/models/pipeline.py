@@ -37,3 +37,4 @@ class DataQualityResult(Base):
     status = Column(String(20), default="Passed", nullable=False)  # Passed, Warning, Failed
     details = Column(JSON, nullable=True)
     executed_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+

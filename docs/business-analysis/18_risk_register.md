@@ -15,3 +15,4 @@
 | **RSK-04** | Architecture / Perf | **Query Bottlenecks:** Large transaction tables cause dashboard timeouts during real-time aggregations. | Medium | Medium | **Medium** | Normalized relational schema with B-Tree indexes on `customer_id`, `branch_id`, `transaction_date`, and pre-aggregated KPI summaries. | Data Architect |
 | **RSK-05** | Business Logic | **Correlational Campaign Bias:** Attributing organic product adoption to recent marketing campaigns without baseline controls. | Medium | Medium | **Medium** | Document attribution methodology clearly; support control group comparisons and transparent ROI assumptions. | Senior BI Analyst |
 | **RSK-06** | System Integration | **Database Divergence:** Inconsistencies between PostgreSQL production schema and SQLite development environment. | Low | Medium | **Low** | Utilize SQLAlchemy 2.0 ORM agnostic dialect mapping and Alembic migrations tested in CI against both dialects. | DevOps / QA |
+

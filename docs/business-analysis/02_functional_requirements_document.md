@@ -62,3 +62,4 @@ The BankSight platform is structured into modular functional components interact
 ### FR-10: Business Reporting & Data Export Engine
 - **FR-10.1 Standard Banking Reports:** Produce 8 executive reports with applied filters, KPIs, executive summary, and recommendations.
 - **FR-10.2 Multi-Format Generator:** Export to CSV, XLSX (with styled sheets and header formatting), and PDF with banking branding.
+

@@ -117,3 +117,4 @@ if portfolio:
         )
 else:
     st.info("No product catalog data available.")
+

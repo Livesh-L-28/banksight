@@ -40,3 +40,4 @@
 | **KPI-05** | Model ROC-AUC Score | 0.68 | ≥ 0.82 | Per Model Retrain | Lead Data Scientist |
 | **KPI-06** | Retention SLA Adherence | 42.0% | ≥ 90.0% | Weekly | Operations Lead |
 | **KPI-07** | Automated Report Generation | 4 business days | Real-time (<30s) | Continuous | Lead BI Analyst |
+

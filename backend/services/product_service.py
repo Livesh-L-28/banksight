@@ -20,3 +20,4 @@ class ProductService:
         with get_db_context() as session:
             repo = ProductRepository(session)
             return repo.get_cross_sell_opportunities()
+
